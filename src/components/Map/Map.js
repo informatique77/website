@@ -34,7 +34,7 @@ const Map = ({ allMedicalCenters }) => {
     if (!window.google) {
       var s = document.createElement("script")
       s.type = "text/javascript"
-      s.src = `https://maps.google.com/maps/api/js?key=${process.env.GATSBY_API_URL}`
+      s.src = `https://maps.google.com/maps/api/js?key=${process.env.GATSBY_API_MAP}`
       var x = document.getElementsByTagName("script")[0]
       x.parentNode.insertBefore(s, x)
       // Below is important.

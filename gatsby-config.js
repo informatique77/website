@@ -78,13 +78,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `2413619198`,
+        trackingId: `${process.env.GATSBY_API_GA}`,
       },
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "GTM-P3MN869",
+        id: `${process.env.GATSBY_API_GTM}`,
   
         // Include GTM in development.
         //
