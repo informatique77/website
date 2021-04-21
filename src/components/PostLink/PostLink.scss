@@ -1,0 +1,68 @@
+@import "../../styles/Variables.scss";
+
+.postlink-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 320px;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  p {
+    text-align: center;
+  }
+  h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .postlink-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 125px;
+  }
+  .postlink-txt {
+    top: -20px;
+    position: relative;
+    border-top: 4px solid $blue-color;
+    text-align: center;
+    background-color: #fff;
+    width: 210px;
+    font-family: $palanquin-dark;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #333333;
+    transition: transform 400ms ease;
+    .postlink-title {
+      font-size: 20px;
+    }
+    .postlink-excerpt {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .postlink-date {
+      font-family: $palanquin;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 32px;
+      color: rgba(34, 67, 88, 0.501557);
+    }
+  }
+  &:hover {
+    .postlink-txt {
+      transform: translateY(-10px);
+    }
+  }
+}

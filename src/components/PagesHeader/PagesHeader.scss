@@ -1,0 +1,53 @@
+@import "../../styles/Variables.scss";
+
+.pages-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
+  margin: 0px auto;
+  .pages-header-title {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 580px;
+    top: 120px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    background-color: $blue-color;
+    background-image: url("../../images/header/Combined\ Shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    top: 110px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .pages-header-title {
+    &::after {
+      display: none;
+    }
+  }
+ 
+}
+
+@media screen and (max-width: 767px) {
+  .pages-header-container {
+    min-height: 220px;
+    .pages-header-title {
+      width: 100%;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}

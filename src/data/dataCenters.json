@@ -1,0 +1,204 @@
+[
+  {
+    "index": 0,
+    "name": "Centre Téléconsultations",
+    "address": "Notre service de téléconsultations 7/7 à horaires élargis, pour adultes et enfants.",
+    "tel": "Téléconsultations",
+    "image": {
+      "src": "../images/centers/teleconsultations.jpg"
+    },
+    "lat": 0,
+    "lng": 0,
+    "map": false,
+    "open": true,
+    "bgColor": "#FFFF",
+    "slug": "/teleconsultations"
+  },
+  {
+    "index": 1,
+    "name": "Centre médical Nice le port",
+    "address": "24 bis Rue Smolett, 06300 Nice",
+    "tel": "04-93-01-28-89",
+    "direction": "https://goo.gl/maps/2c4183WaEzxX16fP6",
+    "image": {
+      "src": "../images/centers/smolett.jpg"
+    },
+    "lat": 43.70345,
+    "lng": 7.28437,
+    "map": true,
+    "open": true,
+    "bgColor": "#F7F6FE",
+    "slug": "/centre/smollet",
+    "payment": "Espèces et chèque",
+    "transport": [
+      {
+        "car": "Un parking payant est situé à 5 min à pied, rue Auguste Gal",
+        "bus": "Le centre est situé proche des lignes 3, 4, 27, 82 et 112",
+        "tramway": "Sur la ligne 1, arrêt Acropolis"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "name": "Centre médical Nice Centre",
+    "address": "39 bis Rue Lamartine, 06300 Nice",
+    "tel": "04-93-01-28-89",
+    "direction": "https://goo.gl/maps/kSETVusR6gaUDiCu7",
+    "image": {
+      "src": "../images/centers/lamartine.jpg"
+    },
+    "lat": 43.70488,
+    "lng": 7.26719,
+    "map": true,
+    "open": true,
+    "bgColor": "#FFFF",
+    "slug": "/centre/lamartine",
+    "payment": "Espèces et chèque",
+    "transport": [
+      {
+        "car": "Le parking payant du centre commercial Nice Étoile est situé à 2 min à pied",
+        "bus": "Le centre est situé proche des lignes 9, 10, 12, et 23",
+        "tramway": "Sur la ligne 1, arrêt Jean Médecin"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "name": "Centre médical Nice Ouest",
+    "address": "Hall de l'Hôpital Lenval, 57 Avenue de La Californie, 06200 Nice",
+    "tel": "04-92-03-09-40",
+    "direction": "https://goo.gl/maps/wPQtKt8aTSfZZGw9A",
+    "image": {
+      "src": "../images/centers/lenval.jpg"
+    },
+    "lat": 43.6893,
+    "lng": 7.24141,
+    "map": true,
+    "open": true,
+    "bgColor": "#F7F6FE",
+    "slug": "/centre/nice-ouest",
+    "payment": "Espèces et chèque",
+    "transport": [
+      {
+        "car": "En utilisant le parking payant de l'Hôpital Lenval",
+        "bus": "Le centre est situé proche des lignes 4, 17, et 30",
+        "tramway": "Sur la ligne 2, arrêt Lenval"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "name": "Centre médical Nice l'Ariane",
+    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice l'Ariane",
+    "tel": "Prochainement ",
+    "image": {
+      "src": "../images/centers/lariane.jpg"
+    },
+    "lat": 43.736052,
+    "lng": 7.304897,
+    "map": true,
+    "open": false,
+    "bgColor": "#FFFF",
+    "slug": "/centre/ariane",
+    "payment": "Espèces et chèque",
+    "transport": [
+      {
+        "car": "",
+        "bus": "",
+        "tramway": ""
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "name": "Centre médical Nice Nord",
+    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice Nord",
+    "tel": "Prochainement",
+    "image": {
+      "src": "../images/centers/nice-nord.jpg"
+    },
+    "lat": 43.722997,
+    "lng": 7.256054,
+    "map": true,
+    "open": false,
+    "bgColor": "#FFFF",
+    "slug": "/centre/ariane",
+    "payment": "Espèces et chèque",
+    "transport": [
+      {
+        "car": "",
+        "bus": "",
+        "tramway": ""
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "name": "Centre médical Menton",
+    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Menton",
+    "tel": "Prochainement",
+    "image": {
+      "src": "../images/centers/menton.jpg"
+    },
+    "lat": 43.774483,
+    "lng": 7.49754,
+    "map": true,
+    "open": false,
+    "bgColor": "#FFFF",
+    "slug": "/centre/menton",
+    "payment": "Espèces et chèque",
+    "transport": [
+      {
+        "car": "",
+        "bus": "",
+        "tramway": ""
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "name": "Centre médical Cagnes-sur-Mer",
+    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cagnes-sur-Mer",
+    "tel": "Prochainement",
+    "image": {
+      "src": "../images/centers/cagnes.jpg"
+    },
+    "lat": 43.663491756996436,
+    "lng": 7.1503342690857306,
+    "map": true,
+    "open": false,
+    "bgColor": "#F7F6FE",
+    "slug": "/centre/cagnes-sur-mer",
+    "payment": "Espèces et chèque",
+    "transport": [
+      {
+        "car": "",
+        "bus": "",
+        "tramway": ""
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "name": "Centre médical Cannes",
+    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cannes",
+    "tel": "Prochainement",
+    "image": {
+      "src": "../images/centers/cannes.jpg"
+    },
+    "lat": 43.55252124257743,
+    "lng": 7.022162338579261,
+    "map": true,
+    "open": false,
+    "bgColor": "#FFFF",
+    "slug": "/centre/cannes",
+    "payment": "Espèces et chèque",
+    "transport": [
+      {
+        "car": "",
+        "bus": "",
+        "tramway": ""
+      }
+    ]
+  }
+]

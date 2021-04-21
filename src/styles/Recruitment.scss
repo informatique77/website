@@ -1,0 +1,42 @@
+@import "./Variables";
+
+.recruitment-page-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-color: $pink-color;
+  margin-top: 50px;
+  h2 {
+    font-family: $palanquin-dark;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #0596de;
+    text-align: center;
+    padding: 50px 0 50px 0;
+  }
+}
+
+.recruitment-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  max-width: 800px;
+  font-family: $palanquin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #224358;
+  padding: 0 40px 0 40px;
+  ul {
+    li {
+      list-style: circle;
+      margin: 5px 0 5px 0;
+    }
+  }
+}

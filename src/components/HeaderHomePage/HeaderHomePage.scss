@@ -1,0 +1,221 @@
+@import "../../styles/Variables.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 700px;
+  margin: 0px auto;
+
+  .main-container {
+    width: 580px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+
+    a {
+      text-decoration: none;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 32px;
+    }
+  }
+
+  .slick-slider {
+    width: 100%;
+
+    .slick-list {
+      height: 190px;
+    }
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: $blue-color;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: $blue-color;
+  }
+
+  .text-carousel {
+    font-family: $palanquin-dark;
+    font-size: 20px;
+    font-weight: 700;
+    color: $blue-color;
+    text-align: center;
+  }
+
+  .img-container {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .img-carousel {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .main-p {
+    margin-top: 50px;
+    width: 538px;
+    height: auto;
+    font-family: $palanquin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+    color: #224358;
+
+    span {
+      font-weight: bold;
+      text-decoration-line: underline;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    background-color: $blue-color;
+    background-image: url("../../images/header/Combined\ Shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    top: 475px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    background-color: $blue-color;
+    background-image: url("../../images/header/Combined\ Shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    top: 110px;
+    right: 0;
+  }
+
+  .img-header-heart {
+    position: absolute;
+    width: 200px;
+    position: absolute;
+    top: 250px;
+    right: 125px;
+    z-index: 1;
+  }
+
+  .img-header-stethoscope {
+    position: absolute;
+    width: 200px;
+    position: absolute;
+    top: 390px;
+    left: 125px;
+    z-index: 1;
+  }
+}
+
+h1 {
+  font-family: $palanquin-dark;
+  font-size: 62px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: $blue-color;
+  font-weight: 400;
+  span {
+    color: #e74c3c;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .header {
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+      left: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    .main-container {
+      width: auto;
+    }
+    .slick-slider {
+      width: 400px;
+    }
+
+    .main-p {
+      width: 400px;
+    }
+
+    .button-container {
+      flex-direction: column;
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    height: 770px;
+    .main-container {
+      width: auto;
+    }
+    .slick-slider {
+      width: 230px;
+    }
+
+    .main-p {
+      width: 300px;
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .header {
+    height: 880px;
+    .slick-slider {
+      width: 200px;
+    }
+    .main-p {
+      width: 200px;
+    }
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+

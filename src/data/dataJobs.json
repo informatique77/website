@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Vous êtes médecins ? ",
+    "contract": "CDD",
+    "place": "Nice",
+    "slug": "/job/nous-rejoindre",
+    "image": {
+      "src": "../images/jobs/job-generaliste.png"
+    }
+  }
+]

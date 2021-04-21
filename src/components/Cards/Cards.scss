@@ -1,0 +1,64 @@
+@import "../../styles/Variables.scss";
+
+.card {
+  width: 270px;
+  height: 288px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.101081);
+  border-radius: 16px;
+  margin: 25px 25px 25px 25px;
+  .card-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    h2 {
+      font-family: $palanquin-dark;
+      font-style: normal;
+      font-weight: normal;
+      width: 120px;
+      color: #333333;
+      line-height: 32px;
+    }
+   .img-card-container {
+     margin-left: 20px;
+   }
+  }
+  .card-content {
+    text-align: left;
+    padding: 25px;
+    .div-card {
+      font-family: $palanquin;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 19px;
+      color: #224358;
+      span {
+        font-weight: bold;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 19px;
+      color: #224358;
+      span {
+        font-weight: bold;
+      }
+      .span-underline {
+        text-decoration: underline;
+        line-height: 24px;
+      }
+      .big {
+        font-size: 22px;
+        font-weight: 700;
+      }
+      a {
+        color: #224358;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+    li {
+      list-style: none;
+    }
+  }
+}

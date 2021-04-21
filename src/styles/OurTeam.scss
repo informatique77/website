@@ -1,0 +1,111 @@
+@import "./Variables";
+
+.ourTeam-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  .ourTeam-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .ourTeam-resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    span {
+      font-family: $palanquin-dark;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #0596de;
+    }
+    p {
+      font-family: $palanquin;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 32px;
+      color: #224358;
+      max-width: 700px;
+    }
+  }
+}
+
+.name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .section-one {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $pink-color;
+    li {
+      font-family: $palanquin;
+      font-size: 20px;
+      line-height: 50px;
+      list-style: none;
+      span {
+        font-family: $palanquin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 50px;
+        color: #224358;
+      }
+    }
+  }
+  .section-two {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      font-family: $palanquin;
+      font-size: 20px;
+      line-height: 50px;
+      list-style: none;
+      span {
+        font-family: $palanquin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 50px;
+        color: #224358;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ourTeam-header {
+    flex-direction: column;
+    .ourTeam-img {
+      width: 100%;
+    }
+    .ourTeam-resume {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .name-container {
+        flex-direction: column;
+        .section-one {
+            width: 100%;
+        }
+        .section-two {
+            width: 100%;
+        }
+    }
+}

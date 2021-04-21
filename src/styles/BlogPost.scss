@@ -1,0 +1,28 @@
+@import "../styles/Variables.scss";
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  header {
+    margin-bottom: 50px;
+    p {
+      text-align: center;
+    }
+  }
+  section {
+    max-width: 900px;
+    margin-top: 75px;
+    font-family: $palanquin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #224358;
+    margin-bottom: 50px;
+    p {
+      text-align: justify;
+    }
+  }
+}
