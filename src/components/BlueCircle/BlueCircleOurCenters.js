@@ -7,7 +7,7 @@ import { burgerAnimation } from "../../utils/burgerAnimation"
 
 const BlueCircleOurCenters = () => {
   return (
-    <Link to="/nos-centres" onClick={burgerAnimation} onKeyDown={burgerAnimation}>
+    <Link to="/nos-centres" onClick={burgerAnimation} onKeyDown={burgerAnimation} >
     <div className="blueCircle">
       <div className="blue-img-container">
         <StaticImage
