@@ -12,7 +12,7 @@ import { openOrClose } from "../../utils/timer"
 
 import "./Map.scss"
 
-const InfoWindowContent = (center, image) => {
+const InfoWindowContent = (center, image, globalMap) => {
   return ReactDOMServer.renderToString(
     <div className="infoWindow-container">
       <h2>{center.name}</h2>
@@ -21,7 +21,7 @@ const InfoWindowContent = (center, image) => {
       </div>
       <p className="infoWindow-address">{center.address}</p>
       {center.open ? openOrClose(center.index) : null}
-      {center.open ? (
+      {center.open && globalMap ? (
          <ShowMoreButton slug={center.slug} content={"En savoir plus"}/>
       ) : null}
       <div>

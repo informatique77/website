@@ -1,9 +1,9 @@
 [
   {
-    "title": "Vous êtes médecins ? ",
-    "contract": "CDD",
-    "place": "Nice",
-    "slug": "/job/nous-rejoindre",
+    "title": "Nom du poste",
+    "contract": "Type de contrat du poste, exemple : CDI, CDD etc...",
+    "place": "Lieu du poste",
+    "slug": "Lien du poste",
     "image": {
       "src": "../images/jobs/job-generaliste.png"
     }

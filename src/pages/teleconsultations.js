@@ -69,7 +69,7 @@ const Teleconsultation = () => (
                 />
               </div>
               <span className="card-text-title">
-                Je prend rendez-vous directement en ligne
+                Je prends rendez-vous directement en ligne
               </span>
               <p className="card-text-paragraph">
                 De 9h à 21h, 7 jours sur 7 y compris les jours fériés.
@@ -89,7 +89,7 @@ const Teleconsultation = () => (
               </div>
               <span className="card-text-title">J'obtiens un avis médical</span>
               <p className="card-text-paragraph">
-                Je bénéificie d'un diagnostic ainsi qu'une ordonnance valable en
+                Je bénéficie d'un diagnostic ainsi qu'une ordonnance valable en
                 pharmacie.
               </p>
             </div>
@@ -108,7 +108,7 @@ const Teleconsultation = () => (
                 />
               </div>
               <span className="card-text-title">
-                J'éffectue ma téléconsultation
+                J'effectue ma téléconsultation
               </span>
               <p className="card-text-paragraph">
                 Depuis mon téléphone ou mon ordinateur, je réalise ma
@@ -149,7 +149,7 @@ const Teleconsultation = () => (
               />
             </div>
             <div className="about-span">
-              <span>Accèder rapidement à l’un de nos médecins</span>
+              <span>Accéder rapidement à l’un de nos médecins</span>
             </div>
             <div className="about-text">
               <p>Notre service disponible 7 jours sur 7 de 9h à 21h</p>
@@ -167,7 +167,7 @@ const Teleconsultation = () => (
               />
             </div>
             <div className="about-span">
-              <span>Un solution idéale face au COVID-19</span>
+              <span>Une solution idéale face au COVID-19</span>
             </div>
             <div className="about-text">
               <p>

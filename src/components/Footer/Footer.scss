@@ -27,6 +27,7 @@
 
   .footer-second-section {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     height: 35%;
@@ -41,7 +42,7 @@
     .footer-link {
       display: flex;
       justify-content: space-between;
-      width: 250px;
+      width: 510px;
       a {
         text-decoration: none;
         font-family: $palanquin;
@@ -74,6 +75,8 @@ label {
       text-align: center;
       .footer-link {
         margin-top: 35px;
+        width: auto;
+        flex-direction: column;
       }
     }
   }

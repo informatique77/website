@@ -33,7 +33,7 @@ const Prices = () => (
           <br></br>
         </p>
         <span className="underline-payment">
-          Paiment uniquement en espèces ou chèques
+          Paiement uniquement en espèces ou chèques
         </span>
         <div className="payment-img">
           <StaticImage

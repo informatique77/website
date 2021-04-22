@@ -1,0 +1,29 @@
+@import "./Variables";
+
+.privacy-policy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  h2 {
+    font-family: $palanquin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: left;
+  }
+  p {
+    font-family: $palanquin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: justify;
+    color: #224358;
+  }
+}

@@ -68,7 +68,8 @@ const SingleCenterTemplate = ({ data }) => {
 
     const content = InfoWindowContent(
       data.dataCentersJson,
-      infoWindowImg(data.dataCentersJson.index)
+      infoWindowImg(data.dataCentersJson.index),
+      false
     )
     const infoWindow = new window.google.maps.InfoWindow({
       content: content,
@@ -112,7 +113,9 @@ const SingleCenterTemplate = ({ data }) => {
                 {data.dataCentersJson.open
                   ? openOrClose(data.dataCentersJson.index)
                   : null}
-                <p className="opening-details">Horaires : 7 jours sur 7 de 8h30 à 22h00</p>
+                <p className="opening-details">
+                  Horaires : 7 jours sur 7 de 8h30 à 22h00
+                </p>
                 <p className="payment">
                   Méthodes de paiements : {data.dataCentersJson.payment}
                 </p>
@@ -154,17 +157,17 @@ const SingleCenterTemplate = ({ data }) => {
                       {" "}
                       <StaticImage
                         src="../images/icons/car.png"
-                        width={40}
-                        height={40}
+                        width={42}
                         quality={95}
+                        layout="fixed"
                         formats={["AUTO", "WEBP", "AVIF"]}
                         alt="Voiture"
                         placeholder="blurred"
                       />
                     </div>
                     <div className="text-transport-content">
-                    <span>En voiture :</span>
-                    {data.dataCentersJson.transport[0].car}
+                      <span>En voiture :</span>
+                      {data.dataCentersJson.transport[0].car}
                     </div>
                   </div>
                   <div className="text-transport">
@@ -172,17 +175,17 @@ const SingleCenterTemplate = ({ data }) => {
                       {" "}
                       <StaticImage
                         src="../images/icons/bus.png"
-                        width={40}
-                        height={40}
+                        width={42}
                         quality={95}
+                        layout="fixed"
                         formats={["AUTO", "WEBP", "AVIF"]}
                         alt="Bus"
                         placeholder="blurred"
                       />
                     </div>
                     <div className="text-transport-content">
-                    <span>En bus :</span>
-                    {data.dataCentersJson.transport[0].bus}
+                      <span>En bus :</span>
+                      {data.dataCentersJson.transport[0].bus}
                     </div>
                   </div>
                   <div className="text-transport">
@@ -190,17 +193,17 @@ const SingleCenterTemplate = ({ data }) => {
                       {" "}
                       <StaticImage
                         src="../images/icons/tram.png"
-                        width={40}
-                        height={40}
+                        width={42}
                         quality={95}
+                        layout="fixed"
                         formats={["AUTO", "WEBP", "AVIF"]}
                         alt="Tramway"
                         placeholder="blurred"
                       />
                     </div>
                     <div className="text-transport-content">
-                    <span>En tram :</span>
-                    {data.dataCentersJson.transport[0].tramway}
+                      <span>En tram :</span>
+                      {data.dataCentersJson.transport[0].tramway}
                     </div>
                   </div>
                 </div>

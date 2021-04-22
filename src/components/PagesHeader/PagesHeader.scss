@@ -15,6 +15,9 @@
     align-items: center;
     width: 580px;
     top: 120px;
+    h1 {
+      font-size: 57px;
+    }
   }
   &::after {
     content: "";
@@ -31,13 +34,12 @@
   }
 }
 
-@media screen and (max-width: 1140px) {
-  .pages-header-title {
+@media screen and (max-width: 1000px) {
+  .pages-header-container {
     &::after {
       display: none;
     }
   }
- 
 }
 
 @media screen and (max-width: 767px) {
@@ -45,9 +47,9 @@
     min-height: 220px;
     .pages-header-title {
       width: 100%;
-    }
-    &::after {
-      display: none;
+      h1 {
+        font-size: 36px;
+      }
     }
   }
 }

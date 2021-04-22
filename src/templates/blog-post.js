@@ -21,7 +21,7 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <PagesHeader title="Actualité" />
+      <h1>{post.frontmatter.title}</h1>
       <article
         className="blog-post"
         itemScope

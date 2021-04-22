@@ -69,7 +69,8 @@ const Map = ({ allMedicalCenters }) => {
         })
         const content = InfoWindowContent(
           center.node,
-          infoWindowImg(center.node.index)
+          infoWindowImg(center.node.index),
+          true
         )
         const infoWindow = new window.google.maps.InfoWindow({
           content: content,
