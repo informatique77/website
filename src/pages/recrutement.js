@@ -46,7 +46,7 @@ const Recruitment = () => {
         <IconButton
           css="icon-button"
           slug="/docteur"
-          content="Vous êtes médecins ?"
+          content="Vous êtes médecin ?"
           staticImage={
             <StaticImage
               src="../images/doctors/white-stethoscope.png"
