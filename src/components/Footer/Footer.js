@@ -33,7 +33,8 @@ const Footer = () => {
         <div className="footer-link">
           <Link to="/mention-legales">Mentions légales</Link>
           <Link to="/politique-confidentialite">Politique de confidentialité</Link>
-          <a href="http://www.consultations77.org/login">Espace Staff</a>
+          <a href="http://www.staffc7.org//login">C7-Planning</a>
+          <a href="http://salle.staffc7.org/#/login">C7-Salle d'attente</a>
         </div>
       </div>
     </div>

@@ -21,15 +21,28 @@ const CardThree = () => {
         </div>
       </div>
       <div className="card-content">
-        <p>
-          Radiologie conventionnelle Echographie Mammographie numérique Scanner
-          - IRM - Radiothérapie
-          <br></br>
-          <br></br>
-          <a href="https://www.riviera-imagerie.fr/">
-            Centre d’Imagerie Médicale : Nice Lamartime
-          </a>
-        </p>
+        <div className="div-card">
+          <ul>
+            <li>
+              <span>- Radiologie</span>
+            </li>
+            <li>
+              <span>- Echographie</span>
+            </li>
+            <li>
+              <span>- Mammographie</span>
+            </li>
+            <li>
+              <span>- Scanner</span>
+            </li>
+            <li>
+              <span>- IRM</span>
+            </li>
+            <li>
+              <span>- Radiothérapie</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   )

@@ -58,7 +58,7 @@ const Recruitment = () => {
             />
           }
         />
-        <h2>Prochainement découvrez nos offres d'emplois </h2>
+        <h2>Prochainement découvrez nos offres d'emplois</h2>
         {data.allDataJobsJson.edges.length > 1
           ? data.allDataJobsJson.edges.map((item, index) => {
               if (index !== 0) {

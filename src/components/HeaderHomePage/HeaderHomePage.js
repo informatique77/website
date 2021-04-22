@@ -27,6 +27,21 @@ const HomeHeader = () => {
           Consultations <span>7 sur 7</span>
         </h1>
         <Slider {...settings}>
+        <a href="https://www.doctolib.fr/centre-de-sante/nice/vaccination-covid-19-7-7-consultations-nice?highlight%5Bspeciality_ids%5D%5B%5D=5494">
+            <div className="carousel-container">
+              <div className="img-container">
+                <StaticImage
+                  src="../../images/carousel/syringe.png"
+                  width={92}
+                  quality={95}
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  alt="Vaccination Covid 19 Nice"
+                  placeholder="blurred"
+                />
+              </div>
+              <p className="text-carousel">Vaccination Covid 19</p>
+            </div>
+          </a>
           <Link to="/nos-centres">
             <div className="carousel-container">
               <div className="img-container">
@@ -40,6 +55,21 @@ const HomeHeader = () => {
                 />
               </div>
               <p className="text-carousel">Nos centres</p>
+            </div>
+          </Link>
+          <Link to="/teleconsultations">
+            <div className="carousel-container">
+              <div className="img-container">
+                <StaticImage
+                  src="../../images/carousel/teleconsultations.png"
+                  width={92}
+                  quality={95}
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  alt="Téléconsultations"
+                  placeholder="blurred"
+                />
+              </div>
+              <p className="text-carousel">Téléconsultations</p>
             </div>
           </Link>
         </Slider>
