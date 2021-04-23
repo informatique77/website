@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
-import PagesHeader from "../components/PagesHeader/PagesHeader"
 import SEO from "../components/seo"
 
 import "../styles/BlogPost.scss"

@@ -43,7 +43,7 @@ const Recruitment = () => {
       <SEO title="Recrutement" />
       <PagesHeader title="Recrutement" />
       <div className="recruitment-page-section">
-        <IconButton
+        {/* <IconButton
           css="icon-button"
           slug="/docteur"
           content="Vous êtes médecin ?"
@@ -57,7 +57,7 @@ const Recruitment = () => {
               placeholder="blurred"
             />
           }
-        />
+        /> */}
         <h2>Prochainement découvrez nos offres d'emplois</h2>
         {data.allDataJobsJson.edges.length > 1
           ? data.allDataJobsJson.edges.map((item, index) => {

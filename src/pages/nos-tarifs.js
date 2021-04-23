@@ -12,7 +12,7 @@ const Prices = () => (
     <SEO title="Nos Tarifs" />
     <PagesHeader title="Nos Tarifs" />
     <div className="prices-section">
-      <span className="small-title">Tarifs et méthodes de paiement</span>
+      <span className="small-title">Tarifs</span>
       <StaticImage
         src="../images/icons/euro-100.png"
         width={100}
@@ -32,27 +32,6 @@ const Prices = () => (
           <span className="underline">carte vitale à jour de vos droits</span>.
           <br></br>
         </p>
-        <span className="underline-payment">
-          Paiement uniquement en espèces ou chèques
-        </span>
-        <div className="payment-img">
-          <StaticImage
-            src="../images/icons/cash.png"
-            width={100}
-            quality={100}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Camera téléconsultations"
-            placeholder="blurred"
-          />
-          <StaticImage
-            src="../images/icons/check.png"
-            width={100}
-            quality={100}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Camera téléconsultations"
-            placeholder="blurred"
-          />
-        </div>
       </div>
     </div>
   </Layout>
