@@ -31,8 +31,8 @@ const Team = ({ data }) => {
         <div className="ourTeam-resume">
           <span>L’équipe consultations 7 sur 7</span>
           <p>
-            Notre équipe de médecins généralistes urgentistes dynamiques, aider par nos
-            assistantes médicales, se relaient 7 jours sur 7.
+            Notre équipe de médecins généralistes urgentistes dynamiques, aideée par nos
+            assistantes médicales, se relait 7 jours sur 7.
           </p>
         </div>
       </div>

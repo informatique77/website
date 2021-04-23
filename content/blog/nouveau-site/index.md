@@ -1,6 +1,6 @@
 ---
 title: Nouveau site Consultations 7 sur 7 !
-date: "2015-05-06T23:46:37.121Z"
+date: "2021-04-22T23:46:37.121Z"
 excerpt: "Nous sommes heureux de vous faire découvrir le nouveau site web de Consultations 7 sur 7 !"
 img: ./website.png
 ---
@@ -11,7 +11,7 @@ Nous avions à cœur  de proposer du contenu plus complet et surtout mieux adapt
 <br></br>
 Sur cette première version, nous avons intégré [une Google Map interactive](https://www.consultations77.org/nos-centres) avec les différents centres comprenant toutes les informations nécessaires (horaires, trajets etc.).
 
-Notre [page de recrutement](https://www.consultations77.org/recrutement) à également vue le jour, ainsi si vous désirez rejoindre notre équipe, vous pourrez consulter nos différentes offres d'emploi sur notre site.
+Notre [page de recrutement](https://www.consultations77.org/recrutement) est maintenant disponible, ainsi si vous désirez rejoindre notre équipe, vous pourrez consulter nos différentes offres d'emploi sur notre site.
 
 Une section "Blog" a aussi été intégrée afin de communiquer plus régulièrement sur nos actions en temps réel.
 <br></br>

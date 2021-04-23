@@ -129,7 +129,7 @@ const Teleconsultation = () => (
               </div>
               <span className="card-text-title">Je suis pris en charge</span>
               <p className="card-text-paragraph">
-                La téléconsultation est directement pris en charge par l’Assurance Maladie.
+                La téléconsultation est directement prise en charge par l’Assurance Maladie.
               </p>
             </div>
           </div>
