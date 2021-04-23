@@ -9,7 +9,7 @@ import "../styles/Doctor.scss"
 const Doctors = () => (
   <Layout>
     <SEO title="Recrutement docteur Consultations 7 sur 7" />
-    <PagesHeader title="Vous êtes docteur ?" />
+    <PagesHeader title="Vous êtes médecin ?" />
     <div className="doctor-text-section">
       <div className="doctor-text-container">
       <h3>Travailler à Consultations 7/7, c’est choisir :</h3>
