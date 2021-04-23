@@ -19,7 +19,7 @@ const Doctors = () => (
           maximum de temps médical.
         </li>
         <li>
-          De bénéficier de vastes centres médicaux modernes multi disciplinaires
+          De bénéficier de vastes centres médicaux modernes multidisciplinaires
           avec imagerie médicale, biologie et paramédicaux intégrés et à
           l’implantation urbaine attractive.
         </li>

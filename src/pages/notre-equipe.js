@@ -47,6 +47,9 @@ const Team = ({ data }) => {
                 </li>
               )
             })}
+            <li style={{visibility: "hidden"}}>
+               .
+            </li>
           </ul>
         </div>
         <div className="section-two">
