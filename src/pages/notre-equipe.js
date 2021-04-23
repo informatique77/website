@@ -32,7 +32,7 @@ const Team = ({ data }) => {
           <span>L’équipe consultations 7 sur 7</span>
           <p>
             Notre équipe de médecins généralistes urgentistes dynamiques, aidée par nos
-            assistantes médicales, se relait 7 jours sur 7.
+            assistantes médicales, se relaie 7 jours sur 7.
           </p>
         </div>
       </div>
