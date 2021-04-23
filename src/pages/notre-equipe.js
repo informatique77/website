@@ -11,8 +11,8 @@ import "../styles/OurTeam.scss"
 const Team = ({ data }) => {
   const fullArray = data.allDataTeamJson.edges.length
   const halfArray = data.allDataTeamJson.edges.length / 2
-  const sectionOne = data.allDataTeamJson.edges.slice(0, halfArray)
-  const sectionTwo = data.allDataTeamJson.edges.slice(halfArray, fullArray)
+  const sectionOne = data.allDataTeamJson.edges.slice(0, halfArray + 1)
+  const sectionTwo = data.allDataTeamJson.edges.slice(halfArray + 1, fullArray)
   return (
     <Layout>
       <SEO title="Notre équipe" />
@@ -47,9 +47,6 @@ const Team = ({ data }) => {
                 </li>
               )
             })}
-            <li style={{visibility: "hidden"}}>
-               .
-            </li>
           </ul>
         </div>
         <div className="section-two">
