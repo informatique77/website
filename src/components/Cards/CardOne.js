@@ -29,7 +29,7 @@ const CardOne = () => {
           <br></br>
           <span className="span-underline big">8h30 - 22h00</span>
           <br></br>
-          <span className="span-underline">Sans intérruption</span>
+          <span className="span-underline">Sans interruption</span>
         </p>
       </div>
     </div>
