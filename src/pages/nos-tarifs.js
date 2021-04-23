@@ -23,14 +23,12 @@ const Prices = () => (
       />
       <div className="prices-resume">
         <p>
-          Les tarifs correspondent, pour les assurés{" "}
-          <span className="underline">sociaux et les assurés monégasques</span>,
-          aux recommandations de la sécurité sociale (NGAP et CCAM){" "}
-          <span className="underline">secteur 1</span> ou à la grille couleur de
-          chaque assuré <span className="underline">(vert - rose - bulle)</span>
-          .<br></br> Le tiers payant peut être proposé si vous disposez d'une{" "}
-          <span className="underline">carte vitale à jour de vos droits</span>.
-          <br></br>
+          <span className="underline">Les tarifs conventionnés de la sécurité social secteur 1 sans dépassement d'honoraire</span>
+        </p>
+      </div>
+      <div className="prices-resume">
+        <p>
+          <span className="underline">Conventionné, caisse de Monaco pour les assurés</span>
         </p>
       </div>
     </div>
