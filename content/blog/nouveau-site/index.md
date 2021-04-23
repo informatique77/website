@@ -11,11 +11,12 @@ Nous avions à cœur  de proposer du contenu plus complet et surtout mieux adapt
 <br></br>
 Sur cette première version, nous avons intégré [une Google Map interactive](https://www.consultations77.org/nos-centres) avec les différents centres comprenant toutes les informations nécessaires (horaires, trajets etc.).
 
-Notre [page de recrutement](https://www.consultations77.org/recrutement) est maintenant disponible, ainsi si vous désirez rejoindre notre équipe, vous pourrez consulter nos différentes offres d'emploi sur notre site.
+Si vous désirez rejoindre notre équipe, consultez nos différentes offres d'emploi [sur notre site](https://www.consultations77.org/recrutement).
 
-Une section "Blog" a aussi été intégrée afin de communiquer plus régulièrement sur nos actions en temps réel.
+
+Restez informé en temps réel sur nos actions via notre blog.
 <br></br>
-Vous pouvez également vous inscrire à notre Newsletter que vous trouverez en bas de chaque page, pour rester informé directement via votre mail.
+Inscrivez-vous à notre Newsletter, et recevez directement nos dernières actualités dans votre boîte mail.
 
 D'autres fonctionnalités sont à venir dans le futur afin de continuer à améliorer votre expérience avec Consultations 7 sur 7.
 <br></br>
