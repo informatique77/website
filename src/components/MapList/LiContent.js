@@ -26,7 +26,8 @@ const LiContent = ({ center, map, array }) => {
         <GatsbyImage image={image} alt={center.node.name} />
       </div>
       <div className="li-text-container">
-        <h2>{center.node.name}</h2>
+        {center.node.index !== 0 ? <h2><span>C</span><span className="red-seven">7</span>{center.node.name}</h2> :
+        <h2>{center.node.name}<span className="red-seven" style={{paddingLeft: "5px"}}>7 sur 7</span></h2>}
         <p className="li-address">{center.node.address}</p>
         <br></br>
         {center.node.open ? openOrClose(center.index) : null}

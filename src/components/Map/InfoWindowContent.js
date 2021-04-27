@@ -15,7 +15,7 @@ import "./Map.scss"
 const InfoWindowContent = (center, image, globalMap) => {
   return ReactDOMServer.renderToString(
     <div className="infoWindow-container">
-      <h2>{center.name}</h2>
+      <h2><span>C</span><span className="red-seven">7</span>{center.name}</h2>
       <div className="infoWindow-img-container">
         <img src={image} alt={center.name}></img>
       </div>

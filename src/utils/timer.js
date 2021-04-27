@@ -21,11 +21,11 @@ export const openingOfTeleconsultations = () => {
 export const openOrClose = index => {
   return index === 0 ? (
     <p className={openingOfTeleconsultations() ? "open" : "close"}>
-      {openingOfTeleconsultations() ? "Ouvert en ce moment" : "Fermé"}
+      {openingOfTeleconsultations() ? "Ouvert en ce moment" : "Fermé, rouvre à 9h"}
     </p>
   ) : (
     <p className={openingOfCenter() ? "open" : "close"}>
-      {openingOfCenter() ? "Ouvert en ce moment" : "Fermé"}
+      {openingOfCenter() ? "Ouvert en ce moment" : "Fermé, rouvre à 8h30"}
     </p>
   )
 }

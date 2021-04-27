@@ -24,13 +24,13 @@ const CardFive = () => {
         <div className="div-card">
           <ul>
             <li>
-              <span>- Infirmier</span>
+              <span>- Infirmiers</span>
             </li>
             <li>
-              <span>- Ostéopathe</span>
+              <span>- Ostéopathes</span>
             </li>
             <li>
-              <span>- Kinésithérapeute</span>
+              <span>- Kinésithérapeutes</span>
             </li>
             <li>
               <span>- Orthoptiste</span>

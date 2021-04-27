@@ -72,7 +72,7 @@ const Teleconsultation = () => (
                 Je prends rendez-vous directement en ligne
               </span>
               <p className="card-text-paragraph">
-                De 9h à 21h, 7 jours sur 7 y compris les jours fériés.
+                De 9h à 21h, <span style={{color:"#e74c3c"}}>7 jours sur 7</span> y compris les jours fériés.
               </p>
             </div>
             <div className="teleconsult-card">
@@ -152,7 +152,7 @@ const Teleconsultation = () => (
               <span>Accéder rapidement à l’un de nos médecins</span>
             </div>
             <div className="about-text">
-              <p>Notre service disponible 7 jours sur 7 de 9h à 21h</p>
+              <p>Notre service disponible <span style={{color:"#e74c3c"}}>7 jours sur 7</span> de 9h à 21h</p>
             </div>
           </div>
           <div className="about-two">

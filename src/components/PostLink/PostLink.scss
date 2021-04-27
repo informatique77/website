@@ -46,6 +46,9 @@
     transition: transform 400ms ease;
     .postlink-title {
       font-size: 20px;
+      span {
+        font-size: 12px;
+      }
     }
     .postlink-excerpt {
       margin-bottom: 10px;

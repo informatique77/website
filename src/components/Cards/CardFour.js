@@ -24,16 +24,13 @@ const CardFour = () => {
         <div className="div-card">
           <ul>
             <li>
-              <span>- Test covid</span>
+              <span>- Tests covids</span>
             </li>
             <li>
               <span>- Biologie standard</span>
             </li>
             <li>
               <span>- Infectiologie</span>
-            </li>
-            <li>
-              <span>- Orthoptiste</span>
             </li>
             <li>
               <span>- Parasitologie</span>

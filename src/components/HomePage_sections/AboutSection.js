@@ -29,12 +29,14 @@ const AboutSection = () => {
       </div>
       <div className="about-text-container">
         <span>À propos</span>
-        <h2>Une équipe de médecins disponible 7 jours sur 7</h2>
+        <h2>
+          Une équipe de médecins disponible <span>7 jours sur 7</span>
+        </h2>
         <p className="about-first-text">
           Afin de répondre aux besoins et aux attentes des patients, une équipe
           de médecins généralistes urgentistes est à votre disposition.
         </p>
-        {/* <SimpleButton slug="/notre-metier" content="En savoir plus" /> */}
+        <SimpleButton slug="/notre-metier" content="En savoir plus" />
       </div>
     </div>
   )

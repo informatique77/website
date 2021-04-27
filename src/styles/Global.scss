@@ -70,6 +70,16 @@ a {
       line-height: 64px;
       color: #333333;
       margin: 15px 0 30px 0;
+      span {
+        font-family: $palanquin-dark;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 64px;
+        color: #333333;
+        margin: 15px 0 30px 0;
+        color: $red-color;
+      }
     }
     .about-first-text {
       font-family: $palanquin;
@@ -256,6 +266,9 @@ a {
       h2 {
         font-size: 35px;
         line-height: 50px;
+        span {
+          font-size: 32px;
+        }
       }
     }
   }

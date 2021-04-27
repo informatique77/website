@@ -13,6 +13,7 @@ const Prices = () => (
     <PagesHeader title="Nos Tarifs" />
     <div className="prices-section">
       <span className="small-title">Tarifs</span>
+      <div>
       <StaticImage
         src="../images/icons/euro-100.png"
         width={100}
@@ -21,14 +22,40 @@ const Prices = () => (
         alt="Camera téléconsultations"
         placeholder="blurred"
       />
+      </div>
       <div className="prices-resume">
+        <div>
+        <StaticImage
+          src="../images/flag/france.png"
+          width={96}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Drapeau de la France"
+          placeholder="blurred"
+        />
+        </div>
         <p>
-          <span className="underline">Les tarifs conventionnés de la sécurité social secteur 1 sans dépassement d'honoraire</span>
+          <span className="underline">
+            Les tarifs conventionnés de la sécurité sociale secteur 1<br></br> sans
+            dépassement d'honoraire
+          </span>
         </p>
       </div>
       <div className="prices-resume">
+        <div>
+        <StaticImage
+          src="../images/flag/monaco.png"
+          width={96}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Drapeau de Monaco"
+          placeholder="blurred"
+        />
+        </div>
         <p>
-          <span className="underline">Conventionné, caisse de Monaco pour les assurés</span>
+          <span className="underline">
+            Conventionné, caisse de Monaco pour les assurés
+          </span>
         </p>
       </div>
     </div>

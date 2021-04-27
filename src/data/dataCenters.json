@@ -16,7 +16,7 @@
   },
   {
     "index": 1,
-    "name": "Centre médical Nice le port",
+    "name": "Nice Le Port",
     "address": "24 bis Rue Smolett, 06300 Nice",
     "tel": "04-93-89-21-33",
     "direction": "https://goo.gl/maps/2c4183WaEzxX16fP6",
@@ -40,7 +40,7 @@
   },
   {
     "index": 2,
-    "name": "Centre médical Nice Centre",
+    "name": "Nice Centre",
     "address": "39 bis Rue Lamartine, 06000 Nice",
     "tel": "04-93-01-28-89",
     "direction": "https://goo.gl/maps/kSETVusR6gaUDiCu7",
@@ -64,7 +64,7 @@
   },
   {
     "index": 3,
-    "name": "Centre médical Nice Ouest",
+    "name": "Nice Ouest",
     "address": "Hall de l'Hôpital Lenval, 57 Avenue de La Californie, 06200 Nice",
     "tel": "04-92-03-09-40",
     "direction": "https://goo.gl/maps/wPQtKt8aTSfZZGw9A",
@@ -88,7 +88,7 @@
   },
   {
     "index": 4,
-    "name": "Centre médical Nice l'Ariane",
+    "name": "Nice l'Ariane",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice l'Ariane",
     "tel": "Prochainement ",
     "image": {
@@ -111,7 +111,7 @@
   },
   {
     "index": 5,
-    "name": "Centre médical Nice Nord",
+    "name": "Nice Nord",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice Nord",
     "tel": "Prochainement",
     "image": {
@@ -134,7 +134,7 @@
   },
   {
     "index": 6,
-    "name": "Centre médical Menton",
+    "name": "Menton",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Menton",
     "tel": "Prochainement",
     "image": {
@@ -157,7 +157,7 @@
   },
   {
     "index": 7,
-    "name": "Centre médical Cagnes-sur-Mer",
+    "name": "Cagnes-sur-Mer",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cagnes-sur-Mer",
     "tel": "Prochainement",
     "image": {
@@ -180,7 +180,7 @@
   },
   {
     "index": 8,
-    "name": "Centre médical Cannes",
+    "name": "Cannes",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cannes",
     "tel": "Prochainement",
     "image": {

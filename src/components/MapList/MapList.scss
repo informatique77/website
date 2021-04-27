@@ -34,19 +34,22 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin: 15px;
+      margin: 10px;
       h2 {
-        font-family: $roboto;
+        font-family: $palanquin;
         color: $blue-color;
         font-style: normal;
         font-weight: bold;
         font-size: 22px;
         line-height: 22px;
-        text-decoration-line: underline;
         margin-bottom: 10px;
+        .red-seven {
+          color: $red-color;
+          padding-right: 5px;
+        }
       }
       .li-address {
-        font-family: $roboto;
+        font-family: $palanquin;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -54,7 +57,7 @@
         color: #000000;
       }
       .open {
-        font-family: $roboto;
+        font-family: $palanquin;
         font-style: normal;
         font-weight: bold;
         font-size: 17px;
@@ -62,7 +65,7 @@
         color: #22c679;
       }
       .close {
-        font-family: $roboto;
+        font-family: $palanquin;
         font-style: normal;
         font-weight: bold;
         font-size: 17px;

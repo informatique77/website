@@ -19,21 +19,27 @@
       color: #333333;
       line-height: 32px;
     }
-   .img-card-container {
-     margin-left: 20px;
-   }
+    .img-card-container {
+      margin-left: 20px;
+    }
   }
   .card-content {
     text-align: left;
-    padding: 25px;
+    padding: 0px 25px 0px 25px;
     .div-card {
       font-family: $palanquin;
       font-style: normal;
       font-size: 18px;
-      line-height: 19px;
+      line-height: 25px;
       color: #224358;
       span {
         font-weight: bold;
+      }
+      .red-link {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: $red-color;
       }
     }
     p {

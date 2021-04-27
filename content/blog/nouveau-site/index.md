@@ -1,7 +1,7 @@
 ---
-title: Nouveau site Consultations 7 sur 7 !
+title: Nouveau site
 date: "2021-04-22T23:46:37.121Z"
-excerpt: "Nous sommes heureux de vous faire découvrir le nouveau site web de Consultations 7 sur 7 !"
+excerpt: "Nous sommes heureux de vous faire découvrir notre nouveau site web !"
 img: ./website.png
 ---
 

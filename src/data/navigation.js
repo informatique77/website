@@ -4,6 +4,10 @@ export const MenuItems = [
         url: '/',
     },
     {
+        title: 'Téléconsultations',
+        url: '/teleconsultations',
+    },
+    {
         title: 'Nos Centres',
         url: '/nos-centres',
     },
@@ -12,8 +16,8 @@ export const MenuItems = [
         url: "/notre-equipe",
     },
     {
-        title: 'Téléconsultations',
-        url: '/teleconsultations',
+        title: 'Notre Métier',
+        url: "/notre-metier",
     },
     {
         title: 'Nos Tarifs',
