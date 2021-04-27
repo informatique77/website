@@ -68,7 +68,7 @@ const OurJob = () => (
               quality={100}
               formats={["AUTO", "WEBP", "AVIF"]}
               placeholder="blurred"
-              src="../images/ourJobs/our-job-7.jpg"
+              src="../images/ourJobs/our-job-6.jpg"
               alt="Notre équipe"
             />
           </div>
