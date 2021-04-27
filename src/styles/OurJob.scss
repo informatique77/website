@@ -18,7 +18,9 @@
     border-radius: 16px;
     margin: 0 0 35px 0;
     padding: 40px 40px 30px 40px;
-    .part-one, .part-two, .part-three {
+    .part-one,
+    .part-two,
+    .part-three {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -72,14 +74,25 @@
 @media screen and (max-width: 1000px) {
   .our-job-section {
     margin-top: 80px;
+    .our-job-resume {
+      width: 90%;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 40px 0px 30px 0px;
+      .part-one,
+      .part-two,
+      .part-three {
+        .our-job-text {
+          width: 100%;
+        }
+        .our-job-img {
+          width: 80%;
+        }
+      }
+    }
   }
-  .our-job-section .our-job-resume {
-    width: 90%;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 40px 0px 30px 0px;
-  }
-  .part-one, .part-three {
+  .part-one,
+  .part-three {
     flex-direction: column;
   }
   .part-two {
