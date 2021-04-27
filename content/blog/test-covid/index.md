@@ -5,7 +5,7 @@ excerpt: "Les tests antigéniques sont dorénavant disponible sur l'ensemble de 
 img: ./covid-test.jpg
 ---
 
-Les tests antigéniques sont dorénavant disponible sur l'ensemble de nos sites.
+Les tests antigéniques sont dorénavant disponibles sur l'ensemble de nos sites.
 
 <strong>[<span style="color:#0596de">C</span><span style="color:#e74c3c">7</span> Nice Le Port ->](https://www.consultations77.org/centre/smollet)</strong><br>
 <strong>[<span style="color:#0596de">C</span><span style="color:#e74c3c">7</span> Nice Centre ->](https://www.consultations77.org/centre/lamartine)</strong><br>
