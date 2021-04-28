@@ -9,7 +9,12 @@ import "../styles/OurJob.scss"
 
 const OurJob = () => (
   <Layout>
-    <SEO title="Notre métier" />
+    <SEO
+      title="Notre métier"
+      description="Chez consultations 7 sur 7, notre métier c'est de vous proposer des consultations pour adultes et enfants, sans rendez-vous, 
+      avec la possibilité d'effectuer des examens complémentaires pouvant être réalisé sur place"
+      path="notre-metier"
+    />
     <PagesHeader title="Notre Métier" />
     <div className="our-job-section">
       <div className="our-job-resume">

@@ -7,7 +7,11 @@ import SEO from "../components/seo"
 
 const ourCenters = ({ data }) => (
   <Layout>
-    <SEO title="Nos Centres" />
+    <SEO
+      title="Nos Centres"
+      description="Consultations 7 sur 7 vous acceuillent dans nos centres de 8h30 à 22h00 7 jours sur 7, ainsi que notre centre de téléconsultations de 9h à 21h"
+      path="nos-centres"
+    />
     <Map allMedicalCenters={data} />
   </Layout>
 )

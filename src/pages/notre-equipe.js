@@ -15,7 +15,11 @@ const Team = ({ data }) => {
   const sectionTwo = data.allDataTeamJson.edges.slice(halfArray + 1, fullArray)
   return (
     <Layout>
-      <SEO title="Notre équipe" />
+      <SEO
+        title="Notre équipe"
+        description="Consultations 7 sur 7 c'est avant tout une équipe de médecins généralistes et urgentistes, accompagnée pas nos assistantes médicales."
+        path="notre-equipe"
+      />
       <PagesHeader title="Notre équipe" />
       <div className="ourTeam-header">
         <div className="ourTeam-img">
@@ -29,10 +33,13 @@ const Team = ({ data }) => {
           />
         </div>
         <div className="ourTeam-resume">
-          <span>L’équipe consultations <span style={{color:"#e74c3c"}}>7 sur 7</span></span>
+          <span>
+            L’équipe consultations{" "}
+            <span style={{ color: "#e74c3c" }}>7 sur 7</span>
+          </span>
           <p>
-            Notre équipe de médecins généralistes urgentistes dynamiques, aidée par nos
-            assistantes médicales, se relaie 7 jours sur 7.
+            Notre équipe de médecins généralistes urgentistes dynamiques, aidée
+            par nos assistantes médicales, se relaie 7 jours sur 7.
           </p>
         </div>
       </div>

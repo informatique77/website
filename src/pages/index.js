@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useEffect } from 'react';
+import { useEffect } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
@@ -20,12 +20,16 @@ const BlogIndex = ({ data, location }) => {
 
   useEffect(() => {
     window.onpopstate = () => {
-      burgerAnimation(); 
-    };
+      burgerAnimation()
+    }
   })
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Accueil" />
+      <SEO
+        title="Accueil"
+        description="Consultations 7 sur 7 vous accueillent dans nos centres de consultations et téléconsultations sur la Côte d'Azur 7 jours sur 7, week-ends et jours fériés sans rendez-vous, de 8h30 à 22h00 sans interruption."
+        path="/"
+      />
       <HeaderHomePage />
       <CardsSection />
       <AboutSection />

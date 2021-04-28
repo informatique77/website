@@ -40,7 +40,7 @@ const Recruitment = () => {
   `)
   return (
     <Layout>
-      <SEO title="Recrutement" />
+      <SEO title="Recrutement" description="Page de recrutement médecin et assistant(e) médical(e) Consultations 7 sur 7" path="recrutement"/>
       <PagesHeader title="Recrutement" />
       <div className="recruitment-page-section">
         <h2>Nos formulaires</h2>
@@ -63,14 +63,14 @@ const Recruitment = () => {
           <ExternalButton
             css="recruitment-button"
             slug="https://docs.google.com/forms/d/e/1FAIpQLSfixH3rfleAPWZh0b9fbBC5s-etHaNTeehE52d3l0dtl_wakg/viewform?usp=sf_link"
-            content="Assitant(e) Médicale"
+            content="Assitant(e) Médical(e)"
             staticImage={
               <StaticImage
                 src="../images/icons/nurse.png"
                 width={24}
                 quality={95}
                 formats={["AUTO", "WEBP", "AVIF"]}
-                alt="Recrutement Assistant(e) Médicale"
+                alt="Recrutement Assistant(e) Médical(e)"
                 placeholder="blurred"
               />
             }
