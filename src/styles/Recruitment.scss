@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
+  height: 550px;
   background-color: $pink-color;
   margin-top: 50px;
   padding-top: 25px;
@@ -19,6 +19,25 @@
     color: #0596de;
     text-align: center;
     padding: 50px 0 50px 0;
+  }
+  .recruitment-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+  }
+  .recruitment-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    .recruitment-img-1 {
+      box-shadow: -20px -15px $blue-color;
+    }
+    .recruitment-img-2 {
+      box-shadow: 20px -15px $blue-color;
+    }
   }
 }
 
@@ -38,6 +57,24 @@
     li {
       list-style: circle;
       margin: 5px 0 5px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .recruitment-page-section {
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 50px;
+    .recruitment-buttons-container {
+      flex-direction: column;
+      width: 100%;
+    }
+    .recruitment-img-container {
+      flex-direction: column;
+      .recruitment-img-1 {
+        margin-bottom: 40px;
+      }
     }
   }
 }

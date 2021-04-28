@@ -21,7 +21,7 @@ const OurJob = () => (
               formats={["AUTO", "WEBP", "AVIF"]}
               placeholder="blurred"
               src="../images/ourJobs/our-job-2.jpg"
-              alt="Notre équipe"
+              alt="Docteur qui soigne un patient"
             />
           </div>
           <div className="our-job-text">
@@ -56,8 +56,8 @@ const OurJob = () => (
               quality={100}
               formats={["AUTO", "WEBP", "AVIF"]}
               placeholder="blurred"
-              src="../images/ourJobs/our-job-3.jpg"
-              alt="Notre équipe"
+              src="../images/ourJobs/our-job-9.jpg"
+              alt="Docteur qui prescrit une ordonnance"
             />
           </div>
         </div>
@@ -69,7 +69,7 @@ const OurJob = () => (
               formats={["AUTO", "WEBP", "AVIF"]}
               placeholder="blurred"
               src="../images/ourJobs/our-job-6.jpg"
-              alt="Notre équipe"
+              alt="Salle de soins"
             />
           </div>
           <div className="our-job-text">

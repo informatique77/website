@@ -116,9 +116,6 @@ const SingleCenterTemplate = ({ data }) => {
                 <p className="opening-details">
                   Horaires : 7 jours sur 7 de 8h30 à 22h00
                 </p>
-                <p className="payment">
-                  Méthodes de paiements : {data.dataCentersJson.payment}
-                </p>
                 <div className="transport">
                   <div className="buttons-center">
                     <ExternalButton
@@ -157,7 +154,7 @@ const SingleCenterTemplate = ({ data }) => {
                       {" "}
                       <StaticImage
                         src="../images/icons/car.png"
-                        width={42}
+                        width={40}
                         quality={95}
                         layout="fixed"
                         formats={["AUTO", "WEBP", "AVIF"]}
@@ -175,7 +172,7 @@ const SingleCenterTemplate = ({ data }) => {
                       {" "}
                       <StaticImage
                         src="../images/icons/bus.png"
-                        width={42}
+                        width={40}
                         quality={95}
                         layout="fixed"
                         formats={["AUTO", "WEBP", "AVIF"]}
@@ -193,7 +190,7 @@ const SingleCenterTemplate = ({ data }) => {
                       {" "}
                       <StaticImage
                         src="../images/icons/tram.png"
-                        width={42}
+                        width={38}
                         quality={95}
                         layout="fixed"
                         formats={["AUTO", "WEBP", "AVIF"]}
@@ -231,7 +228,6 @@ export const pageQuery = graphql`
       tel
       direction
       address
-      payment
       transport {
         car
         bus

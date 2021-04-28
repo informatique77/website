@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 import "./Cards.scss"
 
@@ -52,7 +53,7 @@ const CardOne = () => {
                   width={16}
                   quality={95}
                   formats={["AUTO", "WEBP", "AVIF"]}
-                  alt="Nos horaires"
+                  alt="Lien Hypertexte"
                   placeholder="blurred"
                 />
               </a>

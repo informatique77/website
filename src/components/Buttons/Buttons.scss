@@ -38,7 +38,8 @@
   }
 }
 
-.call-button, .travel-button {
+.call-button,
+.travel-button {
   cursor: pointer;
   display: flex;
   font-family: $palanquin;
@@ -58,6 +59,29 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   img {
     max-width: 20px;
+  }
+}
+
+.recruitment-button {
+  cursor: pointer;
+  display: flex;
+  font-family: $palanquin;
+  font-size: 22px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 28px;
+  background: #0596de;
+  border: 1px solid #0596de;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  .gatsby-image-wrapper {
+    margin-right: 10px;
   }
 }
 

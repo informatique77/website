@@ -29,7 +29,6 @@
     "open": true,
     "bgColor": "#F7F6FE",
     "slug": "/centre/smollet",
-    "payment": "Espèces et chèque",
     "transport": [
       {
         "car": "Un parking payant est situé à 5 min à pied, rue Auguste Gal",
@@ -53,7 +52,6 @@
     "open": true,
     "bgColor": "#FFFF",
     "slug": "/centre/lamartine",
-    "payment": "Espèces et chèque",
     "transport": [
       {
         "car": "Le parking payant du centre commercial Nice Étoile est situé à 2 min à pied",
@@ -77,7 +75,6 @@
     "open": true,
     "bgColor": "#F7F6FE",
     "slug": "/centre/nice-ouest",
-    "payment": "Espèces et chèque",
     "transport": [
       {
         "car": "En utilisant le parking payant de l'Hôpital Lenval",
@@ -100,7 +97,6 @@
     "open": false,
     "bgColor": "#FFFF",
     "slug": "/centre/ariane",
-    "payment": "Espèces et chèque",
     "transport": [
       {
         "car": "",
@@ -123,7 +119,6 @@
     "open": false,
     "bgColor": "#FFFF",
     "slug": "/centre/ariane",
-    "payment": "Espèces et chèque",
     "transport": [
       {
         "car": "",
@@ -146,7 +141,6 @@
     "open": false,
     "bgColor": "#FFFF",
     "slug": "/centre/menton",
-    "payment": "Espèces et chèque",
     "transport": [
       {
         "car": "",
@@ -169,7 +163,6 @@
     "open": false,
     "bgColor": "#F7F6FE",
     "slug": "/centre/cagnes-sur-mer",
-    "payment": "Espèces et chèque",
     "transport": [
       {
         "car": "",
@@ -192,7 +185,6 @@
     "open": false,
     "bgColor": "#FFFF",
     "slug": "/centre/cannes",
-    "payment": "Espèces et chèque",
     "transport": [
       {
         "car": "",

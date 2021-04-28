@@ -54,7 +54,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             open
             tel
             address
-            payment
             transport {
               car
               bus

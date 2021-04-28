@@ -145,7 +145,7 @@ const Teleconsultation = () => (
                 formats={["AUTO", "WEBP", "AVIF"]}
                 placeholder="blurred"
                 src="../images/doctors/blue-stethoscope.png"
-                alt="Notre équipe"
+                alt="Stéthoscope"
               />
             </div>
             <div className="about-span">
@@ -163,7 +163,7 @@ const Teleconsultation = () => (
                 formats={["AUTO", "WEBP", "AVIF"]}
                 placeholder="blurred"
                 src="../images/doctors/virus.png"
-                alt="Notre équipe"
+                alt="Virus"
               />
             </div>
             <div className="about-span">
@@ -184,7 +184,7 @@ const Teleconsultation = () => (
                 formats={["AUTO", "WEBP", "AVIF"]}
                 placeholder="blurred"
                 src="../images/doctors/time.png"
-                alt="Notre équipe"
+                alt="Horloge"
               />
             </div>
             <div className="about-span">
