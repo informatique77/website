@@ -6,6 +6,7 @@ import Layout from "../components/Layout/Layout"
 import HeaderHomePage from "../components/HeaderHomePage/HeaderHomePage"
 import CardsSection from "../components/HomePage_sections/CardsSection"
 import AboutSection from "../components/HomePage_sections/AboutSection"
+import NumbersSection from "../components/HomePage_sections/NumbersSection"
 import PostSection from "../components/HomePage_sections/PostSection"
 import PostLink from "../components/PostLink/PostLink"
 import RecruitmentSection from "../components/HomePage_sections/RecruitmentSection"
@@ -33,6 +34,7 @@ const BlogIndex = ({ data, location }) => {
       <HeaderHomePage />
       <CardsSection />
       <AboutSection />
+      <NumbersSection />
       <PostSection posts={Posts} />
       <RecruitmentSection />
     </Layout>

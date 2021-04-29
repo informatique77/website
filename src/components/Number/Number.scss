@@ -1,0 +1,42 @@
+@import "../../styles/Variables.scss";
+
+.number-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .img-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #02499E;
+      width: 134px;
+      height: 134px;
+      border-radius: 50%;
+    }
+  }
+  .the-number {
+    font-family: $palanquin-dark;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+  }
+  .text-number {
+    font-family: $palanquin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+}
