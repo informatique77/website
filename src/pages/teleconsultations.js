@@ -19,7 +19,7 @@ const Teleconsultation = () => (
       <ExternalButton
         css="icon-button red"
         slug="https://www.doctolib.fr/medecin-generaliste/nice/7-7-teleconsultations"
-        content="Prendre rendez-vous"
+        content="Je prends rendez-vous"
         staticImage={
           <StaticImage
             src="../images/icons/icon-camera.png"
@@ -200,7 +200,7 @@ const Teleconsultation = () => (
         <ExternalButton
           css="icon-button red"
           slug="https://www.doctolib.fr/medecin-generaliste/nice/7-7-teleconsultations"
-          content="Prendre rendez-vous"
+          content="Je prends rendez-vous"
           staticImage={
             <StaticImage
               src="../images/icons/icon-camera.png"

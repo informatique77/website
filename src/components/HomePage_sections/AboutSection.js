@@ -33,8 +33,9 @@ const AboutSection = () => {
           Une équipe de médecins disponible <span>7 jours sur 7</span>
         </h2>
         <p className="about-first-text">
-          Afin de répondre aux besoins et aux attentes des patients, une équipe
-          de médecins généralistes urgentistes est à votre disposition.
+          Depuis 2005, une équipe de médecins généralistes et urgentistes est à
+          votre disposition afin de répondre aux besoins et aux attentes des
+          patients.
         </p>
         <SimpleButton slug="/notre-metier" content="En savoir plus" />
       </div>

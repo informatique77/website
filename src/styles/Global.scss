@@ -140,18 +140,44 @@ a {
 .numbers-section {
   background-color: $blue-color;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   height: auto;
   flex-wrap: wrap;
   padding: 50px;
-  :nth-child(4n) {
-    .the-number {
-      width: 100%;
-      text-align: left;
-      &::after {
-        content: "000";
-        position: absolute;
+  .section-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    :nth-child(2n) {
+      .the-number {
+        width: 100%;
+        padding-left: 165px;
+        text-align: left;
+        &::after {
+          content: "000";
+          position: absolute;
+          padding-left: 20px;
+        }
+      }
+    }
+    :nth-child(3n) {
+      .the-number {
+        width: 100%;
+        padding-left: 115px;
+        text-align: left;
+        &::after {
+          content: "000";
+          position: absolute;
+          padding-left: 20px;
+        }
       }
     }
   }

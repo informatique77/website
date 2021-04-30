@@ -85,7 +85,7 @@ const HomeHeader = () => {
           <IconButton
             css="icon-button"
             slug="/nos-centres"
-            content="Trouver un centre"
+            content="Trouver votre centre"
             staticImage={
               <StaticImage
                 src="../../images/icons/icon-position.png"
@@ -100,7 +100,7 @@ const HomeHeader = () => {
           <IconButton
             css="icon-button red"
             slug="/teleconsultations"
-            content="Téléconsultations"
+            content="Téléconsultations 7 sur 7"
             staticImage={
               <StaticImage
                 src="../../images/icons/icon-camera.png"
