@@ -41,3 +41,27 @@
     margin-top: 10px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .numbers-section {
+    .section-one, .section-two {
+      flex-direction: column;
+      .number-container {
+        width: auto;
+      }
+    }
+    .section-two {
+      :nth-child(2n) {
+        .the-number {
+          padding-left: 55px;
+        }
+      }
+      :nth-child(3n) {
+        .the-number {
+          padding-right: 15px;
+          padding-left: 0;
+        }
+      }
+    } 
+  }
+}
