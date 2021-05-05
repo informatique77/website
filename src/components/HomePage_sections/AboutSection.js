@@ -1,31 +1,22 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 import SimpleButton from "../Buttons/SimpleButton"
 
 const AboutSection = () => {
-  const data = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "doctors/doctors.jpg" }) {
-        id
-        childImageSharp {
-          gatsbyImageData(
-            width: 500
-            layout: CONSTRAINED
-            placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
-            quality: 95
-          )
-        }
-      }
-    }
-  `)
-  const image = getImage(data.file.childImageSharp)
   return (
     <div className="about-section">
       <div className="about-img-container">
-        <GatsbyImage image={image} alt="Notre équipe Consultations 7 sur 7" />
+        <StaticImage
+          src="../../images/doctors/doctors.jpg"
+          loading="eager"
+          layout="constrained"
+          width={500}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Notre équipe Consultations 7 sur 7"
+          placeholder="blurred"
+        />
       </div>
       <div className="about-text-container">
         <span>À propos</span>
