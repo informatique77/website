@@ -79,18 +79,20 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `${process.env.GATSBY_API_GA}`,
+        head: false,
+        defer: true,
       },
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: `${process.env.GATSBY_API_GTM}`,
-  
+
         // Include GTM in development.
         //
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: false,
-  
+
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
         //
@@ -154,6 +156,8 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Consultations 7 sur 7`,
+        description: `Consultations 7 sur 7 vous accueillent 7 jours sur 7, week-ends et jours fériés inclus, 
+        sans rendez-vous, de 8h30 à 22h00 sans interruption.`,
         short_name: `C7`,
         start_url: `/`,
         background_color: `#0596de`,
