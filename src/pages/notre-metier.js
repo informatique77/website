@@ -44,14 +44,14 @@ const OurJob = () => (
         </div>
         <div className="part-two">
           <div className="our-job-text">
-            <ul>
-              <li>- Médecine générale</li>
-              <li>- Médecine d'urgence</li>
-              <li>- Gérontologie</li>
-              <li>- Pédiatrie</li>
-              <li>- Suture de plaie</li>
-              <li>- Entorse et fracture</li>
-            </ul>
+            <p>
+              <span>- Médecine générale</span><br></br>
+              <span>- Médecine d'urgence</span><br></br>
+              <span>- Gérontologie</span><br></br>
+              <span>- Pédiatrie</span><br></br>
+              <span>- Suture de plaie</span><br></br>
+              <span>- Entorse et fracture</span><br></br>
+            </p>
           </div>
           <div className="our-job-img">
             <StaticImage

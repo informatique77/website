@@ -13,7 +13,7 @@ const Teleconsultation = () => (
   <Layout>
     <SEO title="Téléconsultations" />
     <PagesHeader title="Téléconsultations" description="Notre centre de téléconsultations ouvert de 9h à 21h, 7 jours sur 7, 
-    vous permettra d'obtenir un avis médical ainsi qu'un diagnostic rapidement ansi qu'en tout confidentialité" 
+    vous permettra d'obtenir un avis médical ainsi qu'un diagnostic rapidement ainsi qu'en toute confidentialité" 
     path="teleconsultations"/>
     <div className="teleconsult-section">
       <ExternalButton
