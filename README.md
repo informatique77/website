@@ -1,16 +1,15 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://www.consultations77.org">
+    <img alt="Consultations 7 sur 7" src="./images/logo-consultations77.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's blog starter
+  Documentation du site web de Consultations 7 sur 7
 </h1>
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Le site a été créé avec le générateur de site statique GatsbyJs, basé que REACT.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
 
