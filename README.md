@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.consultations77.org">
-    <img alt="Consultations 7 sur 7" src="src/images/logo-consultations77.png" width="100%" />
+    <img alt="Consultations 7 sur 7" src="src/images/logo-consultations77.png" width="200" />
   </a>
 </p>
 <h1 align="center">
