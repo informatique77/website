@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
 import Form from "../Form/Form"
+import { closeBurger } from "../../utils/burgerAnimation"
 
 import "./Footer.scss"
 
@@ -12,14 +13,14 @@ const Footer = () => {
       <div className="footer-form">
         <div className="footer-logo-container">
           <Link to="/">
-          <StaticImage
-            src="../../images/logo-consultations77.png"
-            width={150}
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="A Gatsby astronaut"
-            placeholder="blurred"
-          />
+            <StaticImage
+              src="../../images/logo-consultations77.png"
+              width={150}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="A Gatsby astronaut"
+              placeholder="blurred"
+            />
           </Link>
         </div>
         <Form />
@@ -31,8 +32,12 @@ const Footer = () => {
           droits réservés.
         </p>
         <div className="footer-link">
-          <Link to="/mention-legales">Mentions légales</Link>
-          <Link to="/politique-confidentialite">Politique de confidentialité</Link>
+          <Link to="/mention-legales" onClick={closeBurger}>
+            Mentions légales
+          </Link>
+          <Link to="/politique-confidentialite" onClick={closeBurger}>
+            Politique de confidentialité
+          </Link>
           <a href="http://www.staffc7.org//login">C7-Staff planning</a>
           <a href="http://salle.staffc7.org/#/login">C7-Staff salle </a>
         </div>
@@ -42,4 +47,3 @@ const Footer = () => {
 }
 
 export default Footer
-

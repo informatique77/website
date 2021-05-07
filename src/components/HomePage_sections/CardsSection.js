@@ -6,6 +6,8 @@ import CardThree from "../Cards/CardThree"
 import CardFour from "../Cards/CardFour"
 import CardFive from "../Cards/CardFive"
 
+import "../../styles/HomePage_sections.scss"
+
 const CardsSection = () => {
   return (
     <div className="cards-sections">
