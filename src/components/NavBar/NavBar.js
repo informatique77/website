@@ -2,15 +2,11 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
+import { burgerAnimation } from "../../utils/burgerAnimation"
+
 import "./NavBar.scss"
 
 import { MenuItems } from "../../data/navigation"
-
-const burgerAnimation = () => {
-  document.body.classList.toggle("menu-open")
-  document.querySelector(".btn-burger").classList.toggle("active")
-  document.querySelector(".list").classList.toggle("list-open")
-}
 
 const NavBar = () => {
   return (

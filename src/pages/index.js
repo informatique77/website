@@ -12,7 +12,7 @@ import PostLink from "../components/PostLink/PostLink"
 import RecruitmentSection from "../components/HomePage_sections/RecruitmentSection"
 import SEO from "../components/seo"
 
-import { burgerAnimation } from "../utils/burgerAnimation"
+import { closeBurger } from "../utils/burgerAnimation"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -21,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
 
   useEffect(() => {
     window.onpopstate = () => {
-      burgerAnimation()
+      closeBurger()
     }
   })
   return (

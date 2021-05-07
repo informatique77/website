@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import "./PagesHeader.scss"
 
@@ -14,6 +15,10 @@ const PagesHeader = ({ title }) => {
       </div>
     </div>
   )
+}
+
+PagesHeader.protype = {
+  title: PropTypes.string,
 }
 
 export default PagesHeader

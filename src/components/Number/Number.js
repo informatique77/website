@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react"
+import PropTypes from "prop-types"
 import useVisibilitySensor from "@rooks/use-visibility-sensor"
 
 import "./Number.scss"
@@ -26,6 +27,12 @@ const Number = ({ img, number, text }) => {
       <p className="text-number">{text}</p>
     </div>
   )
+}
+
+Number.proTypes = {
+  img: PropTypes.object,
+  number: PropTypes.number,
+  text: PropTypes.string
 }
 
 export default Number

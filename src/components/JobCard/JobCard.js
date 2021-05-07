@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 
@@ -43,6 +44,14 @@ const JobCard = ({ img, title, contract, place, slug }) => {
       </div>
     </Link>
   )
+}
+
+JobCard.proTypes = {
+  img: PropTypes.object,
+  title : PropTypes.string,
+  contract : PropTypes.string,
+  place: PropTypes.string,
+  slug: PropTypes.string,
 }
 
 export default JobCard

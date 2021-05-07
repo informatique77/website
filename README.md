@@ -9,6 +9,7 @@
 </h1>
 
 Le site a été créé avec le générateur de site statique GatsbyJs, basé que REACT.
+L'hébergement du site est réalisé avec Netlify.
 
 
 ## 🚀 Quick start
