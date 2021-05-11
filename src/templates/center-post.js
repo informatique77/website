@@ -4,7 +4,7 @@ import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
 import InfoWindowContent from "../components/Map/InfoWindowContent"
-import BlueCirclesContainer from "../components/BlueCircle/BlueCirclesContainer"
+import { BlueCircleContainer }  from "../components/BlueCircle/BlueCircleContainer "
 import ExternalButton from "../components/Buttons/ExternalButton"
 import CallButton from "../components/Buttons/CallButton"
 
@@ -207,7 +207,7 @@ const SingleCenterTemplate = ({ data }) => {
               </div>
             ) : null}
           </div>
-          <BlueCirclesContainer />
+          <BlueCircleContainer />
         </div>
       </div>
     </Layout>

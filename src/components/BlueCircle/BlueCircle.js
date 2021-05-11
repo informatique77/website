@@ -19,7 +19,7 @@ const BlueCircle= ({ slug, img, text }) => {
   )
 }
 
-const BlueCircleContainer = () => {
+export const BlueCircleContainer = () => {
   return (
     <div className="blueCircles-container">
       <BlueCircle
@@ -70,5 +70,3 @@ BlueCircle.propTypes = {
   img : PropTypes.object,
   text : PropTypes.string
 }
-
-export default BlueCircleContainer
