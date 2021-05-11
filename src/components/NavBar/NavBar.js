@@ -19,7 +19,7 @@ const NavBar = () => {
             width={125}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="A Gatsby astronaut"
+            alt="Logo Consultations 7 sur 7"
             placeholder="blurred"
           />
         </Link>
@@ -32,7 +32,7 @@ const NavBar = () => {
             width={64}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="A Gatsby astronaut"
+            alt="Logo Instagram"
             placeholder="blurred"
           />
         </a>
@@ -43,7 +43,7 @@ const NavBar = () => {
             width={64}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="A Gatsby astronaut"
+            alt="Logo Facebook"
             placeholder="blurred"
           />
         </a>

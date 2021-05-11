@@ -18,7 +18,7 @@ const Footer = () => {
               width={150}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
-              alt="A Gatsby astronaut"
+              alt="Logo Consultations 7 sur 7"
               placeholder="blurred"
             />
           </Link>
