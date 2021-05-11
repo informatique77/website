@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 
 import  SimpleButton  from "../Buttons/SimpleButton"
 
+import "../../styles/HomePage_sections.scss"
+
 const News = ({ posts }) => {
   return (
     <>
