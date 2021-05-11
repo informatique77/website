@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import ExternalButton from "../components/Buttons/ExternalButton"
-import { BlueCircleContainer } from "../components/BlueCircle/BlueCircleContainer"
+import  BlueCircleContainer  from "../components/BlueCircle/BlueCircle"
 import SEO from "../components/seo"
 
 import "../styles/Teleconsultations.scss"

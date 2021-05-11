@@ -4,7 +4,7 @@ import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
 import InfoWindowContent from "../components/Map/InfoWindowContent"
-import { BlueCircleContainer }  from "../components/BlueCircle/BlueCircleContainer "
+import BlueCircleContainer from "../components/BlueCircle/BlueCircle"
 import ExternalButton from "../components/Buttons/ExternalButton"
 import CallButton from "../components/Buttons/CallButton"
 
