@@ -13,7 +13,7 @@ const LiContent = ({ center, map, array }) => {
   const image = getImage(center.node.image.src)
   return (
     <li
-      className="li-center"
+      className="li-center" 
       onClick={() => closeInfoWindow(center, array, map)}
       onKeyPress={() => closeInfoWindow(center, array, map)}
       style={{
