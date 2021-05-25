@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@rooks/use-visibility-sensor": "^4.11.0",
-    "gatsby": "^3.1.1",
+    "gatsby": "^3.5.1",
     "gatsby-plugin-feed": "^3.1.0",
     "gatsby-plugin-gatsby-cloud": "^2.1.0",
     "gatsby-plugin-google-analytics": "^3.1.0",
