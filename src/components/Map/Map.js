@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 
 import MapList from "../MapList/MapList"
 import LiContent from "../MapList/LiContent"
-import { createScript, initMap, loadMapContent } from "../../utils/mapScript"
+import { createScript, loadMapContent } from "../../utils/mapScript"
 
 import "./Map.scss"
 
@@ -12,19 +12,15 @@ const mapCenter = {
 }
 
 const Map = ({ allMedicalCenters }) => {
-  const [map, setMap] = useState(null)
-  const [infoWindowArray, setInfoWindowArray] = useState([])
 
   useEffect(() => {
     if (!window.google) {
       const script = createScript()
       script.addEventListener("load", e => {
-        setMap(initMap(mapCenter))
-        loadMapContent(allMedicalCenters, map)
-        setInfoWindowArray(allMedicalCenters.infoWindowArray)
+        loadMapContent(allMedicalCenters, mapCenter)
       })
     } else {
-      loadMapContent(allMedicalCenters, map)
+      loadMapContent(allMedicalCenters, mapCenter)
     }
   })
 
@@ -41,8 +37,6 @@ const Map = ({ allMedicalCenters }) => {
                 <LiContent
                   key={index}
                   center={center}
-                  map={map}
-                  array={infoWindowArray}
                 />
               )
             }

@@ -32,9 +32,11 @@ export const initMap = position => {
 /**
  * Chargement des Markers et InfoWindow de la Google Map par rapport aux donées des Centres
  * @param {Array} data Le tableau de de données des centres
- * @param {Object} map La Google Map
+ * @param {Object} position La centre de la Google Map
  */
-export const loadMapContent = (data, map) => {
+export const loadMapContent = (data, position) => {
+  const map = initMap(position)
+
   data.infoWindowArray = []
   data.allDataCentersJson.edges
     .filter(center => center.node.map)
