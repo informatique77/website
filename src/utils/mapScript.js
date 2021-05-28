@@ -11,7 +11,7 @@ import iconClose from "../images/icons/map-bulldozer.png"
 export const createScript = () => {
   const script = document.createElement("script")
   script.type = "text/javascript"
-  script.src = `https://maps.google.com/maps/api/js?key=AIzaSyAI-zsq436f9KO_AT_EgfO2PoOh0qznsZE`
+  script.src = `https://maps.google.com/maps/api/js?key=${process.env.GATSBY_API_MAP}`
   const x = document.getElementsByTagName("script")[0]
   x.parentNode.insertBefore(script, x)
 
