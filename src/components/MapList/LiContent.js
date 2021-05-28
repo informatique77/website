@@ -5,17 +5,18 @@ import CallButton from "../Buttons/CallButton"
 import ExternalButton from "../Buttons/ExternalButton"
 import ShowMoreButton from "../Buttons/ShowMoreButton"
 import { openOrClose } from "../../utils/timer"
-import { closeInfoWindow } from "../../utils/infoWindowScript"
 
 import "./MapList.scss"
 
-const LiContent = ({ center, map, array }) => {
+/**
+ * Create an Li for the Google Map List
+ * @param {Object} center A medical center
+ */
+const LiContent = ({ center }) => {
   const image = getImage(center.node.image.src)
   return (
     <li
-      className="li-center"
-      onClick={() => closeInfoWindow(center, array, map)}
-      onKeyPress={() => closeInfoWindow(center, array, map)}
+      className="li-center" 
       style={{
         backgroundColor: center.node.bgColor,
         animationDelay: center.node.index + 0.1 + "s",

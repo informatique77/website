@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import "./BlueCircle.scss"
-import { burgerAnimation } from "../../utils/burgerAnimation"
+import { closeBurger } from "../../utils/burgerAnimation"
 
 const BlueCircle= ({ slug, img, text }) => {
   return (
-    <Link to={slug} onClick={burgerAnimation} onKeyDown={burgerAnimation}>
+    <Link to={slug} onClick={closeBurger} onKeyDown={closeBurger}>
       <div className="blueCircle">
         <div className="blue-img-container">
           {img}

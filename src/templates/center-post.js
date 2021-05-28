@@ -10,6 +10,7 @@ import CallButton from "../components/Buttons/CallButton"
 
 import { infoWindowImg } from "../utils/infoWindowScript"
 import { openOrClose } from "../utils/timer"
+import { createScript } from "../utils/mapScript"
 
 import iconOpen from "../images/icons/map-firstaid.png"
 import iconClose from "../images/icons/map-bulldozer.png"
@@ -30,14 +31,8 @@ const SingleCenterTemplate = ({ data }) => {
 
   const loadGoogleMapScript = () => {
     if (!window.google) {
-      var s = document.createElement("script")
-      s.type = "text/javascript"
-      s.src = `https://maps.google.com/maps/api/js?key=${process.env.GATSBY_API_MAP}`
-      var x = document.getElementsByTagName("script")[0]
-      x.parentNode.insertBefore(s, x)
-      // Below is important.
-      //We cannot access google.maps until it's finished loading
-      s.addEventListener("load", e => {
+      const script = createScript() 
+      script.addEventListener("load", e => {
         loadMap()
       })
     } else {
