@@ -6,6 +6,11 @@
   height: 600px;
   background-color: $pink-color;
   padding-top: 50px;
+  .pricesTable-container {
+    display: flex;
+    margin-top: 20px;
+  }
+
   .small-title {
     font-family: $palanquin-dark;
     font-style: normal;
@@ -18,65 +23,23 @@
     text-align: center;
     padding-bottom: 25px;
   }
-  .prices-resume {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    width: 480px;
-    height: auto;
-    background: #ffffff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.101081);
-    border-radius: 16px;
-    margin: 0 0 35px 0;
-    padding: 0 40px 30px 40px;
-    p {
-      font-family: $palanquin;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 30px;
-      color: #224358;
-      text-align: center;
-      .underline {
-        font-weight: bold;
-      }
-    }
-    .underline-payment {
-      font-family: $palanquin;
-      font-style: normal;
-      font-size: 20px;
-      line-height: 30px;
-      color: $blue-color;
-      font-weight: bold;
-      text-decoration: underline;
-      text-align: center;
-      margin-top: 25px;
-    }
-    .payment-img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 648px) {
   .prices-section {
     flex-direction: column;
     margin-top: 100px;
     height: auto;
+    .pricesTable-container {
+      flex-direction: column;
+      .prices-resume {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
     .prices-img {
       width: auto;
       margin-bottom: 50px;
-    }
-    .prices-resume {
-      width: auto;
-      padding: 20px;
-      margin-left: 15px;
-      margin-right: 15px;
     }
   }
 }

@@ -22,8 +22,9 @@ export const createScript = () => {
  * Initialisation de la Google Map
  * @param {Object} position La position de la Google Map
  */
-export const initMap = position => {
-  return new window.google.maps.Map(document.getElementById("map"), {
+export const initMap = (position, htmlElementID) => {
+  const mapContainer = document.getElementById(htmlElementID)
+  return new window.google.maps.Map(mapContainer, {
     center: position,
     zoom: 9,
   })
@@ -34,8 +35,8 @@ export const initMap = position => {
  * @param {Array} data Le tableau de de données des centres
  * @param {Object} position La centre de la Google Map
  */
-export const loadMapContent = (data, position) => {
-  const map = initMap(position)
+export const loadMapContent = (data, position, htmlElementID) => {
+  const map = initMap(position, htmlElementID)
 
   data.infoWindowArray = []
   data.allDataCentersJson.edges

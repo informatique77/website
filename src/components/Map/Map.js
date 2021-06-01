@@ -12,15 +12,15 @@ const mapCenter = {
 }
 
 const Map = ({ allMedicalCenters }) => {
-
+console.log(allMedicalCenters)
   useEffect(() => {
     if (!window.google) {
       const script = createScript()
       script.addEventListener("load", e => {
-        loadMapContent(allMedicalCenters, mapCenter)
+        loadMapContent(allMedicalCenters, mapCenter, "map")
       })
     } else {
-      loadMapContent(allMedicalCenters, mapCenter)
+      loadMapContent(allMedicalCenters, mapCenter, "map")
     }
   })
 
