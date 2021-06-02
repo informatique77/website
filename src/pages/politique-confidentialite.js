@@ -2,12 +2,12 @@ import React from "react"
 
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/PrivacyPolicy.scss"
 const PrivacyPolicy = () => (
   <Layout>
-    <SEO title="Politique de confidentialité" />
+    <Seo title="Politique de confidentialité" />
     <PagesHeader title="Politique de confidentialité" />
     <div className="privacy-policy-container">
       <p>

@@ -4,13 +4,13 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import PriceTable from "../components/PricTable/PriceTable"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/OurPrices.scss"
 
 const Prices = () => (
   <Layout>
-    <SEO title="Nos Tarifs" />
+    <Seo title="Nos Tarifs" />
     <PagesHeader
       title="Nos Tarifs"
       desription="Consulter les tarifs pratiqués chez Consultations 7 sur 7 dans nos centre de consultatations et de téléconsulations"

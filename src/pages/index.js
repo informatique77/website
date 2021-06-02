@@ -10,7 +10,7 @@ import NumbersSection from "../components/HomePage_sections/NumbersSection"
 import PostSection from "../components/HomePage_sections/PostSection"
 import PostLink from "../components/PostLink/PostLink"
 import RecruitmentSection from "../components/HomePage_sections/RecruitmentSection"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import { closeBurger } from "../utils/burgerAnimation"
 
@@ -26,7 +26,7 @@ const BlogIndex = ({ data, location }) => {
   })
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
+      <Seo
         title="Accueil"
         description="Consultations 7 sur 7 vous accueillent dans nos centres de consultations et téléconsultations sur la Côte d'Azur 7 jours sur 7, week-ends et jours fériés sans rendez-vous, de 8h30 à 22h00 sans interruption."
         path="/"

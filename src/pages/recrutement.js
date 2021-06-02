@@ -6,7 +6,7 @@ import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import JobCard from "../components/JobCard/JobCard"
 import ExternalButton from "../components/Buttons/ExternalButton"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/Recruitment.scss"
 
@@ -40,7 +40,11 @@ const Recruitment = () => {
   `)
   return (
     <Layout>
-      <SEO title="Recrutement" description="Page de recrutement médecin et assistant(e) médical(e) Consultations 7 sur 7" path="recrutement"/>
+      <Seo
+        title="Recrutement"
+        description="Page de recrutement médecin et assistant(e) médical(e) Consultations 7 sur 7"
+        path="recrutement"
+      />
       <PagesHeader title="Recrutement" />
       <div className="recruitment-page-section">
         <h2>Nos formulaires</h2>
@@ -96,6 +100,82 @@ const Recruitment = () => {
               src="../images/ourJobs/our-job-8.jpg"
               alt="Une assistante médicale"
             />
+          </div>
+        </div>
+        <div className="recruitment-forms-container">
+          <div className="doctor-form">
+            <form name="contact-doctor" method="POST" data-netlify="true">
+              {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+              <input type="hidden" name="form-name" value="contact" />
+              <div hidden>
+                <label>
+                  Don’t fill this out: <input name="bot-field" />
+                </label>
+              </div>
+              <p>
+                <label>
+                  Nom <input type="text" name="name" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Prénom <input type="text" name="name" />
+                </label>
+              </p>
+              <p>
+                Thésé:{" "}
+                <div>
+                  <label>
+                    Oui
+                    <input type="radio" name="scales"></input>
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    Non
+                    <input type="radio" name="scales"></input>
+                  </label>
+                </div>
+              </p>
+              <p>
+                Spécialité:{" "}
+                <div>
+                  <label>
+                    Médecine générale
+                    <input type="checkbox" name="scales"></input>
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    Médecine d'urgence
+                    <input type="checkbox" name="scales"></input>
+                  </label>
+                </div>
+              </p>
+              <p>
+                <label>
+                  Téléphone:{" "}
+                  <input
+                    type="tel"
+                    name="tel"
+                    pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                  />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Adresse e-mail: <input type="email" name="email" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Message: <textarea name="message"></textarea>
+                </label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
           </div>
         </div>
         {data.allDataJobsJson.edges.length > 1
