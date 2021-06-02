@@ -154,7 +154,7 @@ const Recruitment = () => {
               </p>
               <p>
                 <label>
-                  Téléphone:{" "}
+                  Téléphone:{"  "}
                   <input
                     type="tel"
                     name="tel"
