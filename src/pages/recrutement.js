@@ -106,7 +106,7 @@ const Recruitment = () => {
           <div className="doctor-form">
             <form name="contact-doctor" method="POST" data-netlify="true">
               {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="contact-doctor" />
               <div hidden>
                 <label>
                   Don’t fill this out: <input name="bot-field" />
@@ -114,12 +114,12 @@ const Recruitment = () => {
               </div>
               <p>
                 <label>
-                  Nom <input type="text" name="name" />
+                  Nom <input type="text" name="name-doctor" />
                 </label>
               </p>
               <p>
                 <label>
-                  Prénom <input type="text" name="nickname" />
+                  Prénom <input type="text" name="nickname-doctor" />
                 </label>
               </p>
               <p>
@@ -127,13 +127,13 @@ const Recruitment = () => {
                 <div>
                   <label>
                     Oui
-                    <input type="radio" name="oui" />
+                    <input type="radio" name="oui-doctor" />
                   </label>
                 </div>
                 <div>
                   <label>
                     Non
-                    <input type="radio" name="non" />
+                    <input type="radio" name="non-doctor" />
                   </label>
                 </div>
               </p>
@@ -142,13 +142,13 @@ const Recruitment = () => {
                 <div>
                   <label>
                     Médecine générale
-                    <input type="checkbox" name="generale" />
+                    <input type="checkbox" name="generale-doctor" />
                   </label>
                 </div>
                 <div>
                   <label>
                     Médecine d'urgence
-                    <input type="checkbox" name="urgence" />
+                    <input type="checkbox" name="urgence-doctor" />
                   </label>
                 </div>
               </p>
@@ -157,19 +157,19 @@ const Recruitment = () => {
                   Téléphone:{"  "}
                   <input
                     type="tel"
-                    name="tel"
+                    name="tel-doctor"
                     pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
                   />
                 </label>
               </p>
               <p>
                 <label>
-                  Adresse e-mail: <input type="email" name="email" />
+                  Adresse e-mail: <input type="email" name="email-doctor" />
                 </label>
               </p>
               <p>
                 <label>
-                  Message: <textarea name="message"></textarea>
+                  Message: <textarea name="message-doctor"></textarea>
                 </label>
               </p>
               <p>
