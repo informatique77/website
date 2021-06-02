@@ -119,7 +119,7 @@ const Recruitment = () => {
               </p>
               <p>
                 <label>
-                  Prénom <input type="text" name="name" />
+                  Prénom <input type="text" name="nickname" />
                 </label>
               </p>
               <p>
@@ -127,13 +127,13 @@ const Recruitment = () => {
                 <div>
                   <label>
                     Oui
-                    <input type="radio" name="scales"></input>
+                    <input type="radio" name="oui" />
                   </label>
                 </div>
                 <div>
                   <label>
                     Non
-                    <input type="radio" name="scales"></input>
+                    <input type="radio" name="non" />
                   </label>
                 </div>
               </p>
@@ -142,13 +142,13 @@ const Recruitment = () => {
                 <div>
                   <label>
                     Médecine générale
-                    <input type="checkbox" name="scales"></input>
+                    <input type="checkbox" name="generale" />
                   </label>
                 </div>
                 <div>
                   <label>
                     Médecine d'urgence
-                    <input type="checkbox" name="scales"></input>
+                    <input type="checkbox" name="urgence" />
                   </label>
                 </div>
               </p>
