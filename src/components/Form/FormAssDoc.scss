@@ -1,0 +1,32 @@
+@import "../../styles/Variables.scss";
+
+.assistant-form,
+.doctor-form {
+  height: 500px;
+  p {
+    font-family: $palanquin;
+    font-style: normal;
+    font-weight: normal;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: $palanquin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    :nth-child(1) {
+      margin-left: 5px;
+    }
+    :nth-child(2) {
+      margin-left: 5px;
+    }
+  }
+  input,
+  select,
+  textarea {
+    border: none;
+    border-bottom: solid 2px $blue-color;
+  }
+}

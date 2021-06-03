@@ -6,6 +6,8 @@ import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import JobCard from "../components/JobCard/JobCard"
 import ExternalButton from "../components/Buttons/ExternalButton"
+import FormDoctor from "../components/Form/FormDoctor"
+import FormAssistant from "../components/Form/FormAssistant"
 import Seo from "../components/seo"
 
 import "../styles/Recruitment.scss"
@@ -48,22 +50,36 @@ const Recruitment = () => {
       <PagesHeader title="Recrutement" />
       <div className="recruitment-page-section">
         <h2>Nos formulaires</h2>
-        <div className="recruitment-buttons-container">
-          <ExternalButton
-            css="recruitment-button"
-            slug="https://docs.google.com/forms/d/e/1FAIpQLSct8CxPIoE7tdidENAHuSQ5eJDHNYO3Z0AWi8HQqXvf1epoew/viewform?usp=sf_link"
-            content="Médecin"
-            staticImage={
+        <div className="recruitment-img-container">
+          <div>
+            <ExternalButton
+              css="recruitment-button"
+              slug="https://docs.google.com/forms/d/e/1FAIpQLSct8CxPIoE7tdidENAHuSQ5eJDHNYO3Z0AWi8HQqXvf1epoew/viewform?usp=sf_link"
+              content="Médecin"
+              staticImage={
+                <StaticImage
+                  src="../images/doctors/white-stethoscope.png"
+                  width={24}
+                  quality={95}
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  alt="Recrutement Docteur"
+                  placeholder="blurred"
+                />
+              }
+            />
+            <div className="recruitment-img-1">
               <StaticImage
-                src="../images/doctors/white-stethoscope.png"
-                width={24}
-                quality={95}
+                width={330}
+                quality={100}
                 formats={["AUTO", "WEBP", "AVIF"]}
-                alt="Recrutement Docteur"
                 placeholder="blurred"
+                src="../images/ourJobs/our-job-3.jpg"
+                alt="Un médecin"
               />
-            }
-          />
+            </div>
+            <FormDoctor />
+          </div>
+          <div>
           <ExternalButton
             css="recruitment-button"
             slug="https://docs.google.com/forms/d/e/1FAIpQLSfixH3rfleAPWZh0b9fbBC5s-etHaNTeehE52d3l0dtl_wakg/viewform?usp=sf_link"
@@ -79,103 +95,17 @@ const Recruitment = () => {
               />
             }
           />
-        </div>
-        <div className="recruitment-img-container">
-          <div className="recruitment-img-1">
-            <StaticImage
-              width={330}
-              quality={100}
-              formats={["AUTO", "WEBP", "AVIF"]}
-              placeholder="blurred"
-              src="../images/ourJobs/our-job-3.jpg"
-              alt="Un médecin"
-            />
-          </div>
-          <div className="recruitment-img-2">
-            <StaticImage
-              width={330}
-              quality={100}
-              formats={["AUTO", "WEBP", "AVIF"]}
-              placeholder="blurred"
-              src="../images/ourJobs/our-job-8.jpg"
-              alt="Une assistante médicale"
-            />
-          </div>
-        </div>
-        <div className="recruitment-forms-container">
-          <div className="doctor-form">
-            <form name="contact-doctor" method="POST" data-netlify="true">
-              {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-              <input type="hidden" name="form-name" value="contact-doctor" />
-              <div hidden>
-                <label>
-                  Don’t fill this out: <input name="bot-field" />
-                </label>
-              </div>
-              <p>
-                <label>
-                  Nom <input type="text" name="name-doctor" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Prénom <input type="text" name="nickname-doctor" />
-                </label>
-              </p>
-              <p>
-                Thésé:{" "}
-                <div>
-                  <label>
-                    Oui
-                    <input type="radio" name="oui-doctor" />
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    Non
-                    <input type="radio" name="non-doctor" />
-                  </label>
-                </div>
-              </p>
-              <p>
-                Spécialité:{" "}
-                <div>
-                  <label>
-                    Médecine générale
-                    <input type="checkbox" name="generale-doctor" />
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    Médecine d'urgence
-                    <input type="checkbox" name="urgence-doctor" />
-                  </label>
-                </div>
-              </p>
-              <p>
-                <label>
-                  Téléphone:{"  "}
-                  <input
-                    type="tel"
-                    name="tel-doctor"
-                    pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
-                  />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Adresse e-mail: <input type="email" name="email-doctor" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Message: <textarea name="message-doctor"></textarea>
-                </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-            </form>
+            <div className="recruitment-img-2">
+              <StaticImage
+                width={330}
+                quality={100}
+                formats={["AUTO", "WEBP", "AVIF"]}
+                placeholder="blurred"
+                src="../images/ourJobs/our-job-8.jpg"
+                alt="Une assistante médicale"
+              />
+            </div>
+            <FormAssistant />
           </div>
         </div>
         {data.allDataJobsJson.edges.length > 1
