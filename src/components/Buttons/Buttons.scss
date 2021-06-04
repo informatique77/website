@@ -97,6 +97,21 @@
   }
 }
 
+.form-button {
+  cursor: pointer;
+  width: 170px;
+  height: 35px;
+  background: #0596de;
+  border-radius: 24px;
+  border: none;
+  font-family: $palanquin-dark;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  padding: 0px 10px 5px 10px;
+  color: $white-color;
+}
+
 .red {
   background: $red-color;
   border: 1px solid $red-color;

@@ -51,22 +51,8 @@ const Recruitment = () => {
       <div className="recruitment-page-section">
         <h2>Nos formulaires</h2>
         <div className="recruitment-img-container">
-          <div>
-            <ExternalButton
-              css="recruitment-button"
-              slug="https://docs.google.com/forms/d/e/1FAIpQLSct8CxPIoE7tdidENAHuSQ5eJDHNYO3Z0AWi8HQqXvf1epoew/viewform?usp=sf_link"
-              content="Médecin"
-              staticImage={
-                <StaticImage
-                  src="../images/doctors/white-stethoscope.png"
-                  width={24}
-                  quality={95}
-                  formats={["AUTO", "WEBP", "AVIF"]}
-                  alt="Recrutement Docteur"
-                  placeholder="blurred"
-                />
-              }
-            />
+          <div className="first-form">
+            <h3>Médecin</h3>
             <div className="recruitment-img-1">
               <StaticImage
                 width={330}
@@ -80,21 +66,9 @@ const Recruitment = () => {
             <FormDoctor />
           </div>
           <div>
-          <ExternalButton
-            css="recruitment-button"
-            slug="https://docs.google.com/forms/d/e/1FAIpQLSfixH3rfleAPWZh0b9fbBC5s-etHaNTeehE52d3l0dtl_wakg/viewform?usp=sf_link"
-            content="Assitant(e) Médical(e)"
-            staticImage={
-              <StaticImage
-                src="../images/icons/nurse.png"
-                width={24}
-                quality={95}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                alt="Recrutement Assistant(e) Médical(e)"
-                placeholder="blurred"
-              />
-            }
-          />
+            <h3>
+              Assistant(e) Médical(e)
+            </h3>
             <div className="recruitment-img-2">
               <StaticImage
                 width={330}

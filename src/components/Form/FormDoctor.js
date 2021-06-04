@@ -1,4 +1,7 @@
 import React from "react"
+import FormButton from "../Buttons/FormButton"
+
+import inputChange from "../../utils/timer"
 
 import "./FormAssDoc.scss"
 
@@ -13,70 +16,78 @@ const FormDoctor = () => {
             Don’t fill this out: <input name="bot-field" />
           </label>
         </div>
-        <p>
-          <input type="text" name="name-doctor" />
-          <label for="name-doctor">
-            <span>Nom :</span>
+        <div className="input-label-container">
+          <input type="text" name="name-doctor" required />
+          <label htmlFor="name-doctor" className="label-container">
+            <span className="label-content">Nom</span>
           </label>
-        </p>
-        <p>
-          <input type="text" name="nickname-doctor" />
-          <label for="nickname-doctor">
-            <span>Prénom :</span>
+        </div>
+        <div className="input-label-container">
+          <input type="text" name="nickname-doctor" required />
+          <label htmlFor="nickname-doctor" className="label-container">
+            <span className="label-content">Prénom</span>
           </label>
-        </p>
-        <p>
-          <div>
-            <label>
-              Thésé :
-              <select>
-                <option value="">--Please choose an option--</option>
-                <option value="Oui">Oui</option>
-                <option value="Non">Non</option>
-              </select>
-            </label>
-          </div>
-        </p>
-        <p>
-          Spécialité :{" "}
-          <div>
+        </div>
+        <div className="input-label-container">
+          <label className="select-label">
+            Thésé :
+            <select required>
+              <option value=""></option>
+              <option value="Oui">Oui</option>
+              <option value="Non">Non</option>
+            </select>
+          </label>
+        </div>
+        <div className="checkboxInput-label-container">
+          <span>Spécialité :</span>
+          <div className="checkbox-container">
             <label>
               Médecine générale
-              <input type="checkbox" name="generale-doctor" />
+              <input
+                type="checkbox"
+                name="generale-doctor"
+                className="personnal-checkbox"
+              />
             </label>
           </div>
-          <div>
+          <div className="checkbox-container">
             <label>
               Médecine d'urgence
-              <input type="checkbox" name="urgence-doctor" />
+              <input
+                type="checkbox"
+                name="urgence-doctor"
+                className="personnal-checkbox"
+              />
             </label>
           </div>
-        </p>
-        <p>
+        </div>
+        <div className="input-label-container">
           <input
-            type="tel"
+            type="text"
             name="tel-doctor"
-            pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+            required
           />
-          <label for="tel-doctor"> 
-            <span>Téléphone :</span>
+          <label htmlFor="tel-doctor" className="label-container">
+            <span className="label-content">Téléphone</span>
           </label>
-        </p>
-        <p>
-          <input type="email" name="email-doctor" />
-          <label for="email-doctor">
-            <span>Adresse e-mail :</span>
+        </div>
+        <div className="input-label-container">
+          <input type="text" name="email-doctor" required />
+          <label htmlFor="email-doctor" className="label-container">
+            <span className="label-content">Adresse e-mail</span>
           </label>
-        </p>
-        <p>
-          <textarea name="message-doctor"></textarea>
-          <label for="message-doctor">
-            <span>Message :</span>
+        </div>
+        <div className="input-label-container">
+          <textarea name="message-doctor" required></textarea>
+          <label
+            htmlFor="message-doctor"
+            className="label-container"
+            id="texteareaLabel"
+          >
+            <span className="label-content">Message</span>
           </label>
-        </p>
-        <p>
-          <button type="submit">Soumettre</button>
-        </p>
+        </div>
+        <FormButton content="Soumettre" callback={inputChange} />
       </form>
     </div>
   )

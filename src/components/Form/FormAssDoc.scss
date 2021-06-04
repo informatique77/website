@@ -2,31 +2,127 @@
 
 .assistant-form,
 .doctor-form {
-  height: 500px;
-  p {
-    font-family: $palanquin;
-    font-style: normal;
-    font-weight: normal;
-  }
-  label {
+  height: 670px;
+  padding: 15px;
+  form {
+    position: relative;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: start;
-    font-family: $palanquin;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    :nth-child(1) {
-      margin-left: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    .input-label-container {
+      display: flex;
+      margin: 15px 0 15px 0;
+      input,
+      textarea {
+        width: 100%;
+        height: 100%;
+        color: $blue-color;
+        padding-top: 10px;
+        padding-left: 5px;
+        border: none;
+        outline: none;
+      }
+      textarea {
+        height: 150px;
+      }
+      select {
+        border: none;
+        width: 50px;
+        height: 25px;
+        margin-left: 10px;
+        font-family: $palanquin-dark;
+        color: $blue-color;
+      }
+      .select-label {
+        font-family: $palanquin-dark;
+        text-decoration: underline;
+        color: $blue-color;
+      }
+      .label-container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: absolute;
+        width: 100%;
+        height: 35px;
+        pointer-events: none;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 0%;
+          left: 0;
+          bottom: -1px;
+          border-bottom: 2px solid $blue-color;
+          transition: all 0.3s ease;
+        }
+      }
+      .label-content {
+        font-family: $palanquin-dark;
+        font-size: 14px;
+        color: $blue-color;
+        transition: all 0.3s ease;
+        padding-left: 5px;
+      }
+      #texteareaLabel {
+        display: flex;
+        align-items: baseline;
+        height: 160px;
+      }
+      input {
+        &:focus,
+        &:valid {
+          + .label-container {
+            &::after {
+              width: 100%;
+            }
+            .label-content {
+              transform: translateY(-16px) translateX(-3px) translateZ(0);
+              font-size: 12px;
+              backface-visibility: hidden;
+            }
+          }
+        }
+      }
+      textarea {
+        &:focus,
+        &:valid {
+          + .label-container {
+            &::after {
+              width: 100%;
+            }
+            .label-content {
+              transform: translateY(-12px) translateX(-3px) translateZ(0);
+              font-size: 12px;
+              backface-visibility: hidden;
+            }
+          }
+        }
+      }
     }
-    :nth-child(2) {
-      margin-left: 5px;
+    .checkboxInput-label-container {
+      font-family: $palanquin-dark;
+      color: $blue-color;
+      width: 100%;
+      span {
+        text-decoration: underline;
+      }
+      .checkbox-container {
+        label {
+          display: flex;
+          align-items: center;
+          font-family: $palanquin-dark;
+          text-decoration:dashed;
+          color: $blue-color;
+          span {
+            text-decoration:none;
+          }
+          input[type=checkbox] {
+            margin-left: 15px;
+          }
+        }
+      }
     }
-  }
-  input,
-  select,
-  textarea {
-    border: none;
-    border-bottom: solid 2px $blue-color;
   }
 }
