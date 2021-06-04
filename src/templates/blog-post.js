@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/BlogPost.scss"
 
@@ -16,7 +16,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
+      <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />

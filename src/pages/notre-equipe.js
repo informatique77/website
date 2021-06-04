@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/OurTeam.scss"
 
@@ -15,7 +15,7 @@ const Team = ({ data }) => {
   const sectionTwo = data.allDataTeamJson.edges.slice(halfArray + 1, fullArray)
   return (
     <Layout>
-      <SEO
+      <Seo
         title="Notre équipe"
         description="Consultations 7 sur 7 c'est avant tout une équipe de médecins généralistes et urgentistes, accompagnée pas nos assistantes médicales."
         path="notre-equipe"

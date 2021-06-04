@@ -5,13 +5,13 @@ import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import ExternalButton from "../components/Buttons/ExternalButton"
 import  BlueCircleContainer  from "../components/BlueCircle/BlueCircle"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/Teleconsultations.scss"
 
 const Teleconsultation = () => (
   <Layout>
-    <SEO title="Téléconsultations" />
+    <Seo title="Téléconsultations" />
     <PagesHeader title="Téléconsultations" description="Notre centre de téléconsultations ouvert de 9h à 21h, 7 jours sur 7, 
     vous permettra d'obtenir un avis médical ainsi qu'un diagnostic rapidement ainsi qu'en toute confidentialité" 
     path="teleconsultations"/>

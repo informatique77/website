@@ -3,13 +3,13 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/OurJob.scss"
 
 const OurJob = () => (
   <Layout>
-    <SEO
+    <Seo
       title="Notre métier"
       description="Chez consultations 7 sur 7, notre métier c'est de vous proposer des consultations pour adultes et enfants, sans rendez-vous, 
       avec la possibilité d'effectuer des examens complémentaires pouvant être réalisé sur place"

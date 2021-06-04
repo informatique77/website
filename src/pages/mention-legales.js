@@ -2,13 +2,13 @@ import React from "react"
 
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/LegalNotice.scss"
 
 const MentionsLegales = () => (
   <Layout>
-    <SEO title="Mentions légales" />
+    <Seo title="Mentions légales" />
     <PagesHeader title="Mentions légales" />
     <div className="legal-notice-container">
       <h2>1 - Édition du site</h2>
