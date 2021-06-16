@@ -1,8 +1,6 @@
 import React from "react"
 import FormButton from "../Buttons/FormButton"
 
-import inputChange from "../../utils/timer"
-
 import "./FormAssDoc.scss"
 
 const FormDoctor = () => {
@@ -32,7 +30,7 @@ const FormDoctor = () => {
           <label className="select-label">
             Thésé :
             <select required>
-              <option value=""></option>
+              <option value="Choisir">Choisir</option>
               <option value="Oui">Oui</option>
               <option value="Non">Non</option>
             </select>
@@ -87,7 +85,7 @@ const FormDoctor = () => {
             <span className="label-content">Message</span>
           </label>
         </div>
-        <FormButton content="Soumettre" callback={inputChange} />
+        <FormButton content="Soumettre" />
       </form>
     </div>
   )

@@ -12,7 +12,6 @@ const mapCenter = {
 }
 
 const Map = ({ allMedicalCenters }) => {
-console.log(allMedicalCenters)
   useEffect(() => {
     if (!window.google) {
       const script = createScript()
