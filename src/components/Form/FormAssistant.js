@@ -30,7 +30,7 @@ const FormAssistant = () => {
           <label className="select-label">
             Statut :
             <select required style={{width: "100px"}}>
-              <option value=""></option>
+              <option value="Choisir">Choisir</option>
               <option value="Diplômé(e)">Diplômé(e)</option>
               <option value="Stagiaire">Stagiaire</option>
             </select>

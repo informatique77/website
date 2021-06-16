@@ -8,76 +8,24 @@ import BlueCircleContainer from "../components/BlueCircle/BlueCircle"
 import ExternalButton from "../components/Buttons/ExternalButton"
 import CallButton from "../components/Buttons/CallButton"
 
-import { infoWindowImg } from "../utils/infoWindowScript"
-import { openOrClose } from "../utils/timer"
-import { createScript } from "../utils/mapScript"
 
-import iconOpen from "../images/icons/map-firstaid.png"
-import iconClose from "../images/icons/map-bulldozer.png"
+import { openOrClose } from "../utils/timer"
+import { createScript, loadMapSingleCenter } from "../utils/mapScript"
 
 import "../components/Map/Map.scss"
-import "../styles/CenterPost.scss"
+import "../styles/CenterPost.scss"  
 
 const SingleCenterTemplate = ({ data }) => {
   useEffect(() => {
-    let mounted = true
-    if (mounted) {
-      loadGoogleMapScript()
-    }
-    return function cleanup() {
-      mounted = false
-    }
-  })
-
-  const loadGoogleMapScript = () => {
     if (!window.google) {
-      const script = createScript() 
+      const script = createScript()
       script.addEventListener("load", e => {
-        loadMap()
+        loadMapSingleCenter(data)
       })
     } else {
-      loadMap()
+      loadMapSingleCenter(data)
     }
-  }
-
-  const loadMap = () => {
-    const open = iconOpen
-    const close = iconClose
-    const mapCenter = {
-      lat: data.dataCentersJson.lat,
-      lng: data.dataCentersJson.lng,
-    }
-    const newMap = new window.google.maps.Map(
-      document.getElementById(`map-${data.dataCentersJson.name}`),
-      {
-        center: mapCenter,
-        zoom: 16,
-      }
-    )
-
-    const marker = new window.google.maps.Marker({
-      position: mapCenter,
-      map: newMap,
-      icon: data.dataCentersJson.open ? open : close,
-    })
-
-    const content = InfoWindowContent(
-      data.dataCentersJson,
-      infoWindowImg(data.dataCentersJson.index),
-      false
-    )
-    const infoWindow = new window.google.maps.InfoWindow({
-      content: content,
-      maxWidth: "350px",
-    })
-
-    data.dataCentersJson.infoWindow = infoWindow
-    data.dataCentersJson.marker = marker
-
-    marker.addListener("click", () => {
-      infoWindow.open(newMap, marker)
-    })
-  }
+  })
 
   const image = getImage(data.dataCentersJson.image.src.childImageSharp)
 
