@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 700px;
+  min-height: 800px;
   margin: 0px auto;
 
   .main-container {
@@ -15,7 +15,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 120px;
+    top: 100px;
+
+    .title-img-container {
+      margin-bottom: 15px;
+    }
 
     a {
       text-decoration: none;
@@ -99,7 +103,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 70%;
-    top: 475px;
+    top: 575px;
     left: 0;
   }
 
@@ -185,9 +189,10 @@ h1 {
 
 @media screen and (max-width: 480px) {
   .header {
-    height: 770px;
+    height: 940px;
     .main-container {
       width: auto;
+      top: 75px;
     }
     .slick-slider {
       width: 230px;

@@ -10,9 +10,20 @@ const HomeHeader = () => {
   return (
     <div className="header">
       <div className="main-container">
-        <h1>
+        <div className="title-img-container">
+          <StaticImage
+            src="../../images/title-C7.png"
+            width={280}
+            height={260}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="Camera téléconsultations"
+            placeholder="blurred"
+          />
+        </div>
+        {/* <h1>
           Consultations <span>7 sur 7</span>
-        </h1>
+        </h1> */}
         <SliderComponent />
         <p className="main-p">
           Nos centres de consultations et de téléconsultations vous accueillent
