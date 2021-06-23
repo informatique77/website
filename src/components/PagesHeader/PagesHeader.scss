@@ -14,9 +14,9 @@
     justify-content: center;
     align-items: center;
     width: 580px;
-    top: 120px;
+    top: 150px;
     h1 {
-      font-size: 57px;
+      font-size: 50px;
     }
   }
   &::after {
@@ -48,8 +48,16 @@
     .pages-header-title {
       width: 100%;
       h1 {
-        font-size: 36px;
+        font-size: 30px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pages-header-container {
+    .pages-header-title {
+      top: 120px;
     }
   }
 }

@@ -6,7 +6,6 @@
   align-items: center;
   height: auto;
   background-color: $pink-color;
-  margin-top: 50px;
   padding-top: 25px;
   h2 {
     font-family: $palanquin-dark;
@@ -68,11 +67,18 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .recruitment-page-section {
+    margin-top: 90px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .recruitment-page-section {
     height: auto;
     padding-top: 0;
     padding-bottom: 50px;
+    margin-top: 50px;
     .recruitment-buttons-container {
       width: 100%;
     }

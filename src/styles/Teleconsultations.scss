@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
   padding-top: 50px;
   h2 {
     font-family: $palanquin-dark;
@@ -177,6 +176,7 @@
 
 @media screen and (max-width: 767px) {
   .teleconsult-section {
+    margin-top: 90px;
     .teleconsult-top {
       flex-direction: column;
       padding: 0;
@@ -226,7 +226,9 @@
 }
 
 @media screen and (max-width: 480px) {
-  .teleconsult-section .teleconsult-top {
+  .teleconsult-section {
+    margin-top: 50px;
+    .teleconsult-top {
     margin-top: 65px;
     width: 230px;
     .teleconsult-img-1 {
@@ -237,6 +239,7 @@
       margin-left: 0;
     }
   }
+}
   .teleconsult-section {
     .teleconsult-midle {
       h2 {

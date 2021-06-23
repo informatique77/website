@@ -25,10 +25,10 @@
   }
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 767px) {
   .prices-section {
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 90px;
     height: auto;
     .pricesTable-container {
       flex-direction: column;
@@ -41,5 +41,11 @@
       width: auto;
       margin-bottom: 50px;
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .prices-section {
+    margin-top: 40px;
   }
 }
