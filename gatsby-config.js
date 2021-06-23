@@ -160,8 +160,8 @@ module.exports = {
         sans rendez-vous, de 8h30 à 22h00 sans interruption.`,
         short_name: `C7`,
         start_url: `/`,
-        background_color: `#ffff`,
-        theme_color: `#0596de`,
+        background_color: `#0596de`,
+        theme_color: `#ffff`,
         display: `minimal-ui`,
         icon: `src/images/favicon-194x194.png`, // This path is relative to the root of the site.
         icon_options: {
