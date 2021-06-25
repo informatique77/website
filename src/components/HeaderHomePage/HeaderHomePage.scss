@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 800px;
+  min-height: 900px;
   margin: 0px auto;
 
   .main-container {
@@ -16,6 +16,10 @@
     justify-content: center;
     align-items: center;
     top: 100px;
+
+    h1 {
+      font-size: 40px;
+    }
 
     .title-img-container {
       margin-bottom: 15px;
@@ -103,7 +107,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 70%;
-    top: 575px;
+    top: 675px;
     left: 0;
   }
 
@@ -166,6 +170,7 @@ h1 {
 
 @media screen and (max-width: 767px) {
   .header {
+    min-height: 1015px;
     .main-container {
       width: auto;
     }
@@ -189,10 +194,14 @@ h1 {
 
 @media screen and (max-width: 480px) {
   .header {
-    height: 940px;
+    min-height: 1115px;
     .main-container {
       width: auto;
       top: 75px;
+      h1 {
+        font-size: 20px;
+        padding-top: 10px;
+      }
     }
     .slick-slider {
       width: 230px;
@@ -223,4 +232,3 @@ h1 {
     font-size: 28px;
   }
 }
-

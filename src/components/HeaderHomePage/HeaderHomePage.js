@@ -10,6 +10,7 @@ const HomeHeader = () => {
   return (
     <div className="header">
       <div className="main-container">
+        <h1>Centres Médicaux Azuréens</h1>
         <div className="title-img-container">
           <StaticImage
             src="../../images/title-C7.png"

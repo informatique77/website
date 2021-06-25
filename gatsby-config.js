@@ -163,7 +163,7 @@ module.exports = {
         background_color: `#ffff`,
         theme_color: `#0596de`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-194x194.png`, // This path is relative to the root of the site.
+        icon: `src/images/title-C7.png`, // This path is relative to the root of the site.
         icon_options: {
           purpose: `any maskable`,
         },
