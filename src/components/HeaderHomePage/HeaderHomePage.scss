@@ -18,7 +18,15 @@
     top: 100px;
 
     h1 {
+      font-family: $palanquin-dark;
       font-size: 40px;
+      text-align: center;
+      color: $blue-color;
+      font-weight: 400;
+      margin: 0;
+      span {
+        color: #e74c3c;
+      }
     }
 
     .title-img-container {
