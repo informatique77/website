@@ -1,4 +1,5 @@
 import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 
 import "./PagesHeader.scss"
@@ -7,9 +8,17 @@ const PagesHeader = ({ title }) => {
   return (
     <div className="pages-header-container">
       <div className="pages-header-title">
+        <StaticImage
+          src="../../images/title.png"
+          width={620}
+          height={70}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Logo Consultations 7 sur 7"
+          placeholder="blurred"
+        />
         <h1>
-          Consultations <span>7 sur 7</span>
-          <br></br>
+          
           {title}
         </h1>
       </div>

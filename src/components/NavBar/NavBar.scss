@@ -293,6 +293,13 @@
 }
 
 @media screen and (max-width: 480px) {
+  .nav-container {
+    height: 80px;
+    .burger {
+      top: 12px;
+    }
+  }
+
   .logo {
     display: none;
   }

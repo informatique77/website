@@ -155,12 +155,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Consultations 7 sur 7`,
+        name: `Consultations 7/7`,
         description: `Consultations 7 sur 7 vous accueillent 7 jours sur 7, week-ends et jours fériés inclus, 
         sans rendez-vous, de 8h30 à 22h00 sans interruption.`,
         short_name: `C7`,
         start_url: `/`,
-        background_color: `#0596de`,
+        background_color: `#ffff`,
         theme_color: `#0596de`,
         display: `minimal-ui`,
         icon: `src/images/favicon-194x194.png`, // This path is relative to the root of the site.
