@@ -33,7 +33,7 @@
       {
         "car": "Un parking payant est situé à 5 min à pied, rue Auguste Gal",
         "bus": "Le centre est situé proche des lignes 3, 4, 27, 82 et 112",
-        "tramway": "Sur la ligne 1, arrêt Acropolis"
+        "tramway": "Avec le Tram ,sur la ligne 1, arrêt Acropolis"
       }
     ]
   },
@@ -56,7 +56,7 @@
       {
         "car": "Le parking payant du centre commercial Nice Étoile est situé à 2 min à pied",
         "bus": "Le centre est situé proche des lignes 9, 10, 12, et 23",
-        "tramway": "Sur la ligne 1, arrêt Jean Médecin"
+        "tramway": "Avec le Tram ,sur la ligne 1, arrêt Jean Médecin"
       }
     ]
   },
@@ -79,28 +79,29 @@
       {
         "car": "En utilisant le parking payant de l'Hôpital Lenval",
         "bus": "Le centre est situé proche des lignes 4, 17, et 30",
-        "tramway": "Sur la ligne 2, arrêt Lenval"
+        "tramway": "Avec le Tram, sur la ligne 2, arrêt Lenval"
       }
     ]
   },
   {
     "index": 4,
     "name": "Nice l'Ariane",
-    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice l'Ariane",
-    "tel": "Prochainement ",
+    "address": "10 Avenue Emile Ripert, 06300 Nice",
+    "tel": "04-93-92-94-08",
+    "direction": "https://goo.gl/maps/FJbDWR2KG5gQbyyo7",
     "image": {
       "src": "../images/centers/lariane.jpg"
     },
-    "lat": 43.736052,
-    "lng": 7.304897,
+    "lat": 43.73584812492593,
+    "lng": 7.301669687126844,
     "map": true,
-    "open": false,
+    "open": true,
     "bgColor": "#FFFF",
     "slug": "/centre/ariane",
     "transport": [
       {
-        "car": "",
-        "bus": "",
+        "car": "À 5 min de la sortie d'autoroute Nice Est",
+        "bus": "Le centre est situé proche de la ligne 7",
         "tramway": ""
       }
     ]
