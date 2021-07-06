@@ -13,18 +13,26 @@ const HomeHeader = () => {
         <h1>Centres Médicaux Azuréens</h1>
         <div className="title-img-container">
           <StaticImage
-            src="../../images/title-C7.png"
-            width={280}
-            height={260}
+            src="../../images/logo-consultations77.png"
+            width={240}
+            height={220}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Camera téléconsultations"
+            alt="Logo Consultations 7 sur 7"
             placeholder="blurred"
           />
         </div>
-        {/* <h1>
-          Consultations <span>7 sur 7</span>
-        </h1> */}
+        <div className="title-img-container">
+          <StaticImage
+            src="../../images/title.png"
+            width={620}
+            height={75}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="Titre Consultations 7 sur 7"
+            placeholder="blurred"
+          />
+        </div>
         <SliderComponent />
         <p className="main-p">
           Nos centres de consultations et de téléconsultations vous accueillent

@@ -5,7 +5,7 @@ import  SimpleButton  from "../Buttons/SimpleButton"
 
 import "../../styles/HomePage_sections.scss"
 
-const News = ({ posts }) => {
+const News = ({ posts, home }) => {
   return (
     <>
       <div className="post-section">
@@ -15,7 +15,7 @@ const News = ({ posts }) => {
         </h2>
         <div className="post-wrapper">{posts}</div>
         {
-          posts.length > 3 ? <SimpleButton slug="/actualites" content="Plus d'articles"/> : null
+          posts.length > 3 && home ? <SimpleButton slug="/actualites" content="Plus d'articles"/> : null
         }
       </div>
     </>

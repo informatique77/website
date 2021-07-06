@@ -35,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
       <CardsSection />
       <AboutSection />
       <NumbersSection />
-      <PostSection posts={Posts} />
+      <PostSection posts={Posts} home={true} />
       <RecruitmentSection />
     </Layout>
   )

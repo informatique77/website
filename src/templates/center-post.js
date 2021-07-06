@@ -142,7 +142,7 @@ const SingleCenterTemplate = ({ data }) => {
                       />
                     </div>
                     <div className="text-transport-content">
-                      <span>En tram :</span>
+                      <span>En tram ou train:</span>
                       {data.dataCentersJson.transport[0].tramway}
                     </div>
                   </div>
