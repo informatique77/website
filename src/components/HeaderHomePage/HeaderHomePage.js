@@ -15,7 +15,7 @@ const HomeHeader = () => {
           <StaticImage
             src="../../images/logo-consultations77.png"
             width={240}
-            height={240}
+            height={220}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Logo Consultations 7 sur 7"
@@ -26,7 +26,7 @@ const HomeHeader = () => {
           <StaticImage
             src="../../images/title.png"
             width={620}
-            height={70}
+            height={75}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Titre Consultations 7 sur 7"

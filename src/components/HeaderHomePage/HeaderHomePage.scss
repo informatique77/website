@@ -40,6 +40,7 @@
 
   .slick-slider {
     width: 100%;
+    margin-top: 15px;
 
     .slick-list {
       height: 190px;
@@ -223,7 +224,7 @@ h1 {
 
 @media screen and (max-width: 280px) {
   .header {
-    height: 880px;
+    height: 1080px;
     .slick-slider {
       width: 200px;
     }

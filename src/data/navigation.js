@@ -24,6 +24,10 @@ export const MenuItems = [
         url: '/nos-tarifs',
     },
     {
+        title: 'Nos Actualités',
+        url: '/actualites',
+    },
+    {
         title: 'Recrutement',
         url: '/recrutement',
     },
