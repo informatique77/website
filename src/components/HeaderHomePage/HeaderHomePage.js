@@ -13,12 +13,23 @@ const HomeHeader = () => {
         <h1>Centres Médicaux Azuréens</h1>
         <div className="title-img-container">
           <StaticImage
-            src="../../images/group-1.png"
-            width={280}
-            height={260}
+            src="../../images/logo-consultations77.png"
+            width={240}
+            height={240}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Camera téléconsultations"
+            alt="Logo Consultations 7 sur 7"
+            placeholder="blurred"
+          />
+        </div>
+        <div className="title-img-container">
+          <StaticImage
+            src="../../images/title.png"
+            width={620}
+            height={70}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="Titre Consultations 7 sur 7"
             placeholder="blurred"
           />
         </div>
