@@ -14,7 +14,7 @@ import Seo from "../components/seo"
 
 import { closeBurger } from "../utils/burgerAnimation"
 
-const BlogIndex = ({ data, location }) => {
+const App = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
   const Posts = posts.map((item, index) => <PostLink key={index} post={item} />)
@@ -23,7 +23,7 @@ const BlogIndex = ({ data, location }) => {
     window.onpopstate = () => {
       closeBurger()
     }
-  })
+  }, [])
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default App
 
 export const pageQuery = graphql`
   query {
