@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@rooks/use-visibility-sensor": "^4.11.0",
+    "framer-motion": "^4.1.17",
     "gatsby": "^3.5.1",
     "gatsby-plugin-feed": "^3.1.0",
     "gatsby-plugin-gatsby-cloud": "^2.1.0",
@@ -41,6 +42,7 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "jest": "^27.0.6",
     "prettier": "2.2.1"
   },
   "homepage": "https://github.com/informatique77/website#readme",
@@ -60,6 +62,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest"
   }
 }
