@@ -24,8 +24,8 @@ const NavBar = () => {
           />
         </Link>
       </div>
-      <div className="social-networks" style={{display:"none"}}>
-        <a href="https://www.facebook.com/consultations77/">
+      <div className="social-networks">
+        <a href="https://www.instagram.com/consultations77/">
           <StaticImage
             src="../../images/icons/instagram-64.png"
             loading="eager"
