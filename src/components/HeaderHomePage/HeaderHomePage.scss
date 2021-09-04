@@ -8,6 +8,27 @@
   min-height: 900px;
   margin: 0px auto;
 
+  .pop-up {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    max-width: 400px;
+    height: auto;
+    background-color: $white-color;
+    top: 200px;
+    border: 2px solid $red-color;
+    border-radius: 8px;
+    padding: 20px;
+    button {
+      margin: 20px 0 20px 0;
+
+    }
+  }
+
   .main-container {
     width: 580px;
     position: absolute;
@@ -200,6 +221,9 @@ h1 {
 @media screen and (max-width: 480px) {
   .header {
     min-height: 1000px;
+    .pop-up {
+      margin: 0 5px 0 5px;
+    }
     .main-container {
       width: auto;
       top: 75px;
