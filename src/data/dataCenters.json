@@ -72,7 +72,7 @@
     "lat": 43.6893,
     "lng": 7.24141,
     "map": true,
-    "open": false,
+    "open": true,
     "bgColor": "#F7F6FE",
     "slug": "/centre/nice-ouest",
     "transport": [

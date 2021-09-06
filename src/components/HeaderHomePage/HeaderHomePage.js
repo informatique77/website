@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import SliderComponent from "../SliderComponent/SliderComponent"
@@ -7,17 +7,8 @@ import IconButton from "../Buttons/IconButton"
 import "./HeaderHomePage.scss"
 
 const HomeHeader = () => {
-  const popup = useRef(null)
-  const closePopup = () => {
-    popup.current.style.display = "none";
-  }
   return (
     <div className="header">
-      <div className="pop-up" ref={popup}>
-        <p>Notre centre Nice Ouest, situé dans le hall de l'Hospital Lenval sera exceptionnellement fermé ce dimanche 5 septembre 2021. 
-        </p>
-        <button onClick={closePopup} className="icon-button red">Fermé</button>
-      </div>
       <div className="main-container">
         <h1>Centres Médicaux Azuréens</h1>
         <div className="title-img-container">
