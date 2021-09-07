@@ -86,21 +86,22 @@
   {
     "index": 4,
     "name": "Nice l'Ariane",
-    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice l'Ariane",
+    "address": "10 Rue Emile Ripert, 06300 Nice",
     "tel": "Prochainement",
+    "direction": "https://goo.gl/maps/B4s4EM91Bu1hTD4f7",
     "image": {
       "src": "../images/centers/lariane.jpg"
     },
     "lat": 43.73584812492593,
     "lng": 7.301669687126844,
     "map": true,
-    "open": false,
+    "open": true,
     "bgColor": "#FFFF",
     "slug": "/centre/ariane",
     "transport": [
       {
-        "car": "",
-        "bus": "",
+        "car": "À 5 min de la sortie d'autoroute Nice Est",
+        "bus": "Le centre est situé proche de la ligne 7",
         "tramway": ""
       }
     ]

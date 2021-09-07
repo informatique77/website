@@ -61,6 +61,15 @@
 
       .moreInfo-container {
         margin-top: 40px;
+        .opening-soon {
+          font-family: $roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 14px;
+          color: #22c679;
+          margin-bottom: 10px;
+        }
       }
 
       .description-button {

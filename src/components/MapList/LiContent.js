@@ -31,7 +31,8 @@ const LiContent = ({ center }) => {
         <h2>{center.node.name}<span className="red-seven" style={{paddingLeft: "5px"}}>7 sur 7</span></h2>}
         <p className="li-address">{center.node.address}</p>
         <br></br>
-        {center.node.open ? openOrClose(center.index) : null}
+        {center.node.open && center.node.index !== 4 ? openOrClose(center.index) : null}
+        <p className="opening-soon">{center.node.index === 4 ? "Ouvre le 4 octobre" : null}</p>
         {center.node.open ? (
           <ShowMoreButton slug={center.node.slug} content={"En savoir plus"}/>
         ) : null}
