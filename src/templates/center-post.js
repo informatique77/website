@@ -13,7 +13,7 @@ import { openOrClose } from "../utils/timer"
 import { createScript, loadMapSingleCenter } from "../utils/mapScript"
 
 import "../components/Map/Map.scss"
-import "../styles/CenterPost.scss"  
+import "../styles/CenterPost.scss"
 
 const SingleCenterTemplate = ({ data }) => {
   useEffect(() => {
@@ -53,9 +53,10 @@ const SingleCenterTemplate = ({ data }) => {
             <span className="adress">{data.dataCentersJson.address}</span>
             {data.dataCentersJson.open ? (
               <div className="moreInfo-container">
-                {data.dataCentersJson.open
+                {data.dataCentersJson.open && data.dataCentersJson.index !== 4
                   ? openOrClose(data.dataCentersJson.index)
                   : null}
+                <p className="opening-soon">{data.dataCentersJson.index === 4 ? "Ouverture prévue le 4 octobre 2021" : null}</p>
                 <p className="opening-details">
                   Horaires : 7 jours sur 7 de 8h30 à 22h00
                 </p>
@@ -128,24 +129,27 @@ const SingleCenterTemplate = ({ data }) => {
                       {data.dataCentersJson.transport[0].bus}
                     </div>
                   </div>
-                  <div className="text-transport">
-                    <div className="img-transport">
-                      {" "}
-                      <StaticImage
-                        src="../images/icons/tram.png"
-                        width={38}
-                        quality={95}
-                        layout="fixed"
-                        formats={["AUTO", "WEBP", "AVIF"]}
-                        alt="Tramway"
-                        placeholder="blurred"
-                      />
-                    </div>
-                    <div className="text-transport-content">
-                      <span>En tram ou train:</span>
-                      {data.dataCentersJson.transport[0].tramway}
-                    </div>
-                  </div>
+
+                  {
+                    data.dataCentersJson.index !== 4 ? <div className="text-transport">
+                      <div className="img-transport">
+                        {" "}
+                        <StaticImage
+                          src="../images/icons/tram.png"
+                          width={38}
+                          quality={95}
+                          layout="fixed"
+                          formats={["AUTO", "WEBP", "AVIF"]}
+                          alt="Tramway"
+                          placeholder="blurred"
+                        />
+                      </div><div className="text-transport-content">
+                        <span>En tram ou train:</span>
+                        {data.dataCentersJson.transport[0].tramway}
+                      </div> </div> : null
+                  }
+
+
                 </div>
               </div>
             ) : null}
