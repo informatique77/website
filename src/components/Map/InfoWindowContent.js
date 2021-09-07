@@ -20,7 +20,8 @@ const InfoWindowContent = (center, image, globalMap) => {
         <img src={image} alt={center.name}></img>
       </div>
       <p className="infoWindow-address">{center.address}</p>
-      {center.open ? openOrClose(center.index) : null}
+      {center.open && center.index !== 4 ? openOrClose(center.index) : null}
+      <p className="opening-soon">{center.index === 4 ? "Ouverture prévue le 4 octobre 2021" : null}</p>
       {center.open && globalMap ? (
          <ShowMoreButton slug={center.slug} content={"En savoir plus"}/>
       ) : null}

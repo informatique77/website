@@ -56,7 +56,7 @@ const SingleCenterTemplate = ({ data }) => {
                 {data.dataCentersJson.open && data.dataCentersJson.index !== 4
                   ? openOrClose(data.dataCentersJson.index)
                   : null}
-                <p className="opening-soon">{data.dataCentersJson.index === 4 ? "Ouvre le 4 octobre" : null}</p>
+                <p className="opening-soon">{data.dataCentersJson.index === 4 ? "Ouverture prévue le 4 octobre 2021" : null}</p>
                 <p className="opening-details">
                   Horaires : 7 jours sur 7 de 8h30 à 22h00
                 </p>
