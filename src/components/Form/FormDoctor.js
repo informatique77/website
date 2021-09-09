@@ -28,7 +28,7 @@ const FormDoctor = () => {
         </div>
         <div className="input-label-container">
           <label className="select-label">
-            Thésé :
+            Thèsé :
             <select required required style={{width: "70px"}}>
               <option value="Choisir">Choisir</option>
               <option value="Oui">Oui</option>
