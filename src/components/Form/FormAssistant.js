@@ -59,16 +59,6 @@ const FormAssistant = () => {
               />
             </label>
           </div>
-          <div className="checkbox-container">
-            <label>
-              Assistante Médicale
-              <input
-                type="checkbox"
-                name="Assistante Médicale"
-                className="personnal-checkbox"
-              />
-            </label>
-          </div>
         </div>
         <div className="input-label-container">
           <input
