@@ -9,8 +9,6 @@ import FormDoctor from "../components/Form/FormDoctor"
 import FormAssistant from "../components/Form/FormAssistant"
 import Seo from "../components/seo"
 
-import "../styles/Recruitment.scss"
-
 const Recruitment = () => {
   const data = useStaticQuery(graphql`
     {

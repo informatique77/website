@@ -2,8 +2,6 @@ import React, { useState, useRef } from "react"
 import PropTypes from "prop-types"
 import useVisibilitySensor from "@rooks/use-visibility-sensor"
 
-import "./Number.scss"
-
 const Number = ({ img, number, text }) => {
   const [count, setCount] = useState(0)
   const rootNode = useRef(null)

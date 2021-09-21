@@ -5,8 +5,6 @@ import { Link } from "gatsby"
 import Form from "../Form/Form"
 import { closeBurger } from "../../utils/burgerAnimation"
 
-import "./Footer.scss"
-
 const Footer = () => {
   return (
     <div className="footer">

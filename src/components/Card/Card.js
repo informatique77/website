@@ -1,16 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "./Card.scss"
-
 const Card = ({ title, img, content, blue }) => {
   return (
-    <div className="card" style={{ backgroundColor: blue ? "#0596de" : "#FFFFFF" }}>
-      <div className="card-header">
-        <h2 style={{ color: blue ? "#FFFFFF" : "#333333" }}>{title}</h2>
-        <div className="img-card-container">{img}</div>
+    <div className={ blue ? "card card--blue" : "card" }>
+      <div className="card__header">
+        <h2 className="card__header__h2">{title}</h2>
+        <div className="card__header__img">{img}</div>
       </div>
-      <div className="card-content">{content}</div>
+      <div className="card__content">{content}</div>
     </div>
   )
 }

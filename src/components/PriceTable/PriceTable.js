@@ -1,7 +1,5 @@
 import * as React from "react"
 
-import "./PriceTable.scss"
-
 const PriceTable = ({ country, image, resume }) => {
     return (
         <div className="prices-resume">

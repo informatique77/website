@@ -10,8 +10,6 @@ import ShowMoreButton from "../Buttons/ShowMoreButton"
 
 import { openOrClose } from "../../utils/timer"
 
-import "./Map.scss"
-
 const InfoWindowContent = (center, image, globalMap) => {
   return ReactDOMServer.renderToString(
     <div className="infoWindow-container">

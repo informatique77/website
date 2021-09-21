@@ -6,8 +6,6 @@ import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import Seo from "../components/seo"
 
-import "../styles/OurTeam.scss"
-
 const Team = ({ data }) => {
   const fullArray = data.allDataTeamJson.edges.length
   const halfArray = data.allDataTeamJson.edges.length / 2

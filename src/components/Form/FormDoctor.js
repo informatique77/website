@@ -1,8 +1,6 @@
 import React from "react"
 import FormButton from "../Buttons/FormButton"
 
-import "./FormAssDoc.scss"
-
 const FormDoctor = () => {
   return (
     <div className="doctor-form">
@@ -29,7 +27,7 @@ const FormDoctor = () => {
         <div className="input-label-container">
           <label className="select-label">
             Thèsé :
-            <select required required style={{width: "70px"}}>
+            <select required style={{width: "70px"}}>
               <option value="Choisir">Choisir</option>
               <option value="Oui">Oui</option>
               <option value="Non">Non</option>

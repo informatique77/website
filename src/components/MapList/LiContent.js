@@ -6,8 +6,6 @@ import ExternalButton from "../Buttons/ExternalButton"
 import ShowMoreButton from "../Buttons/ShowMoreButton"
 import { openOrClose } from "../../utils/timer"
 
-import "./MapList.scss"
-
 /**
  * Create an Li for the Google Map List
  * @param {Object} center A medical center

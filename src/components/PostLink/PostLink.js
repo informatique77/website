@@ -3,8 +3,6 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import "./PostLink.scss"
-
 const PostLink = ({ post }) => {
   const image = getImage(post.frontmatter.img.childImageSharp)
   return (

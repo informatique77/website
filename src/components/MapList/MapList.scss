@@ -1,5 +1,3 @@
-@import "../../styles/Variables.scss";
-
 .mapList-container {
   width: 45%;
   height: auto;
@@ -35,20 +33,20 @@
       align-items: flex-start;
       margin: 10px;
       h2 {
-        font-family: $palanquin;
-        color: $blue-color;
+        font-family: $secondary-font;
+        color: $primary-color;
         font-style: normal;
         font-weight: bold;
         font-size: 22px;
         line-height: 22px;
         margin-bottom: 10px;
         .red-seven {
-          color: $red-color;
+          color: $fourth-color;
           padding-right: 5px;
         }
       }
       .li-address {
-        font-family: $palanquin;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -56,7 +54,7 @@
         color: #000000;
       }
       .open {
-        font-family: $palanquin;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: bold;
         font-size: 17px;
@@ -64,7 +62,7 @@
         color: #22c679;
       }
       .close {
-        font-family: $palanquin;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: bold;
         font-size: 17px;
@@ -72,7 +70,7 @@
         color: red;
       }
       .opening-soon {
-        font-family: $palanquin;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: bold;
         font-size: 17px;

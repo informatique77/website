@@ -1,7 +1,6 @@
 import React from "react"
 
 import { closeBurger  } from "../../utils/burgerAnimation"
-import "./Buttons.scss"
 
 const ExternalButton = ({ css, slug, content, staticImage }) => {
   return (

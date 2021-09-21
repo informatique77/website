@@ -1,5 +1,3 @@
-@import "../../styles/Variables.scss";
-
 .pages-header-container {
   display: flex;
   flex-direction: column;
@@ -24,7 +22,7 @@
     position: absolute;
     width: 225px;
     height: 225px;
-    background-color: $blue-color;
+    background-color: $primary-color;
     background-image: url("../../images/header/Combined\ Shape.png");
     background-position: center;
     background-repeat: no-repeat;

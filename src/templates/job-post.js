@@ -4,8 +4,6 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 
-import "../styles/Recruitment.scss"
-
 const JobPostTemplate = ({ data }) => {
   return (
     <Layout>

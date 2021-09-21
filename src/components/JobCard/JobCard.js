@@ -3,8 +3,6 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 
-import "./JobCard.scss"
-
 const JobCard = ({ img, title, contract, place, slug }) => {
   const image = getImage(img)
   return (

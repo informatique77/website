@@ -1,7 +1,6 @@
 import React from "react"
 
 import { closeBurger  } from "../../utils/burgerAnimation"
-import "./Buttons.scss"
 
 const CallButton = ({ css, slug, content, staticImage }) => {
   return (

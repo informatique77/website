@@ -3,17 +3,12 @@ import { graphql } from "gatsby"
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
-import InfoWindowContent from "../components/Map/InfoWindowContent"
-import BlueCircleContainer from "../components/BlueCircle/BlueCircle"
+import BlueCircle from "../components/BlueCircle/BlueCircle"
 import ExternalButton from "../components/Buttons/ExternalButton"
 import CallButton from "../components/Buttons/CallButton"
 
-
 import { openOrClose } from "../utils/timer"
 import { createScript, loadMapSingleCenter } from "../utils/mapScript"
-
-import "../components/Map/Map.scss"
-import "../styles/CenterPost.scss"
 
 const SingleCenterTemplate = ({ data }) => {
   useEffect(() => {
@@ -56,7 +51,11 @@ const SingleCenterTemplate = ({ data }) => {
                 {data.dataCentersJson.open && data.dataCentersJson.index !== 4
                   ? openOrClose(data.dataCentersJson.index)
                   : null}
-                <p className="opening-soon">{data.dataCentersJson.index === 4 ? "Ouverture prévue le 4 octobre 2021" : null}</p>
+                <p className="opening-soon">
+                  {data.dataCentersJson.index === 4
+                    ? "Ouverture prévue le 4 octobre 2021"
+                    : null}
+                </p>
                 <p className="opening-details">
                   Horaires : 7 jours sur 7 de 8h30 à 22h00
                 </p>
@@ -129,9 +128,8 @@ const SingleCenterTemplate = ({ data }) => {
                       {data.dataCentersJson.transport[0].bus}
                     </div>
                   </div>
-
-                  {
-                    data.dataCentersJson.index !== 4 ? <div className="text-transport">
+                  {data.dataCentersJson.index !== 4 ? (
+                    <div className="text-transport">
                       <div className="img-transport">
                         {" "}
                         <StaticImage
@@ -143,18 +141,58 @@ const SingleCenterTemplate = ({ data }) => {
                           alt="Tramway"
                           placeholder="blurred"
                         />
-                      </div><div className="text-transport-content">
+                      </div>
+                      <div className="text-transport-content">
                         <span>En tram ou train:</span>
                         {data.dataCentersJson.transport[0].tramway}
-                      </div> </div> : null
-                  }
-
-
+                      </div>{" "}
+                    </div>
+                  ) : null}
                 </div>
               </div>
             ) : null}
           </div>
-          <BlueCircleContainer />
+          <div className="blueCircles-container">
+            <BlueCircle
+              slug="/nos-centres"
+              img={
+                <StaticImage
+                  src="../images/circle/white-center.png"
+                  alt="Nos centres"
+                  placeholder="blurred"
+                  width={40}
+                  quality={95}
+                />
+              }
+              text="Nos centres"
+            />
+            <BlueCircle
+              slug="/notre-metier"
+              img={
+                <StaticImage
+                  placeholder="blurred"
+                  layout="fixed"
+                  quality={95}
+                  src="../images/circle/white-wallet.png"
+                  alt="Note métier"
+                />
+              }
+              text="Notre métier"
+            />
+            <BlueCircle
+              slug="/nos-tarifs"
+              img={
+                <StaticImage
+                  placeholder="blurred"
+                  layout="fixed"
+                  quality={95}
+                  src="../images/circle/white-euro.png"
+                  alt="Nos tarifs"
+                />
+              }
+              text="Nos tarifs"
+            />
+          </div>
         </div>
       </div>
     </Layout>

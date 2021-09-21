@@ -1,18 +1,16 @@
-@import "../../styles/Variables.scss";
-
 .simple-button {
   cursor: pointer;
   width: 170px;
   height: 35px;
-  background: #0596de;
+  background: $primary-color;
   border-radius: 24px;
   border: none;
-  font-family: $palanquin-dark;
+  font-family: $primary-font;
   font-style: normal;
   font-size: 18px;
   text-align: center;
   padding: 5px 10px 5px 10px;
-  color: $white-color;
+  color: $secondary-color;
 }
 
 .icon-button {
@@ -23,11 +21,11 @@
   font-size: 18px;
   width: 250px;
   height: 48px;
-  background: $blue-color;
-  border: 1px solid $blue-color;
+  background: $primary-color;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   border-radius: 5px;
-  font-family: $palanquin;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: bold;
   color: white;
@@ -42,17 +40,17 @@
 .travel-button {
   cursor: pointer;
   display: flex;
-  font-family: $palanquin;
+  font-family: $secondary-font;
   font-size: 16px;
   font-weight: bold;
   justify-content: space-evenly;
   align-items: center;
   width: 140px;
   height: 28px;
-  background: #ffff;
-  border: 1px solid #0596de;
+  background: $secondary-color;
+  border: 1px solid $primary-color;
   border-radius: 5px;
-  color: #0596de;
+  color: $primary-color;
   margin-top: 10px;
   margin-right: 5px;
   padding-bottom: 2px;
@@ -65,15 +63,15 @@
 .recruitment-button {
   cursor: pointer;
   display: flex;
-  font-family: $palanquin;
+  font-family: $secondary-font;
   font-size: 22px;
   font-weight: bold;
   justify-content: center;
   align-items: center;
   width: auto;
   height: 28px;
-  background: #0596de;
-  border: 1px solid #0596de;
+  background: $primary-color;
+  border: 1px solid $primary-color;
   border-radius: 5px;
   color: #fff;
   margin-top: 10px;
@@ -86,7 +84,7 @@
 }
 
 .show-more-button {
-  color: $blue-color;
+  color: $primary-color;
   font-size: 17px;
   margin-bottom: 10px;
   &::after {
@@ -101,25 +99,25 @@
   cursor: pointer;
   width: 170px;
   height: 35px;
-  background: #0596de;
+  background: $primary-color;
   border-radius: 24px;
   border: none;
-  font-family: $palanquin-dark;
+  font-family: $primary-font;
   font-style: normal;
   font-size: 18px;
   text-align: center;
   padding: 0px 10px 5px 10px;
-  color: $white-color;
+  color: $secondary-color;
 }
 
 .red {
-  background: $red-color;
-  border: 1px solid $red-color;
+  background: $fourth-color;
+  border: 1px solid $fourth-color;
 }
 
 .white {
-  color: $blue-color;
-  background: #ffff;
+  color: $primary-color;
+  background: $secondary-color;
 }
 
 @media screen and (max-width: 767px) {
