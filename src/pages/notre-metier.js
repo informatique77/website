@@ -5,8 +5,6 @@ import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import Seo from "../components/seo"
 
-import "../styles/OurJob.scss"
-
 const OurJob = () => (
   <Layout>
     <Seo

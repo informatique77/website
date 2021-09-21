@@ -1,8 +1,6 @@
 import React from "react"
 import FormButton from "../Buttons/FormButton"
 
-import "./FormAssDoc.scss"
-
 const FormAssistant = () => {
   return (
     <div className="assistant-form">

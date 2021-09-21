@@ -4,7 +4,6 @@ import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import Seo from "../components/seo"
 
-import "../styles/PrivacyPolicy.scss"
 const PrivacyPolicy = () => (
   <Layout>
     <Seo title="Politique de confidentialité" />

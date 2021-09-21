@@ -3,10 +3,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
-import PriceTable from "../components/PricTable/PriceTable"
+import PriceTable from "../components/PriceTable/PriceTable"
 import Seo from "../components/seo"
-
-import "../styles/OurPrices.scss"
 
 const Prices = () => (
   <Layout>

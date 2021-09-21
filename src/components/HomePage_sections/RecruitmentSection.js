@@ -3,8 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import SimpleButton from "../Buttons/SimpleButton"
 
-import "../../styles/HomePage_sections.scss"
-
 const RecruitmentSection = () => {
   return (
     <>

@@ -5,8 +5,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout/Layout"
 import Seo from "../components/seo"
 
-import "../styles/BlogPost.scss"
-
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`

@@ -3,8 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Number from "../Number/Number"
 
-import "../../styles/HomePage_sections.scss"
-
 const NumbersSectionOne = () => {
   return (
     <div className="numbers-section">

@@ -4,10 +4,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import ExternalButton from "../components/Buttons/ExternalButton"
-import  BlueCircleContainer  from "../components/BlueCircle/BlueCircle"
+import  BlueCircle  from "../components/BlueCircle/BlueCircle"
 import Seo from "../components/seo"
-
-import "../styles/Teleconsultations.scss"
 
 const Teleconsultation = () => (
   <Layout>
@@ -213,7 +211,47 @@ const Teleconsultation = () => (
           }
         />
       </div>
-      <BlueCircleContainer />
+      <div className="blueCircles-container">
+            <BlueCircle
+              slug="/nos-centres"
+              img={
+                <StaticImage
+                  src="../images/circle/white-center.png"
+                  alt="Nos centres"
+                  placeholder="blurred"
+                  width={40}
+                  quality={95}
+                />
+              }
+              text="Nos centres"
+            />
+            <BlueCircle
+              slug="/notre-metier"
+              img={
+                <StaticImage
+                  placeholder="blurred"
+                  layout="fixed"
+                  quality={95}
+                  src="../images/circle/white-wallet.png"
+                  alt="Note métier"
+                />
+              }
+              text="Notre métier"
+            />
+            <BlueCircle
+              slug="/nos-tarifs"
+              img={
+                <StaticImage
+                  placeholder="blurred"
+                  layout="fixed"
+                  quality={95}
+                  src="../images/circle/white-euro.png"
+                  alt="Nos tarifs"
+                />
+              }
+              text="Nos tarifs"
+            />
+          </div>
     </div>
   </Layout>
 )

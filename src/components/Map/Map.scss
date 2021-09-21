@@ -1,7 +1,5 @@
-@import "../../styles/Variables.scss";
-
 .h1-map {
-  font-family: $palanquin-dark;
+  font-family: $primary-font;
   position: fixed;
   width: 100%;
   top: 30px;
@@ -24,12 +22,12 @@
     height: auto;
     position: relative;
     .gm-style .gm-style-iw-c {
-      border: 3px solid $blue-color;
+      border: 3px solid $primary-color;
     }
 
     .gm-style .gm-style-iw-t {
       &::after {
-        border: 3px solid $blue-color;
+        border: 3px solid $primary-color;
         z-index: -1;
       }
     }
@@ -45,20 +43,20 @@
         height: auto;
       }
       h2 {
-        font-family: $palanquin;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
         line-height: 20px;
         margin-bottom: 10px;
-        color: $blue-color;
+        color: $primary-color;
         .red-seven {
-          color: $red-color;
+          color: $fourth-color;
           padding-right: 5px;
         }
       }
       .infoWindow-address {
-        font-family: $palanquin;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -69,7 +67,7 @@
       }
 
       .open {
-        font-family: $palanquin;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
@@ -78,7 +76,7 @@
         margin: 5px 0 5px 0;
       }
       .close {
-        font-family: $palanquin;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
@@ -87,7 +85,7 @@
         margin: 5px 0 5px 0;
       }
       .show-more {
-        color: $blue-color;
+        color: $primary-color;
         &::after {
           content: url("../../images/icons/right-arrow.png");
           position: relative;
@@ -96,7 +94,7 @@
         }
       }
       .opening-soon {
-        font-family: $palanquin;
+        font-family: $secondary-font;
         font-style: normal;
         font-weight: bold;
         font-size: 15px;

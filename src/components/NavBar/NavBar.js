@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 
 import { burgerAnimation } from "../../utils/burgerAnimation"
 
-import "./NavBar.scss"
-
 import { MenuItems } from "../../data/navigation"
 
 const NavBar = () => {

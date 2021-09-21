@@ -4,8 +4,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import SliderComponent from "../SliderComponent/SliderComponent"
 import IconButton from "../Buttons/IconButton"
 
-import "./HeaderHomePage.scss"
-
 const HomeHeader = () => {
   return (
     <div className="header">

@@ -1,7 +1,5 @@
 import React from "react"
 
-import "./MapList.scss"
-
 const MapList = ({ content }) => {
 
   return (

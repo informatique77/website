@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { closeBurger  } from "../../utils/burgerAnimation"
-import "./Buttons.scss"
 
 const SimpleButton = ({ slug, content }) => {
   return (

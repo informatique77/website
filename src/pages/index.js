@@ -18,7 +18,7 @@ const App = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
   const Posts = posts.map((item, index) => <PostLink key={index} post={item} />)
-
+  const dataCards = require('../data/dataCards.json')
   useEffect(() => {
     window.onpopstate = () => {
       closeBurger()
@@ -32,7 +32,7 @@ const App = ({ data, location }) => {
         path="/"
       />
       <HeaderHomePage />
-      <CardsSection />
+      <CardsSection arr={dataCards}/>
       <AboutSection />
       <NumbersSection />
       <PostSection posts={Posts} home={true} />

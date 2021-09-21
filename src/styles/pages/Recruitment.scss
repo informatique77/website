@@ -1,14 +1,12 @@
-@import "./Variables";
-
 .recruitment-page-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: auto;
-  background-color: $pink-color;
+  background-color: $third-color;
   padding-top: 25px;
   h2 {
-    font-family: $palanquin-dark;
+    font-family: $primary-font;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -27,7 +25,7 @@
     margin-top: 10px;
     h3 {
       text-align: center;
-      font-family: $palanquin-dark;
+      font-family: $primary-font;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -39,10 +37,10 @@
       padding: 25px 0 20px 0;
     }
     .recruitment-img-1 {
-      box-shadow: -20px -15px $blue-color;
+      box-shadow: -20px -15px $primary-color;
     }
     .recruitment-img-2 {
-      box-shadow: 20px -15px $blue-color;
+      box-shadow: 20px -15px $primary-color;
     }
   }
 }
@@ -53,7 +51,7 @@
   justify-content: center;
   width: auto;
   max-width: 800px;
-  font-family: $palanquin;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

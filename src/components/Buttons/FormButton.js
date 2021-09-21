@@ -1,7 +1,5 @@
 import React from "react"
 
-import "./Buttons.scss"
-
 const FormButton = ({ content }) => {
     return (
         <div>

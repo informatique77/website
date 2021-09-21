@@ -4,8 +4,6 @@ import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import Seo from "../components/seo"
 
-import "../styles/LegalNotice.scss"
-
 const MentionsLegales = () => (
   <Layout>
     <Seo title="Mentions légales" />

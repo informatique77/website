@@ -4,8 +4,6 @@ import MapList from "../MapList/MapList"
 import LiContent from "../MapList/LiContent"
 import { createScript, loadMapContent } from "../../utils/mapScript"
 
-import "./Map.scss"
-
 const mapCenter = {
   lat: 43.70488,
   lng: 7.26719,

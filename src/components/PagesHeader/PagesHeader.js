@@ -2,8 +2,6 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 
-import "./PagesHeader.scss"
-
 const PagesHeader = ({ title }) => {
   return (
     <div className="pages-header-container">
