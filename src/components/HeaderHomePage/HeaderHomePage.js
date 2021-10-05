@@ -11,7 +11,7 @@ const HomeHeader = () => {
         <h1>Centres Médicaux Azuréens</h1>
         <div className="title-img-container">
           <StaticImage
-            src="../../images/logo-consultations77.png"
+            src="../../assets/images/logo-consultations77.png"
             width={240}
             height={220}
             quality={95}
@@ -22,7 +22,7 @@ const HomeHeader = () => {
         </div>
         <div className="title-img-container">
           <StaticImage
-            src="../../images/title.png"
+            src="../../assets/images/title.png"
             width={620}
             height={75}
             quality={95}
@@ -41,12 +41,12 @@ const HomeHeader = () => {
         </p>
         <div className="button-container">
           <IconButton
-            css="icon-button"
+            css="button button__icon button__icon--blue"
             slug="/nos-centres"
             content="Trouver votre centre"
             staticImage={
               <StaticImage
-                src="../../images/icons/icon-position.png"
+                src="../../assets/images/icons/icon-position.png"
                 width={24}
                 quality={95}
                 formats={["AUTO", "WEBP", "AVIF"]}
@@ -56,12 +56,12 @@ const HomeHeader = () => {
             }
           />
           <IconButton
-            css="icon-button red"
+            css="button button__icon button__icon--red"
             slug="/teleconsultations"
             content="Téléconsultations 7 sur 7"
             staticImage={
               <StaticImage
-                src="../../images/icons/icon-camera.png"
+                src="../../assets/images/icons/icon-camera.png"
                 width={24}
                 quality={95}
                 formats={["AUTO", "WEBP", "AVIF"]}

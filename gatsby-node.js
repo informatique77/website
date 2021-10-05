@@ -10,7 +10,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
    */
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const centerPost = path.resolve(`./src/templates/center-post.js`)
-  const jobPost = path.resolve(`./src/templates/job-post.js`)
 
   // Récupére les data en Markdown de l'application qui sont les articles
   const resultPosts = await graphql(
@@ -83,20 +82,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   `)
 
-  // Récupére les data des Jobs
-  const resultJobs = await graphql(`
-    {
-      allDataJobsJson {
-        edges {
-          node {
-            title
-            slug
-          }
-        }
-      }
-    }
-  `)
-
   if (resultPosts.errors) {
     reporter.panicOnBuild(
       `There was an error loading your blog posts`,
@@ -113,17 +98,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  if (resultJobs.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your job posts`,
-      resultJobs.errors
-    )
-    return
-  }
-
   const posts = resultPosts.data.allMarkdownRemark.nodes
   const centers = resultCenters.data.allDataCentersJson.edges
-  const jobs = resultJobs.data.allDataJobsJson.edges
 
   // Créer des pages d'articles de blog
   // Mais seulement s'il y a au moins un fichier  trouvé dans "content / blog" (défini dans gatsby-config.js)
@@ -166,21 +142,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           },
         })
       }
-    })
-  }
-
-  // Créer des pages de job
-  // Mais seulement s'il y a au moins deux donées trouvées dans "data / dataJobs.json"
-  if (jobs.length > 0) {
-    jobs.forEach(({ node }) => {
-      createPage({
-        path: node.slug,
-        component: jobPost,
-        context: {
-          title: node.title,
-          slug: node.slug,
-        },
-      })
     })
   }
 }

@@ -1,5 +1,4 @@
 import React from "react"
-import FormButton from "../Buttons/FormButton"
 
 const FormDoctor = () => {
   return (
@@ -27,7 +26,7 @@ const FormDoctor = () => {
         <div className="input-label-container">
           <label className="select-label">
             Thèsé :
-            <select required style={{width: "70px"}}>
+            <select required style={{ width: "70px" }}>
               <option value="Choisir">Choisir</option>
               <option value="Oui">Oui</option>
               <option value="Non">Non</option>
@@ -58,11 +57,7 @@ const FormDoctor = () => {
           </div>
         </div>
         <div className="input-label-container">
-          <input
-            type="text"
-            name="tel-doctor"
-            required
-          />
+          <input type="text" name="tel-doctor" required />
           <label htmlFor="tel-doctor" className="label-container">
             <span className="label-content">Téléphone</span>
           </label>
@@ -83,7 +78,11 @@ const FormDoctor = () => {
             <span className="label-content">Message</span>
           </label>
         </div>
-        <FormButton content="Soumettre" />
+        <div>
+          <button type="submit" className="form-button">
+            Soumettre
+          </button>
+        </div>
       </form>
     </div>
   )

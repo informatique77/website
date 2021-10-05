@@ -24,7 +24,7 @@ const SliderComponent = () => {
         <div className="carousel-container">
           <div className="img-container">
             <StaticImage
-              src="../../images/carousel/syringe.png"
+              src="../../assets/images/carousel/syringe.png"
               width={92}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -39,7 +39,7 @@ const SliderComponent = () => {
         <div className="carousel-container">
           <div className="img-container">
             <StaticImage
-              src="../../images/carousel/coronavirus.png"
+              src="../../assets/images/carousel/coronavirus.png"
               width={92}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -54,7 +54,7 @@ const SliderComponent = () => {
         <div className="carousel-container">
           <div className="img-container">
             <StaticImage
-              src="../../images/carousel/teleconsultations.png"
+              src="../../assets/images/carousel/teleconsultations.png"
               width={92}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -65,7 +65,7 @@ const SliderComponent = () => {
           <p className="text-carousel">Téléconsultations</p>
         </div>
       </Link>
-      </Slider>
+    </Slider>
   )
 }
 

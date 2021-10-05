@@ -3,12 +3,12 @@ import { Link } from "gatsby"
 
 import { closeBurger } from "../../utils/burgerAnimation"
 
-const SimpleButton = ({ slug, content }) => {
+const Button = ({ slug, content, css, staticImage }) => {
   return (
-    <Link className="button" to={slug} onClick={closeBurger}>
+    <Link className={css} to={slug} onClick={closeBurger}>
       {content}
     </Link>
   )
 }
 
-export default SimpleButton
+export default Button

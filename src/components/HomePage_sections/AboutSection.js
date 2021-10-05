@@ -8,7 +8,7 @@ const AboutSection = () => {
     <div className="about-section">
       <div className="about-img-container">
         <StaticImage
-          src="../../images/doctors/doctors.jpg"
+          src="../../assets/images/doctors/doctors.jpg"
           loading="eager"
           layout="constrained"
           width={500}

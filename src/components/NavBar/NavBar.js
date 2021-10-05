@@ -12,7 +12,7 @@ const NavBar = () => {
       <div className="logo">
         <Link to="/">
           <StaticImage
-            src="../../images/logo-consultations77.png"
+            src="../../assets/images/logo-consultations77.png"
             loading="eager"
             width={125}
             quality={95}
@@ -25,7 +25,7 @@ const NavBar = () => {
       <div className="social-networks">
         <a href="https://www.instagram.com/consultations77/">
           <StaticImage
-            src="../../images/icons/instagram-64.png"
+            src="../../assets/images/icons/instagram-64.png"
             loading="eager"
             width={64}
             quality={95}
@@ -36,7 +36,7 @@ const NavBar = () => {
         </a>
         <a href="https://www.facebook.com/consultations77/">
           <StaticImage
-            src="../../images/icons/facebook-64.png"
+            src="../../assets/images/icons/facebook-64.png"
             loading="eager"
             width={64}
             quality={95}

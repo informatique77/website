@@ -7,7 +7,7 @@ const PagesHeader = ({ title }) => {
     <div className="pages-header-container">
       <div className="pages-header-title">
         <StaticImage
-          src="../../images/title.png"
+          src="../../assets/images/title.png"
           width={620}
           height={70}
           quality={95}
@@ -15,10 +15,7 @@ const PagesHeader = ({ title }) => {
           alt="Logo Consultations 7 sur 7"
           placeholder="blurred"
         />
-        <h1>
-          
-          {title}
-        </h1>
+        <h1>{title}</h1>
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
 import React from "react"
 import ReactDOMServer from "react-dom/server"
 
-import iconTelephone from "../../images/icons/icon-telephone-blue.png"
-import iconWalk from "../../images/icons/walking.png"
+import iconTelephone from "../../assets/images/icons/icon-telephone-blue.png"
+import iconWalk from "../../assets/images/icons/walking.png"
 
 import CallButton from "../Buttons/CallButton"
 import ExternalButton from "../Buttons/ExternalButton"
@@ -13,20 +13,26 @@ import { openOrClose } from "../../utils/timer"
 const InfoWindowContent = (center, image, globalMap) => {
   return ReactDOMServer.renderToString(
     <div className="infoWindow-container">
-      <h2><span>C</span><span className="red-seven">7</span>{center.name}</h2>
+      <h2>
+        <span>C</span>
+        <span className="red-seven">7</span>
+        {center.name}
+      </h2>
       <div className="infoWindow-img-container">
         <img src={image} alt={center.name}></img>
       </div>
       <p className="infoWindow-address">{center.address}</p>
       {center.open && center.index !== 4 ? openOrClose(center.index) : null}
-      <p className="opening-soon">{center.index === 4 ? "Ouverture prévue le 4 octobre 2021" : null}</p>
+      <p className="opening-soon">
+        {center.index === 4 ? "Ouverture prévue le 4 octobre 2021" : null}
+      </p>
       {center.open && globalMap ? (
-         <ShowMoreButton slug={center.slug} content={"En savoir plus"}/>
+        <ShowMoreButton slug={center.slug} content={"En savoir plus"} />
       ) : null}
       <div>
         {center.open ? (
           <CallButton
-            css="call-button white"
+            css="button button__call"
             slug={`tel:${center.tel}`}
             content={center.tel}
             staticImage={<img src={iconTelephone} alt="Téléphone"></img>}
@@ -34,7 +40,7 @@ const InfoWindowContent = (center, image, globalMap) => {
         ) : null}
         {center.direction ? (
           <ExternalButton
-            css="travel-button white"
+            css="button button__travel"
             slug={center.direction}
             content="Vous y rendre"
             staticImage={<img src={iconWalk} alt="Marche"></img>}

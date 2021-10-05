@@ -1,37 +1,36 @@
-@import '../utils/Variables';
+@import "../utils/Variables";
 
 // Components
-@import '../../components/BlueCircle/BlueCircle.scss';
-@import '../../components/Buttons/Buttons.scss';
-@import '../../components/Card/Card.scss';
-@import '../../components/Form/Form.scss';
-@import '../../components/Form/FormAssDoc.scss';
-@import '../../components/Footer/Footer.scss';
-@import '../../components/HeaderHomePage/HeaderHomePage.scss';
-@import '../../components/JobCard/JobCard.scss';
-@import '../../components/Map/Map.scss';
-@import '../../components/MapList/MapList.scss';
-@import '../../components/NavBar/NavBar.scss';
-@import '../../components/Number/Number.scss';
-@import '../../components/PagesHeader/PagesHeader.scss';
-@import '../../components/PostLink/PostLink.scss';
-@import '../../components/PriceTable/PriceTable.scss';
+@import "../../components/BlueCircle/BlueCircle.scss";
+@import "../../components/Buttons/Buttons.scss";
+@import "../../components/Card/Card.scss";
+@import "../../components/Form/FormAssDoc.scss";
+@import "../../components/Footer/Footer.scss";
+@import "../../components/HeaderHomePage/HeaderHomePage.scss";
+@import "../../components/Map/Map.scss";
+@import "../../components/MapList/MapList.scss";
+@import "../../components/NavBar/NavBar.scss";
+@import "../../components/NewsLetter/NewsLetter.scss";
+@import "../../components/Number/Number.scss";
+@import "../../components/PagesHeader/PagesHeader.scss";
+@import "../../components/PostLink/PostLink.scss";
+@import "../../components/PriceTable/PriceTable.scss";
 
 // Sections
-@import '../../styles/sections/HomePage_sections.scss';
+@import "../../styles/sections/HomePage_sections.scss";
 
 // Templates
-@import '../templates/BlogPost.scss';
-@import '../templates/CenterPost.scss';
+@import "../templates/BlogPost.scss";
+@import "../templates/CenterPost.scss";
 
 // Pages
-@import '../pages/LegalNotice.scss';
-@import '../pages/OurJob.scss';
-@import '../pages/OurPrices.scss';
-@import '../pages/OurTeam.scss';
-@import '../pages/PrivacyPolicy.scss';
-@import '../pages/Recruitment.scss';
-@import '../pages/Teleconsultations.scss';
+@import "../pages/LegalNotice.scss";
+@import "../pages/OurJob.scss";
+@import "../pages/OurPrices.scss";
+@import "../pages/OurTeam.scss";
+@import "../pages/PrivacyPolicy.scss";
+@import "../pages/Recruitment.scss";
+@import "../pages/Teleconsultations.scss";
 
 * {
   margin: 0;

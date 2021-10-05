@@ -4,23 +4,26 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
 import ExternalButton from "../components/Buttons/ExternalButton"
-import  BlueCircle  from "../components/BlueCircle/BlueCircle"
+import BlueCircle from "../components/BlueCircle/BlueCircle"
 import Seo from "../components/seo"
 
 const Teleconsultation = () => (
   <Layout>
     <Seo title="Téléconsultations" />
-    <PagesHeader title="Téléconsultations" description="Notre centre de téléconsultations ouvert de 9h à 21h, 7 jours sur 7, 
-    vous permettra d'obtenir un avis médical ainsi qu'un diagnostic rapidement ainsi qu'en toute confidentialité" 
-    path="teleconsultations"/>
+    <PagesHeader
+      title="Téléconsultations"
+      description="Notre centre de téléconsultations ouvert de 9h à 21h, 7 jours sur 7, 
+    vous permettra d'obtenir un avis médical ainsi qu'un diagnostic rapidement ainsi qu'en toute confidentialité"
+      path="teleconsultations"
+    />
     <div className="teleconsult-section">
       <ExternalButton
-        css="icon-button red"
+        css="button button__icon button__icon--red"
         slug="https://www.doctolib.fr/medecin-generaliste/nice/7-7-teleconsultations"
         content="Je prends rendez-vous"
         staticImage={
           <StaticImage
-            src="../images/icons/icon-camera.png"
+            src="../assets/images/icons/icon-camera.png"
             width={24}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
@@ -37,7 +40,7 @@ const Teleconsultation = () => (
             quality={100}
             formats={["AUTO", "WEBP", "AVIF"]}
             placeholder="blurred"
-            src="../images/teleconsultations/teleconsult-1.jpg"
+            src="../assets/images/teleconsultations/teleconsult-1.jpg"
             alt="Personne âgée en téléconsultation"
           />
         </div>
@@ -48,7 +51,7 @@ const Teleconsultation = () => (
             quality={100}
             formats={["AUTO", "WEBP", "AVIF"]}
             placeholder="blurred"
-            src="../images/teleconsultations/teleconsult-2.jpg"
+            src="../assets/images/teleconsultations/teleconsult-2.jpg"
             alt="Mère de famille en téléconsultation avec son bébé"
           />
         </div>
@@ -64,7 +67,7 @@ const Teleconsultation = () => (
                   quality={100}
                   formats={["AUTO", "WEBP", "AVIF"]}
                   placeholder="blurred"
-                  src="../images/teleconsultations/calendar.png"
+                  src="../assets/images/teleconsultations/calendar.png"
                   alt="Calendrier"
                 />
               </div>
@@ -72,7 +75,9 @@ const Teleconsultation = () => (
                 Je prends rendez-vous directement en ligne
               </span>
               <p className="card-text-paragraph">
-                De 9h à 21h, <span style={{color:"#e74c3c"}}>7 jours sur 7</span> y compris les jours fériés.
+                De 9h à 21h,{" "}
+                <span style={{ color: "#e74c3c" }}>7 jours sur 7</span> y
+                compris les jours fériés.
               </p>
             </div>
             <div className="teleconsult-card">
@@ -83,7 +88,7 @@ const Teleconsultation = () => (
                   quality={100}
                   formats={["AUTO", "WEBP", "AVIF"]}
                   placeholder="blurred"
-                  src="../images/teleconsultations/chat-room.png"
+                  src="../assets/images/teleconsultations/chat-room.png"
                   alt="Bulle de discussion"
                 />
               </div>
@@ -103,7 +108,7 @@ const Teleconsultation = () => (
                   quality={100}
                   formats={["AUTO", "WEBP", "AVIF"]}
                   placeholder="blurred"
-                  src="../images/teleconsultations/laptop-and-phone.png"
+                  src="../assets/images/teleconsultations/laptop-and-phone.png"
                   alt="Ordinateur et téléphone"
                 />
               </div>
@@ -123,13 +128,14 @@ const Teleconsultation = () => (
                   quality={100}
                   formats={["AUTO", "WEBP", "AVIF"]}
                   placeholder="blurred"
-                  src="../images/teleconsultations/credit-card.png"
+                  src="../assets/images/teleconsultations/credit-card.png"
                   alt="Carte de crédit"
                 />
               </div>
               <span className="card-text-title">Je suis pris en charge</span>
               <p className="card-text-paragraph">
-                La téléconsultation est directement prise en charge par l’Assurance Maladie.
+                La téléconsultation est directement prise en charge par
+                l’Assurance Maladie.
               </p>
             </div>
           </div>
@@ -144,7 +150,7 @@ const Teleconsultation = () => (
                 quality={100}
                 formats={["AUTO", "WEBP", "AVIF"]}
                 placeholder="blurred"
-                src="../images/doctors/blue-stethoscope.png"
+                src="../assets/images/doctors/blue-stethoscope.png"
                 alt="Stéthoscope"
               />
             </div>
@@ -152,7 +158,11 @@ const Teleconsultation = () => (
               <span>Accéder rapidement à l’un de nos médecins</span>
             </div>
             <div className="about-text">
-              <p>Notre service disponible <span style={{color:"#e74c3c"}}>7 jours sur 7</span> de 9h à 21h</p>
+              <p>
+                Notre service disponible{" "}
+                <span style={{ color: "#e74c3c" }}>7 jours sur 7</span> de 9h à
+                21h
+              </p>
             </div>
           </div>
           <div className="about-two">
@@ -162,7 +172,7 @@ const Teleconsultation = () => (
                 quality={100}
                 formats={["AUTO", "WEBP", "AVIF"]}
                 placeholder="blurred"
-                src="../images/doctors/virus.png"
+                src="../assets/images/doctors/virus.png"
                 alt="Virus"
               />
             </div>
@@ -183,7 +193,7 @@ const Teleconsultation = () => (
                 quality={100}
                 formats={["AUTO", "WEBP", "AVIF"]}
                 placeholder="blurred"
-                src="../images/doctors/time.png"
+                src="../assets/images/doctors/time.png"
                 alt="Horloge"
               />
             </div>
@@ -196,12 +206,12 @@ const Teleconsultation = () => (
           </div>
         </div>
         <ExternalButton
-          css="icon-button red"
+          css="button button__icon button__icon--red"
           slug="https://www.doctolib.fr/medecin-generaliste/nice/7-7-teleconsultations"
           content="Je prends rendez-vous"
           staticImage={
             <StaticImage
-              src="../images/icons/icon-camera.png"
+              src="../assets/images/icons/icon-camera.png"
               width={24}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -212,46 +222,46 @@ const Teleconsultation = () => (
         />
       </div>
       <div className="blueCircles-container">
-            <BlueCircle
-              slug="/nos-centres"
-              img={
-                <StaticImage
-                  src="../images/circle/white-center.png"
-                  alt="Nos centres"
-                  placeholder="blurred"
-                  width={40}
-                  quality={95}
-                />
-              }
-              text="Nos centres"
+        <BlueCircle
+          slug="/nos-centres"
+          img={
+            <StaticImage
+              src="../assets/images/circle/white-center.png"
+              alt="Nos centres"
+              placeholder="blurred"
+              width={40}
+              quality={95}
             />
-            <BlueCircle
-              slug="/notre-metier"
-              img={
-                <StaticImage
-                  placeholder="blurred"
-                  layout="fixed"
-                  quality={95}
-                  src="../images/circle/white-wallet.png"
-                  alt="Note métier"
-                />
-              }
-              text="Notre métier"
+          }
+          text="Nos centres"
+        />
+        <BlueCircle
+          slug="/notre-metier"
+          img={
+            <StaticImage
+              placeholder="blurred"
+              layout="fixed"
+              quality={95}
+              src="../assets/images/circle/white-wallet.png"
+              alt="Note métier"
             />
-            <BlueCircle
-              slug="/nos-tarifs"
-              img={
-                <StaticImage
-                  placeholder="blurred"
-                  layout="fixed"
-                  quality={95}
-                  src="../images/circle/white-euro.png"
-                  alt="Nos tarifs"
-                />
-              }
-              text="Nos tarifs"
+          }
+          text="Notre métier"
+        />
+        <BlueCircle
+          slug="/nos-tarifs"
+          img={
+            <StaticImage
+              placeholder="blurred"
+              layout="fixed"
+              quality={95}
+              src="../assets/images/circle/white-euro.png"
+              alt="Nos tarifs"
             />
-          </div>
+          }
+          text="Nos tarifs"
+        />
+      </div>
     </div>
   </Layout>
 )

@@ -2,7 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-import Form from "../Form/Form"
+import NewsLetter from "../NewsLetter/NewsLetter"
 import { closeBurger } from "../../utils/burgerAnimation"
 
 const Footer = () => {
@@ -10,9 +10,9 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-form">
         <div className="footer-logo-container">
-          <Link to="/">
+          <Link to="/" onClick={closeBurger}>
             <StaticImage
-              src="../../images/logo-consultations77.png"
+              src="../../assets/images/logo-consultations77.png"
               width={150}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -21,7 +21,7 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <Form />
+        <NewsLetter />
       </div>
       <hr></hr>
       <div className="footer-second-section">
@@ -37,7 +37,7 @@ const Footer = () => {
             Politique de confidentialité
           </Link>
           <a href="http://www.staffc7.org//login">C7-Staff planning</a>
-          <a href="http://salle.staffc7.org/#/login">C7-Staff salle </a>
+          <a href="http://salle.staffc7.org/#/login">C7-Staff salle</a>
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
-import imgSmolett from "../images/centers/smolett.jpg"
-import imgLamartine from "../images/centers/lamartine.jpg"
-import imgLenval from "../images/centers/lenval.jpg"
-import imgLariane from "../images/centers/lariane.jpg"
-import imgNiceNord from "../images/centers/nice-nord.jpg"
-import imgMenton from "../images/centers/menton.jpg"
-import imgCagnes from "../images/centers/cagnes.jpg"
-import imgCannes from "../images/centers/cannes.jpg"
+import imgSmolett from "../assets/images/centers/smolett.jpg"
+import imgLamartine from "../assets/images/centers/lamartine.jpg"
+import imgLenval from "../assets/images/centers/lenval.jpg"
+import imgLariane from "../assets/images/centers/lariane.jpg"
+import imgNiceNord from "../assets/images/centers/nice-nord.jpg"
+import imgMenton from "../assets/images/centers/menton.jpg"
+import imgCagnes from "../assets/images/centers/cagnes.jpg"
+import imgCannes from "../assets/images/centers/cannes.jpg"
 
 export const infoWindowImg = index => {
   switch (index) {

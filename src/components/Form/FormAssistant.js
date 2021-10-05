@@ -1,5 +1,4 @@
 import React from "react"
-import FormButton from "../Buttons/FormButton"
 
 const FormAssistant = () => {
   return (
@@ -27,7 +26,7 @@ const FormAssistant = () => {
         <div className="input-label-container">
           <label className="select-label">
             Statut :
-            <select required style={{width: "100px"}}>
+            <select required style={{ width: "100px" }}>
               <option value="Choisir">Choisir</option>
               <option value="Diplômé(e)">Diplômé(e)</option>
               <option value="Stagiaire">Stagiaire</option>
@@ -59,11 +58,7 @@ const FormAssistant = () => {
           </div>
         </div>
         <div className="input-label-container">
-          <input
-            type="text"
-            name="tel-assistant"
-            required
-          />
+          <input type="text" name="tel-assistant" required />
           <label htmlFor="tel-assistant" className="label-container">
             <span className="label-content">Téléphone</span>
           </label>
@@ -84,7 +79,11 @@ const FormAssistant = () => {
             <span className="label-content">Message</span>
           </label>
         </div>
-        <FormButton content="Soumettre" />
+        <div>
+          <button type="submit" className="form-button">
+            Soumettre
+          </button>
+        </div>
       </form>
     </div>
   )

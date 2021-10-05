@@ -1,8 +1,8 @@
 import { infoWindowImg } from "../utils/infoWindowScript"
 import InfoWindowContent from "../components/Map/InfoWindowContent"
 
-import iconOpen from "../images/icons/map-firstaid.png"
-import iconClose from "../images/icons/map-bulldozer.png"
+import iconOpen from "../assets/images/icons/map-firstaid.png"
+import iconClose from "../assets/images/icons/map-bulldozer.png"
 
 /**
  * Création du script pour charger la Google Map
@@ -42,8 +42,6 @@ export const loadMapContent = (data, position, htmlElementID) => {
   data.allDataCentersJson.edges
     .filter(center => center.node.map)
     .forEach(center => {
-
-         
       const markerPosition = {
         lat: center.node.lat,
         lng: center.node.lng,
@@ -70,20 +68,20 @@ export const loadMapContent = (data, position, htmlElementID) => {
  * Create un map with a single Center
  * @param {Object} Center Les données d'un unique Centre médical
  */
-export const loadMapSingleCenter = (center)  => {
+export const loadMapSingleCenter = center => {
   const markerPosition = {
     lat: center.dataCentersJson.lat,
-    lng: center.dataCentersJson.lng
+    lng: center.dataCentersJson.lng,
   }
 
-  const map = initMap(markerPosition,16, `map-${center.dataCentersJson.name}`)
+  const map = initMap(markerPosition, 16, `map-${center.dataCentersJson.name}`)
 
   const marker = createMarker(center.dataCentersJson.open, markerPosition, map)
   const infoWindow = createSingleInfoWindow(center.dataCentersJson)
-  
+
   center.infoWindow = infoWindow
   center.marker = marker
-  
+
   marker.addListener("click", () => {
     infoWindow.open(map, marker)
   })
@@ -126,11 +124,7 @@ const createInfoWindow = center => {
  * @returns
  */
 const createSingleInfoWindow = center => {
-  const content = InfoWindowContent(
-    center,
-    infoWindowImg(center.index),
-    true
-  )
+  const content = InfoWindowContent(center, infoWindowImg(center.index), true)
   return new window.google.maps.InfoWindow({
     content: content,
     maxWidth: "350px",

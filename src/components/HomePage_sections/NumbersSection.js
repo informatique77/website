@@ -10,7 +10,7 @@ const NumbersSectionOne = () => {
         <Number
           img={
             <StaticImage
-              src="../../images/numbers/wallet-white.png"
+              src="../../assets/images/numbers/wallet-white.png"
               width={72}
               height={72}
               quality={95}
@@ -25,7 +25,7 @@ const NumbersSectionOne = () => {
         <Number
           img={
             <StaticImage
-              src="../../images/numbers/doctor-white.png"
+              src="../../assets/images/numbers/doctor-white.png"
               width={72}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -39,7 +39,7 @@ const NumbersSectionOne = () => {
         <Number
           img={
             <StaticImage
-              src="../../images/numbers/center-white.png"
+              src="../../assets/images/numbers/center-white.png"
               width={72}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -55,7 +55,7 @@ const NumbersSectionOne = () => {
         <Number
           img={
             <StaticImage
-              src="../../images/numbers/bulldozer.png"
+              src="../../assets/images/numbers/bulldozer.png"
               width={72}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -69,7 +69,7 @@ const NumbersSectionOne = () => {
         <Number
           img={
             <StaticImage
-              src="../../images/numbers/camera.png"
+              src="../../assets/images/numbers/camera.png"
               width={72}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -83,7 +83,7 @@ const NumbersSectionOne = () => {
         <Number
           img={
             <StaticImage
-              src="../../images/numbers/write-white.png"
+              src="../../assets/images/numbers/write-white.png"
               width={72}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}

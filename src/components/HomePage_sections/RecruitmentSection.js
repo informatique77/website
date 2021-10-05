@@ -13,7 +13,7 @@ const RecruitmentSection = () => {
           <SimpleButton slug="/recrutement" content="Nous rejoindre" />
         </div>
         <StaticImage
-          src="../../images/shapes/centre-shapes.png"
+          src="../../assets/images/shapes/centre-shapes.png"
           loading="eager"
           layout="fixed"
           width={183}
