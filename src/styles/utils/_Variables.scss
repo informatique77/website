@@ -1,13 +1,11 @@
 @font-face {
   font-family: palanquinDark;
-  src: local("palanquinDark"),
-    url("../../assets/fonts/PalanquinDark-Regular.ttf") format("truetype");
+  src: url("../../assets/Fonts/PalanquinDark-Regular.ttf");
 }
 
 @font-face {
   font-family: palanquin;
-  src: local("palanquin"),
-    url("../../assets/fonts/Palanquin-Regular.ttf") format("truetype");
+  src: url("../../assets/Fonts/Palanquin-Regular.ttf");
 }
 
 $primary-color: #0596de;
