@@ -13,7 +13,11 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-image`,
+    {
+      removeAttrs: {
+        attrs: ["fill"],
+      },
+    }`gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
