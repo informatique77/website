@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     {
@@ -58,14 +58,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `image`,
-        path: `${__dirname}/src/images/centers`,
+        path: `${__dirname}/src/assets/images/centers`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `image`,
-        path: `${__dirname}/src/images/icons`,
+        path: `${__dirname}/src/assets/images/icons`,
       },
     },
     {
@@ -163,7 +163,7 @@ module.exports = {
         background_color: `#ffff`,
         theme_color: `#0596de`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-194x194.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favicon-194x194.png`, // This path is relative to the root of the site.
         icon_options: {
           purpose: `any maskable`,
         },

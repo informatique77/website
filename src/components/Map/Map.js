@@ -30,12 +30,7 @@ const Map = ({ allMedicalCenters }) => {
         <MapList
           content={allMedicalCenters.allDataCentersJson.edges.map(
             (center, index) => {
-              return (
-                <LiContent
-                  key={index}
-                  center={center}
-                />
-              )
+              return <LiContent key={index} center={center} />
             }
           )}
         />

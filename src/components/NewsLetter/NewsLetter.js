@@ -1,6 +1,6 @@
 import React from "react"
 
-const Form = () => {
+const NewsLetter = () => {
   return (
     <div className="form-container">
       <form
@@ -18,7 +18,8 @@ const Form = () => {
         </div>
         <p>
           <label htmlFor={"email"} required={true}>
-            Newsletter <input type="email" name="email" placeholder="Email" required/>
+            Newsletter{" "}
+            <input type="email" name="email" placeholder="Email" required />
           </label>
         </p>
         <p>
@@ -29,4 +30,4 @@ const Form = () => {
   )
 }
 
-export default Form
+export default NewsLetter

@@ -14,7 +14,7 @@ const LiContent = ({ center }) => {
   const image = getImage(center.node.image.src)
   return (
     <li
-      className="li-center" 
+      className="li-center"
       style={{
         backgroundColor: center.node.bgColor,
         animationDelay: center.node.index + 0.1 + "s",
@@ -25,25 +25,38 @@ const LiContent = ({ center }) => {
         <GatsbyImage image={image} alt={center.node.name} />
       </div>
       <div className="li-text-container">
-        {center.node.index !== 0 ? <h2><span>C</span><span className="red-seven">7</span>{center.node.name}</h2> :
-        <h2>{center.node.name}<span className="red-seven" style={{paddingLeft: "5px"}}>7 sur 7</span></h2>}
+        {center.node.index !== 0 ? (
+          <h2>
+            <span>C</span>
+            <span className="red-seven">7</span>
+            {center.node.name}
+          </h2>
+        ) : (
+          <h2>
+            {center.node.name}
+            <span className="red-seven" style={{ paddingLeft: "5px" }}>
+              7 sur 7
+            </span>
+          </h2>
+        )}
         <p className="li-address">{center.node.address}</p>
         <br></br>
-        {center.node.open && center.node.index !== 4 ? openOrClose(center.index) : null}
-        <p className="opening-soon">{center.node.index === 4 ? "Ouverture prévue le 4 octobre 2021" : null}</p>
+        {center.node.open && center.node.index
+          ? openOrClose(center.index)
+          : null}
         {center.node.open ? (
-          <ShowMoreButton slug={center.node.slug} content={"En savoir plus"}/>
+          <ShowMoreButton slug={center.node.slug} content={"En savoir plus"} />
         ) : null}
 
         <div className="li-buttons-container">
           {center.node.direction ? (
             <ExternalButton
-              css="travel-button white"
+              css="button button__travel"
               slug={center.node.direction}
               content="Vous y rendre"
               staticImage={
                 <StaticImage
-                  src="../../images/icons/walking.png"
+                  src="../../assets/images/icons/walking.png"
                   width={18}
                   quality={100}
                   formats={["AUTO", "WEBP", "AVIF"]}
@@ -56,12 +69,12 @@ const LiContent = ({ center }) => {
           <br></br>
           {center.node.open && center.node.index !== 0 ? (
             <CallButton
-              css="call-button white"
+              css="button button__call"
               slug={`tel:${center.node.tel}`}
               content={center.node.tel}
               staticImage={
                 <StaticImage
-                  src="../../images/icons/icon-telephone-blue.png"
+                  src="../../assets/images/icons/icon-telephone-blue.png"
                   width={18}
                   quality={100}
                   formats={["AUTO", "WEBP", "AVIF"]}

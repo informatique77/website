@@ -5,7 +5,7 @@
     "address": "Notre service de téléconsultations 7/7 à horaires élargis, pour adultes et enfants.",
     "tel": "Téléconsultations",
     "image": {
-      "src": "../images/centers/teleconsultations.jpg"
+      "src": "../assets/images/centers/teleconsultations.jpg"
     },
     "lat": 0,
     "lng": 0,
@@ -21,7 +21,7 @@
     "tel": "04-93-89-21-33",
     "direction": "https://goo.gl/maps/2c4183WaEzxX16fP6",
     "image": {
-      "src": "../images/centers/smolett.jpg"
+      "src": "../assets/images/centers/smolett.jpg"
     },
     "lat": 43.70345,
     "lng": 7.28437,
@@ -44,7 +44,7 @@
     "tel": "04-93-01-28-89",
     "direction": "https://goo.gl/maps/kSETVusR6gaUDiCu7",
     "image": {
-      "src": "../images/centers/lamartine.jpg"
+      "src": "../assets/images/centers/lamartine.jpg"
     },
     "lat": 43.70488,
     "lng": 7.26719,
@@ -67,7 +67,7 @@
     "tel": "04-92-03-09-40",
     "direction": "https://goo.gl/maps/wPQtKt8aTSfZZGw9A",
     "image": {
-      "src": "../images/centers/lenval.jpg"
+      "src": "../assets/images/centers/lenval.jpg"
     },
     "lat": 43.6893,
     "lng": 7.24141,
@@ -86,11 +86,11 @@
   {
     "index": 4,
     "name": "Nice l'Ariane",
-    "address": "10 Rue Emile Ripert, 06300 Nice",
-    "tel": "Prochainement",
+    "address": "10 Av. Emile Ripert, 06300 Nice",
+    "tel": "04-93-92-94-08",
     "direction": "https://goo.gl/maps/B4s4EM91Bu1hTD4f7",
     "image": {
-      "src": "../images/centers/lariane.jpg"
+      "src": "../assets/images/centers/lariane.jpg"
     },
     "lat": 43.73584812492593,
     "lng": 7.301669687126844,
@@ -112,13 +112,13 @@
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice Nord",
     "tel": "Prochainement",
     "image": {
-      "src": "../images/centers/nice-nord.jpg"
+      "src": "../assets/images/centers/nice-nord.jpg"
     },
     "lat": 43.722997,
     "lng": 7.256054,
     "map": true,
     "open": false,
-    "bgColor": "#FFFF",
+    "bgColor": "#F7F6FE",
     "slug": "/centre/ariane",
     "transport": [
       {
@@ -134,7 +134,7 @@
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Menton",
     "tel": "Prochainement",
     "image": {
-      "src": "../images/centers/menton.jpg"
+      "src": "../assets/images/centers/menton.jpg"
     },
     "lat": 43.774483,
     "lng": 7.49754,
@@ -156,7 +156,7 @@
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cagnes-sur-Mer",
     "tel": "Prochainement",
     "image": {
-      "src": "../images/centers/cagnes.jpg"
+      "src": "../assets/images/centers/cagnes.jpg"
     },
     "lat": 43.663491756996436,
     "lng": 7.1503342690857306,
@@ -178,7 +178,7 @@
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cannes",
     "tel": "Prochainement",
     "image": {
-      "src": "../images/centers/cannes.jpg"
+      "src": "../assets/images/centers/cannes.jpg"
     },
     "lat": 43.55252124257743,
     "lng": 7.022162338579261,

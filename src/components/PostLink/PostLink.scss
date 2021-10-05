@@ -6,7 +6,11 @@
   width: 230px;
   height: 320px;
   border-radius: 4px;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
   text-decoration: none;
+  text-align: center;
   padding: 5px;
   margin-left: 5px;
   margin-right: 5px;
@@ -15,54 +19,49 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  p {
-    text-align: center;
-  }
-  h3 {
-    font-weight: 400;
-    margin-bottom: 10px;
-  }
-  .postlink-image {
+  &__image {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 180px;
     height: 125px;
   }
-  .postlink-txt {
+  &__txt {
     top: -20px;
     position: relative;
     border-top: 4px solid $primary-color;
     text-align: center;
     background-color: #fff;
     width: 210px;
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: normal;
     line-height: 1.4;
     color: #333333;
     transition: transform 400ms ease;
-    .postlink-title {
+    &__title {
       font-size: 20px;
-      span {
-        font-size: 12px;
+      font-weight: 400;
+    }
+    &__span {
+      font-size: 12px;
+      line-height: 32px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: $primary-color;
+      margin-bottom: 10px;
+      &--red {
+        color: $fourth-color;
       }
     }
-    .postlink-excerpt {
+    &__excerpt {
       margin-bottom: 10px;
       font-size: 16px;
     }
-    .postlink-date {
+    &__date {
       font-family: $secondary-font;
-      font-style: normal;
-      font-weight: normal;
       font-size: 14px;
       line-height: 32px;
       color: rgba(34, 67, 88, 0.501557);
     }
-  }
-  &:hover {
-    .postlink-txt {
+    &:hover {
       transform: translateY(-10px);
     }
   }

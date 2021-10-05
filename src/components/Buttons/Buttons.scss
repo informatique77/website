@@ -1,131 +1,75 @@
-.simple-button {
+.button {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 170px;
   height: 35px;
   background: $primary-color;
   border-radius: 24px;
   border: none;
-  font-family: $primary-font;
-  font-style: normal;
-  font-size: 18px;
-  text-align: center;
-  padding: 5px 10px 5px 10px;
-  color: $secondary-color;
-}
-
-.icon-button {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 18px;
-  width: 250px;
-  height: 48px;
-  background: $primary-color;
-  border: 1px solid $primary-color;
-  box-sizing: border-box;
-  border-radius: 5px;
   font-family: $secondary-font;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
-  color: white;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 30px;
+  color: $secondary-color;
   transition: transform 400ms ease;
   &:hover,
   &:focus {
     transform: translateY(-10px);
   }
-}
-
-.call-button,
-.travel-button {
-  cursor: pointer;
-  display: flex;
-  font-family: $secondary-font;
-  font-size: 16px;
-  font-weight: bold;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 140px;
-  height: 28px;
-  background: $secondary-color;
-  border: 1px solid $primary-color;
-  border-radius: 5px;
-  color: $primary-color;
-  margin-top: 10px;
-  margin-right: 5px;
-  padding-bottom: 2px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  img {
-    max-width: 20px;
+  &__icon {
+    width: 250px;
+    height: 48px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    &--blue {
+      background: $primary-color;
+      border: 1px solid $primary-color;
+    }
+    &--red {
+      background: $fourth-color;
+      border: 1px solid $fourth-color;
+    }
   }
-}
-
-.recruitment-button {
-  cursor: pointer;
-  display: flex;
-  font-family: $secondary-font;
-  font-size: 22px;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 28px;
-  background: $primary-color;
-  border: 1px solid $primary-color;
-  border-radius: 5px;
-  color: #fff;
-  margin-top: 10px;
-  margin-right: 5px;
-  padding: 10px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  .gatsby-image-wrapper {
-    margin-right: 10px;
+  &__travel,
+  &__call {
+    width: 150px;
+    height: 28px;
+    justify-content: space-evenly;
+    font-size: 16px;
+    color: $primary-color;
+    background: $secondary-color;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    margin: 10px 5px 0 0;
+    padding: 0 0 2px 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    img {
+      max-width: 20px;
+    }
   }
-}
-
-.show-more-button {
-  color: $primary-color;
-  font-size: 17px;
-  margin-bottom: 10px;
-  &::after {
-    content: url("../../images/icons/right-arrow.png");
-    position: relative;
-    top: 4.5px;
-    left: 3px;
-  }
-}
-
-.form-button {
-  cursor: pointer;
-  width: 170px;
-  height: 35px;
-  background: $primary-color;
-  border-radius: 24px;
-  border: none;
-  font-family: $primary-font;
-  font-style: normal;
-  font-size: 18px;
-  text-align: center;
-  padding: 0px 10px 5px 10px;
-  color: $secondary-color;
-}
-
-.red {
-  background: $fourth-color;
-  border: 1px solid $fourth-color;
-}
-
-.white {
-  color: $primary-color;
-  background: $secondary-color;
-}
-
-@media screen and (max-width: 767px) {
-  .header {
-    .button-container {
-      .icon-button {
-        margin-bottom: 30px;
-      }
+  &__show-more {
+    width: auto;
+    height: auto;
+    background: none;
+    color: $primary-color;
+    font-size: 17px;
+    padding: 0;
+    margin: 0 0 10px 0;
+    transition: none;
+    &:hover,
+    &:focus {
+      transform: none;
+    }
+    &::after {
+      content: url("../../assets/images/icons/right-arrow.png");
+      position: relative;
+      top: 4.5px;
+      left: 3px;
     }
   }
 }

@@ -48,26 +48,21 @@ const SingleCenterTemplate = ({ data }) => {
             <span className="adress">{data.dataCentersJson.address}</span>
             {data.dataCentersJson.open ? (
               <div className="moreInfo-container">
-                {data.dataCentersJson.open && data.dataCentersJson.index !== 4
+                {data.dataCentersJson.open
                   ? openOrClose(data.dataCentersJson.index)
                   : null}
-                <p className="opening-soon">
-                  {data.dataCentersJson.index === 4
-                    ? "Ouverture prévue le 4 octobre 2021"
-                    : null}
-                </p>
                 <p className="opening-details">
                   Horaires : 7 jours sur 7 de 8h30 à 22h00
                 </p>
                 <div className="transport">
                   <div className="buttons-center">
                     <ExternalButton
-                      css="travel-button white"
+                      css="button button__travel"
                       slug={data.dataCentersJson.direction}
                       content="Vous y rendre"
                       staticImage={
                         <StaticImage
-                          src="../images/icons/walking.png"
+                          src="../assets/images/icons/walking.png"
                           width={16}
                           quality={100}
                           formats={["AUTO", "WEBP", "AVIF"]}
@@ -77,12 +72,12 @@ const SingleCenterTemplate = ({ data }) => {
                       }
                     />
                     <CallButton
-                      css="call-button white"
+                      css="button button__call"
                       slug={`tel:${data.dataCentersJson.tel}`}
                       content={data.dataCentersJson.tel}
                       staticImage={
                         <StaticImage
-                          src="../images/icons/icon-telephone-blue.png"
+                          src="../assets/images/icons/icon-telephone-blue.png"
                           width={16}
                           quality={100}
                           formats={["AUTO", "WEBP", "AVIF"]}
@@ -96,7 +91,7 @@ const SingleCenterTemplate = ({ data }) => {
                     <div className="img-transport">
                       {" "}
                       <StaticImage
-                        src="../images/icons/car.png"
+                        src="../assets/images/icons/car.png"
                         width={40}
                         quality={95}
                         layout="fixed"
@@ -114,7 +109,7 @@ const SingleCenterTemplate = ({ data }) => {
                     <div className="img-transport">
                       {" "}
                       <StaticImage
-                        src="../images/icons/bus.png"
+                        src="../assets/images/icons/bus.png"
                         width={40}
                         quality={95}
                         layout="fixed"
@@ -133,7 +128,7 @@ const SingleCenterTemplate = ({ data }) => {
                       <div className="img-transport">
                         {" "}
                         <StaticImage
-                          src="../images/icons/tram.png"
+                          src="../assets/images/icons/tram.png"
                           width={38}
                           quality={95}
                           layout="fixed"
@@ -157,7 +152,7 @@ const SingleCenterTemplate = ({ data }) => {
               slug="/nos-centres"
               img={
                 <StaticImage
-                  src="../images/circle/white-center.png"
+                  src="../assets/images/circle/white-center.png"
                   alt="Nos centres"
                   placeholder="blurred"
                   width={40}
@@ -173,7 +168,7 @@ const SingleCenterTemplate = ({ data }) => {
                   placeholder="blurred"
                   layout="fixed"
                   quality={95}
-                  src="../images/circle/white-wallet.png"
+                  src="../assets/images/circle/white-wallet.png"
                   alt="Note métier"
                 />
               }
@@ -186,7 +181,7 @@ const SingleCenterTemplate = ({ data }) => {
                   placeholder="blurred"
                   layout="fixed"
                   quality={95}
-                  src="../images/circle/white-euro.png"
+                  src="../assets/images/circle/white-euro.png"
                   alt="Nos tarifs"
                 />
               }

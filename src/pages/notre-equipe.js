@@ -26,7 +26,7 @@ const Team = ({ data }) => {
             quality={100}
             formats={["AUTO", "WEBP", "AVIF"]}
             placeholder="blurred"
-            src="../images/doctors/doctors-no-shapes.jpg"
+            src="../assets/images/doctors/doctors-no-shapes.jpg"
             alt="Notre équipe"
           />
         </div>

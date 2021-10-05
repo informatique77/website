@@ -111,16 +111,30 @@
           display: flex;
           align-items: center;
           font-family: $primary-font;
-          text-decoration:dashed;
+          text-decoration: dashed;
           color: $primary-color;
           span {
-            text-decoration:none;
+            text-decoration: none;
           }
-          input[type=checkbox] {
+          input[type="checkbox"] {
             margin-left: 15px;
           }
         }
       }
+    }
+    .form-button {
+      cursor: pointer;
+      width: 170px;
+      height: 35px;
+      background: $primary-color;
+      border-radius: 24px;
+      border: none;
+      font-family: $primary-font;
+      font-style: normal;
+      font-size: 18px;
+      text-align: center;
+      padding: 0px 10px 5px 10px;
+      color: $secondary-color;
     }
   }
 }

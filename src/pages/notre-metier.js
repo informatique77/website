@@ -23,7 +23,7 @@ const OurJob = () => (
               quality={100}
               formats={["AUTO", "WEBP", "AVIF"]}
               placeholder="blurred"
-              src="../images/ourJobs/our-job-2.jpg"
+              src="../assets/images/ourJobs/our-job-2.jpg"
               alt="Docteur qui soigne un patient"
             />
           </div>
@@ -43,12 +43,18 @@ const OurJob = () => (
         <div className="part-two">
           <div className="our-job-text">
             <p>
-              <span>- Médecine générale</span><br></br>
-              <span>- Médecine d'urgence</span><br></br>
-              <span>- Gérontologie</span><br></br>
-              <span>- Pédiatrie</span><br></br>
-              <span>- Suture de plaie</span><br></br>
-              <span>- Entorse et fracture</span><br></br>
+              <span>- Médecine générale</span>
+              <br></br>
+              <span>- Médecine d'urgence</span>
+              <br></br>
+              <span>- Gérontologie</span>
+              <br></br>
+              <span>- Pédiatrie</span>
+              <br></br>
+              <span>- Suture de plaie</span>
+              <br></br>
+              <span>- Entorse et fracture</span>
+              <br></br>
             </p>
           </div>
           <div className="our-job-img">
@@ -57,7 +63,7 @@ const OurJob = () => (
               quality={100}
               formats={["AUTO", "WEBP", "AVIF"]}
               placeholder="blurred"
-              src="../images/ourJobs/our-job-9.jpg"
+              src="../assets/images/ourJobs/our-job-9.jpg"
               alt="Docteur qui prescrit une ordonnance"
             />
           </div>
@@ -69,7 +75,7 @@ const OurJob = () => (
               quality={100}
               formats={["AUTO", "WEBP", "AVIF"]}
               placeholder="blurred"
-              src="../images/ourJobs/our-job-6.jpg"
+              src="../assets/images/ourJobs/our-job-6.jpg"
               alt="Salle de soins"
             />
           </div>

@@ -18,7 +18,7 @@ const Prices = () => (
       <span className="small-title">Tarifs</span>
       <div>
         <StaticImage
-          src="../images/icons/euro-100.png"
+          src="../assets/images/icons/euro-100.png"
           width={100}
           quality={100}
           formats={["AUTO", "WEBP", "AVIF"]}
@@ -31,7 +31,7 @@ const Prices = () => (
           country="France"
           image={
             <StaticImage
-              src="../images/flag/france.png"
+              src="../assets/images/flag/france.png"
               width={96}
               quality={100}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -39,23 +39,19 @@ const Prices = () => (
               placeholder="blurred"
             />
           }
-          resume={<ul>
-            <li>
-              Tarifs conventionnés de la sécurité sociale
-            </li>
-            <li>
-              Secteur 1
-            </li>
-            <li>
-              Sans dépassement d'honoraire
-            </li>
-          </ul>}
+          resume={
+            <ul>
+              <li>Tarifs conventionnés de la sécurité sociale</li>
+              <li>Secteur 1</li>
+              <li>Sans dépassement d'honoraire</li>
+            </ul>
+          }
         />
         <PriceTable
           country="Monaco"
           image={
             <StaticImage
-              src="../images/flag/monaco.png"
+              src="../assets/images/flag/monaco.png"
               width={96}
               quality={100}
               formats={["AUTO", "WEBP", "AVIF"]}
@@ -63,14 +59,12 @@ const Prices = () => (
               placeholder="blurred"
             />
           }
-          resume={<ul>
-            <li>
-              Conventionné
-            </li>
-            <li>
-              Caisse de Monaco pour les assurés
-            </li>
-          </ul>}
+          resume={
+            <ul>
+              <li>Conventionné</li>
+              <li>Caisse de Monaco pour les assurés</li>
+            </ul>
+          }
         />
       </div>
     </div>

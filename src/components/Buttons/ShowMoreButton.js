@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { closeBurger  } from "../../utils/burgerAnimation"
+import { closeBurger } from "../../utils/burgerAnimation"
 
-const SimpleButton = ({ slug, content }) => {
+const ShowMoreButton = ({ slug, content }) => {
   return (
-    <Link className="show-more-button" to={slug} onClick={closeBurger}>
+    <Link className="button button__show-more" to={slug} onClick={closeBurger}>
       {content}
     </Link>
   )
 }
 
-export default SimpleButton
+export default ShowMoreButton
