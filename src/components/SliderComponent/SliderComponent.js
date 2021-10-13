@@ -20,6 +20,21 @@ const SliderComponent = () => {
   }
   return (
     <Slider {...settings}>
+      <Link to="/centre-ariane/">
+        <div className="carousel-container">
+          <div className="img-container">
+            <StaticImage
+              src="../../assets/images/carousel/center.png"
+              width={92}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="Centre Médical Nice l'Ariane"
+              placeholder="blurred"
+            />
+          </div>
+          <p className="text-carousel">Ouverture Nice l'Ariane</p>
+        </div>
+      </Link>
       <a href="https://www.doctolib.fr/centre-de-sante/nice/vaccination-covid-19-7-7-consultations-nice?highlight%5Bspeciality_ids%5D%5B%5D=5494">
         <div className="carousel-container">
           <div className="img-container">
