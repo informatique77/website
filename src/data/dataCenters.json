@@ -193,5 +193,27 @@
         "tramway": ""
       }
     ]
+  },
+  {
+    "index": 9,
+    "name": "Mandelieu-La Napoule",
+    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Mandelieu-La Napoule",
+    "tel": "Prochainement",
+    "image": {
+      "src": "../assets/images/centers/mandelieu.jpg"
+    },
+    "lat": 43.541751,
+    "lng": 6.934251,
+    "map": true,
+    "open": false,
+    "bgColor": "#FFFF",
+    "slug": "/centre/mandelieu-la-napoule",
+    "transport": [
+      {
+        "car": "",
+        "bus": "",
+        "tramway": ""
+      }
+    ]
   }
 ]
