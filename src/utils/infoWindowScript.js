@@ -6,6 +6,7 @@ import imgNiceNord from "../assets/images/centers/nice-nord.jpg"
 import imgMenton from "../assets/images/centers/menton.jpg"
 import imgCagnes from "../assets/images/centers/cagnes.jpg"
 import imgCannes from "../assets/images/centers/cannes.jpg"
+import imgMandelieu from "../assets/images/centers/mandelieu.jpg"
 
 export const infoWindowImg = index => {
   switch (index) {
@@ -25,6 +26,8 @@ export const infoWindowImg = index => {
       return imgCagnes
     case 8:
       return imgCannes
+    case 9:
+      return imgMandelieu
     default:
   }
 }
