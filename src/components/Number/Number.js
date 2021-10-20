@@ -12,16 +12,14 @@ const Number = ({ img, number, text }) => {
   })
 
   const increment = () => {
-    count < number && setTimeout(() => setCount(count + 1), 50)
+    count < number && setTimeout(() => setCount(count + 1), 25)
     return count
   }
 
   return (
     <div className="number-container" ref={rootNode}>
       <div className="img-number">{img}</div>
-      <span className="the-number">
-        {isVisible ? increment() : count}
-      </span>
+      <span className="the-number">{isVisible ? increment() : count}</span>
       <p className="text-number">{text}</p>
     </div>
   )
@@ -30,7 +28,7 @@ const Number = ({ img, number, text }) => {
 Number.proTypes = {
   img: PropTypes.object,
   number: PropTypes.number,
-  text: PropTypes.string
+  text: PropTypes.string,
 }
 
 export default Number
