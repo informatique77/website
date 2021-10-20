@@ -33,8 +33,8 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="17"
-          text="Médecins spécialisés"
+          number="35"
+          text="Collaborateurs"
         />
         <Number
           img={
@@ -63,7 +63,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="4"
+          number="5"
           text="Nouveaux centres à venir"
         />
         <Number
@@ -91,7 +91,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="45"
+          number="70"
           text="Consultations par an"
         />
       </div>

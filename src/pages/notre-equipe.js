@@ -9,8 +9,8 @@ import Seo from "../components/seo"
 const Team = ({ data }) => {
   const fullArray = data.allDataTeamJson.edges.length
   const halfArray = data.allDataTeamJson.edges.length / 2
-  const sectionOne = data.allDataTeamJson.edges.slice(0, halfArray + 1)
-  const sectionTwo = data.allDataTeamJson.edges.slice(halfArray + 1, fullArray)
+  const sectionOne = data.allDataTeamJson.edges.slice(0, halfArray)
+  const sectionTwo = data.allDataTeamJson.edges.slice(halfArray, fullArray)
   return (
     <Layout>
       <Seo
