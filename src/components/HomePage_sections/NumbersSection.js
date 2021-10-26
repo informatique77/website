@@ -33,7 +33,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="35"
+          number="40"
           text="Collaborateurs"
         />
         <Number
