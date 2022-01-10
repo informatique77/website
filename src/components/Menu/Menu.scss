@@ -1,0 +1,88 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    .top-menu {
+        border-bottom: 1px solid $primary-color;
+        display: flex;
+        padding-bottom: 5px;
+        .recrutment-link {
+            display: flex;
+            align-items: center;
+            font-family: $secondary-font;
+            text-decoration: none;
+            color: $primary-color;
+            outline: none;
+            font-size: 18px;
+            border-right: 1px solid $primary-color;
+            padding-right: 15px;
+        }
+    }
+
+    .bottom-menu {
+        display: flex;
+        align-items: center;
+        .logo-menu {
+            display: flex;
+            align-items: center;
+        }
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            li {
+                list-style: none;
+                a {
+                    font-family: $primary-font;
+                    text-decoration: none;
+                    color: $primary-color;
+                    outline: none;
+                    font-size: 18px;
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: relative;
+                        bottom: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: $primary-color;
+                        transition: width 0.3s;
+                    }
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                    &:active {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                    &:focus {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .menu {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .menu {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}

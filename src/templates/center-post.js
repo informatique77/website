@@ -174,19 +174,6 @@ const SingleCenterTemplate = ({ data }) => {
               }
               text="Notre métier"
             />
-            <BlueCircle
-              slug="/nos-tarifs"
-              img={
-                <StaticImage
-                  placeholder="blurred"
-                  layout="fixed"
-                  quality={95}
-                  src="../assets/images/circle/white-euro.png"
-                  alt="Nos tarifs"
-                />
-              }
-              text="Nos tarifs"
-            />
           </div>
         </div>
       </div>

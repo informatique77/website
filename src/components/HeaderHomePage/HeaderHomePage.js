@@ -8,8 +8,7 @@ const HomeHeader = () => {
   return (
     <div className="header">
       <div className="main-container">
-        <h1>Centres Médicaux Azuréens</h1>
-        <div className="title-img-container">
+        {/*         <div className="title-img-container">
           <StaticImage
             src="../../assets/images/logo-consultations77.png"
             width={240}
@@ -19,18 +18,19 @@ const HomeHeader = () => {
             alt="Logo Consultations 7 sur 7"
             placeholder="blurred"
           />
-        </div>
+        </div> */}
         <div className="title-img-container">
           <StaticImage
-            src="../../assets/images/title.png"
-            width={620}
-            height={75}
+            src="../../assets/images/c7-title.jpg"
+            width={1020}
+            height={150}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Titre Consultations 7 sur 7"
             placeholder="blurred"
           />
         </div>
+        <h1>Centres Médicaux Azuréens</h1>
         <SliderComponent />
         <p className="main-p">
           Nos centres de consultations et de téléconsultations vous accueillent

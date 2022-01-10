@@ -19,7 +19,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="16"
+          number="17"
           text="Années d'expérience"
         />
         <Number
@@ -33,7 +33,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="40"
+          number="45"
           text="Collaborateurs"
         />
         <Number
@@ -77,7 +77,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="5"
+          number="7"
           text="Téléconsultations par an"
         />
         <Number
@@ -91,7 +91,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="70"
+          number="85"
           text="Consultations par an"
         />
       </div>

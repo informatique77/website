@@ -7,17 +7,17 @@
   margin: 0px auto;
 
   .main-container {
-    width: 580px;
+    width: 780px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 100px;
+    top: 200px;
 
     h1 {
       font-family: $primary-font;
-      font-size: 40px;
+      font-size: 35px;
       text-align: center;
       color: $primary-color;
       font-weight: 400;
@@ -37,7 +37,7 @@
   }
 
   .slick-slider {
-    width: 100%;
+    width: 75%;
     margin-top: 15px;
 
     .slick-list {
@@ -93,7 +93,7 @@
 
   .button-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 30px;
     width: 100%;
@@ -124,7 +124,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 70%;
-    top: 110px;
+    top: 200px;
     right: 0;
   }
 
@@ -203,7 +203,7 @@ h1 {
     }
     .main-container {
       width: auto;
-      top: 75px;
+      top: 125px;
       h1 {
         font-size: 20px;
         padding-top: 10px;

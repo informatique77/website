@@ -1,6 +1,7 @@
 .our-job-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: auto;
   background-color: $third-color;
@@ -70,7 +71,7 @@
 
 @media screen and (max-width: 1000px) {
   .our-job-section {
-    margin-top: 90px;
+    // margin-top: 90px;
     .our-job-resume {
       width: 90%;
       margin-left: 10px;
