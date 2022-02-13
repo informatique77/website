@@ -11,7 +11,7 @@ const SliderComponent = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     speed: 500,
     slidesToShow: 1,
@@ -20,66 +20,67 @@ const SliderComponent = () => {
   }
   return (
     <Slider {...settings}>
-      <Link to="/centre-ariane/">
         <div className="carousel-container">
-          <div className="img-container">
+          <Link to="a-propos" className="img-container">
             <StaticImage
-              src="../../assets/images/carousel/center.png"
-              width={92}
-              quality={95}
+              src="../../assets/images/carousel/home.jpg"
+              quality={100}
+                 style={{
+                  margin: '0 auto',
+                }}
+              layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="Centre Médical Nice l'Ariane"
               placeholder="blurred"
             />
-          </div>
-          <p className="text-carousel">Ouverture Nice l'Ariane</p>
+
+          </Link>
         </div>
-      </Link>
-      <a href="https://www.doctolib.fr/centre-de-sante/nice/vaccination-covid-19-7-7-consultations-nice?highlight%5Bspeciality_ids%5D%5B%5D=5494">
         <div className="carousel-container">
           <div className="img-container">
             <StaticImage
-              src="../../assets/images/carousel/syringe.png"
-              width={92}
-              quality={95}
+              src="../../assets/images/carousel/vaccination.jpg"
+              quality={100}
+                 style={{
+                  margin: '0 auto',
+                }}
+              layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="Vaccination Covid 19 Nice"
               placeholder="blurred"
             />
           </div>
-          <p className="text-carousel">Vaccination Covid 19</p>
         </div>
-      </a>
-      <Link to="/test-covid">
         <div className="carousel-container">
           <div className="img-container">
             <StaticImage
-              src="../../assets/images/carousel/coronavirus.png"
-              width={92}
-              quality={95}
+              src="../../assets/images/carousel/covid.jpg"
+              quality={100}
+                 style={{
+                  margin: '0 auto',
+                }}
+              layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="Test Codiv 19"
               placeholder="blurred"
             />
           </div>
-          <p className="text-carousel">Test Covid 19</p>
         </div>
-      </Link>
-      <Link to="/teleconsultations">
         <div className="carousel-container">
           <div className="img-container">
             <StaticImage
-              src="../../assets/images/carousel/teleconsultations.png"
-              width={92}
-              quality={95}
+              src="../../assets/images/carousel/teleconsult.jpg"
+              quality={100}
+                 style={{
+                  margin: '0 auto',
+                }}
+              layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="Téléconsultations"
               placeholder="blurred"
             />
           </div>
-          <p className="text-carousel">Téléconsultations</p>
         </div>
-      </Link>
     </Slider>
   )
 }

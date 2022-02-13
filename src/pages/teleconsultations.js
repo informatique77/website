@@ -10,15 +10,10 @@ import Seo from "../components/seo"
 const Teleconsultation = () => (
   <Layout>
     <Seo title="Téléconsultations" />
-    <PagesHeader
-      title="Téléconsultations"
-      description="Notre centre de téléconsultations ouvert de 9h à 21h, 7 jours sur 7, 
-    vous permettra d'obtenir un avis médical ainsi qu'un diagnostic rapidement ainsi qu'en toute confidentialité"
-      path="teleconsultations"
-    />
-    <div className="teleconsult-section">
+    <div className="teleconsult-header">
+      <h1>Téléconsultations</h1>
       <ExternalButton
-        css="button button__icon button__icon--red"
+        css="button button__icon button__icon--blue"
         slug="https://www.doctolib.fr/medecin-generaliste/nice/7-7-teleconsultations"
         content="Je prends rendez-vous"
         staticImage={
@@ -32,30 +27,8 @@ const Teleconsultation = () => (
           />
         }
       />
-      <div className="teleconsult-top">
-        <div className="teleconsult-img-1">
-          <StaticImage
-            width={350}
-            height={197}
-            quality={100}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            placeholder="blurred"
-            src="../assets/images/teleconsultations/teleconsult-1.jpg"
-            alt="Personne âgée en téléconsultation"
-          />
-        </div>
-        <div className="teleconsult-img-2">
-          <StaticImage
-            width={350}
-            height={197}
-            quality={100}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            placeholder="blurred"
-            src="../assets/images/teleconsultations/teleconsult-2.jpg"
-            alt="Mère de famille en téléconsultation avec son bébé"
-          />
-        </div>
-      </div>
+    </div>
+    <div className="teleconsult-section">
       <div className="teleconsult-midle">
         <h2>Déroulement d'une téléconsultation</h2>
         <div className="midle-content">

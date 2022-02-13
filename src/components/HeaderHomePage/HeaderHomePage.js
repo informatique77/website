@@ -8,36 +8,16 @@ const HomeHeader = () => {
   return (
     <div className="header">
       <div className="main-container">
-        {/*         <div className="title-img-container">
-          <StaticImage
-            src="../../assets/images/logo-consultations77.png"
-            width={240}
-            height={220}
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Logo Consultations 7 sur 7"
-            placeholder="blurred"
-          />
-        </div> */}
-        <div className="title-img-container">
-          <StaticImage
-            src="../../assets/images/c7-title.jpg"
-            width={1020}
-            height={150}
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Titre Consultations 7 sur 7"
-            placeholder="blurred"
-          />
-        </div>
-        <h1>Centres Médicaux Azuréens</h1>
         <SliderComponent />
         <p className="main-p">
           Nos centres de consultations et de téléconsultations vous accueillent
-          sur la Côte d'Azur{" "}
-          <span style={{ color: "#e74c3c" }}>7 jours sur 7</span>, week-ends et
-          jours fériés inclus, sans rendez-vous, de <span>8h30 à 22h00</span>{" "}
-          sans interruption.
+          sur la Côte d'Azur
+          <ul>
+            <li>7 jours sur 7</li>
+            <li>Week-ends et jours fériés inclus</li>
+            <li>Se 8h30 à 22h00</li>
+            <li>Sans interruption</li>
+          </ul>
         </p>
         <div className="button-container">
           <IconButton

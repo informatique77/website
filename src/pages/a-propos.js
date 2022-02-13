@@ -20,29 +20,21 @@ const OurJob = ({ data }) => {
       avec la possibilité d'effectuer des examens complémentaires pouvant être réalisé sur place"
         path="notre-metier"
       />
-      <PagesHeader title="Qui sommes nous ?" />
-      <div className="ourTeam-header">
-        <div className="ourTeam-img">
-          <StaticImage
-            width={350}
-            quality={100}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            placeholder="blurred"
-            src="../assets/images/doctors/doctors-no-shapes.jpg"
-            alt="Notre équipe"
-          />
-        </div>
+      <div className="our-job-header">
+      <h1>Notre métier</h1>
+    </div>
         <div className="ourTeam-resume">
-          <span>
-            L’équipe consultations{" "}
-            <span style={{ color: "#e74c3c" }}>7 sur 7</span>
-          </span>
           <p>
-            Notre équipe de médecins généralistes urgentistes dynamiques, aidée
-            par nos assistantes médicales, se relaie 7 jours sur 7.
+            Nous effectuons des consultations sans rendez-vous 
+            <span style={{ color: "#e74c3c" }}> pour vous prendre en charge.</span>
+          </p>
+          <br></br>
+          <p>
+            Si besoin, nous pouvons nous proposer d'effectuer 
+            des <span style={{ color: "#e74c3c" }}>examens d'imagerie médicale</span> ou de
+            <span style={{ color: "#e74c3c" }}> biologie médicale</span> pouvant être réalisé sur place.
           </p>
         </div>
-      </div>
       <div className="name-container">
         <div className="section-one">
           <ul>
