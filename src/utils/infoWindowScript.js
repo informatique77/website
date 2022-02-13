@@ -19,15 +19,15 @@ export const infoWindowImg = index => {
     case 4:
       return imgLariane
     case 5:
-      return imgNiceNord
-    case 6:
-      return imgMenton
-    case 7:
-      return imgCagnes
-    case 8:
-      return imgCannes
-    case 9:
       return imgMandelieu
+    case 6:
+      return imgNiceNord 
+    case 7:
+      return imgMenton
+    case 8:
+      return imgCagnes
+    case 9:
+      return imgCannes 
     default:
   }
 }
