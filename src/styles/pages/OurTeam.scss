@@ -44,15 +44,13 @@
 
 .name-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   .section-one {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $third-color;
     li {
       color: $primary-color;
       font-family: $secondary-font;
@@ -70,11 +68,9 @@
     }
   }
   .section-two {
-    width: 50%;
     height: 450px;
     display: flex;
     justify-content: center;
-    background-color: $third-color;
     li {
       font-family: $secondary-font;
       font-size: 20px;
