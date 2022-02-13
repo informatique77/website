@@ -106,8 +106,31 @@
       }
     ]
   },
-  {
+    {
     "index": 5,
+    "name": "Mandelieu-la-Napoule",
+    "address": "109 Avenue Janvier Passero, 06210 Mandelieu-la-Napoule",
+    "tel": "Prochainement",
+    "direction": "https://goo.gl/maps/43Cq9VkHSuiuL1sA8",
+    "image": {
+      "src": "../assets/images/centers/mandelieu.jpg"
+    },
+    "lat": 43.54750713906246,
+    "lng": 6.938366587657163,
+    "map": true,
+    "open": true,
+    "bgColor": "#FFFF",
+    "slug": "/centre/mandelieu-la-napoule",
+    "transport": [
+      {
+        "car": "",
+        "bus": "",
+        "tramway": ""
+      }
+    ]
+  },
+  {
+    "index": 6,
     "name": "Nice Nord",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice Nord",
     "tel": "Prochainement",
@@ -129,7 +152,7 @@
     ]
   },
   {
-    "index": 6,
+    "index": 7,
     "name": "Menton",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Menton",
     "tel": "Prochainement",
@@ -151,7 +174,7 @@
     ]
   },
   {
-    "index": 7,
+    "index": 8,
     "name": "Cagnes-sur-Mer",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cagnes-sur-Mer",
     "tel": "Prochainement",
@@ -173,7 +196,7 @@
     ]
   },
   {
-    "index": 8,
+    "index": 9,
     "name": "Cannes",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cannes",
     "tel": "Prochainement",
@@ -186,28 +209,6 @@
     "open": false,
     "bgColor": "#FFFF",
     "slug": "/centre/cannes",
-    "transport": [
-      {
-        "car": "",
-        "bus": "",
-        "tramway": ""
-      }
-    ]
-  },
-  {
-    "index": 9,
-    "name": "Mandelieu-La Napoule",
-    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Mandelieu-La Napoule",
-    "tel": "Prochainement",
-    "image": {
-      "src": "../assets/images/centers/mandelieu.jpg"
-    },
-    "lat": 43.541751,
-    "lng": 6.934251,
-    "map": true,
-    "open": false,
-    "bgColor": "#FFFF",
-    "slug": "/centre/mandelieu-la-napoule",
     "transport": [
       {
         "car": "",
