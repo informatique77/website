@@ -11,7 +11,6 @@ const Teleconsultation = () => (
   <Layout>
     <Seo title="Téléconsultations" />
     <div className="teleconsult-header">
-      <h1>Téléconsultations</h1>
       <ExternalButton
         css="button button__icon button__icon--blue"
         slug="https://www.doctolib.fr/medecin-generaliste/nice/7-7-teleconsultations"

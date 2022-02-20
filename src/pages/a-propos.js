@@ -3,8 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
-import PagesHeader from "../components/PagesHeader/PagesHeader"
-import PriceTable from "../components/PriceTable/PriceTable"
 import Seo from "../components/seo"
 
 const OurJob = ({ data }) => {

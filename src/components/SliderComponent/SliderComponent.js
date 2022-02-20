@@ -30,7 +30,7 @@ const SliderComponent = () => {
                 }}
               layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
-              alt="Centre Médical Nice l'Ariane"
+              alt="Consultations 7 sur 7"
               placeholder="blurred"
             />
 
@@ -39,7 +39,7 @@ const SliderComponent = () => {
         <div className="carousel-container">
           <div className="img-container">
             <StaticImage
-              src="../../assets/images/carousel/vaccination.jpg"
+              src="../../assets/images/carousel/vaccinations.jpg"
               quality={100}
                  style={{
                   margin: '0 auto',
@@ -54,7 +54,7 @@ const SliderComponent = () => {
         <div className="carousel-container">
           <div className="img-container">
             <StaticImage
-              src="../../assets/images/carousel/covid.jpg"
+              src="../../assets/images/carousel/test-covid.jpg"
               quality={100}
                  style={{
                   margin: '0 auto',
@@ -76,7 +76,7 @@ const SliderComponent = () => {
                 }}
               layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
-              alt="Téléconsultations"
+              alt="Téléconsultations 7 sur 7"
               placeholder="blurred"
             />
           </div>
