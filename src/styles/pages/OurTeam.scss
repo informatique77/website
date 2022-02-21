@@ -7,7 +7,7 @@
     width: 100%;
     padding: 9px;
     text-align: center;
-    max-width: 650px;
+    max-width: 80%;
     margin: 0 auto 50px;
     span {
       font-family: $primary-font;
@@ -15,7 +15,7 @@
       font-weight: normal;
       font-size: 24px;
       line-height: 32px;
-      letter-spacing: 3px;
+      letter-spacing: 1px;
       color: $primary-color;
     }
     p {
@@ -25,7 +25,7 @@
       font-size: 24px;
       line-height: 32px;
       color: $primary-color;
-      max-width: 700px;
+      max-width: 50%;
     }
   }
 
@@ -42,11 +42,99 @@
   }
 }
 
-.name-container {
+.cp-specialities {
+  .speciality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  span {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0596de;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cp-text-button-pink {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  p {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0596de;
+    max-width: 700px;
+    background: $sixth-color;
+    padding: 40px;
+    text-align: center;
+  }
+}
+.cp-text-img {
+  background: #fff;
+  position: absolute;
+  top: 65%;
+  p, span {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0596de;
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  span {
+    padding: 0;
+    color: $fourth-color;
+  }
+}
+
+.cp-text {
+  p, span {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0596de;
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  span {
+    padding: 0;
+    color: $fourth-color;
+  }
+}
+.name-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    max-width: 75%;
+    margin: 50px auto 10px;
   .section-one {
     display: flex;
     justify-content: center;
@@ -55,26 +143,25 @@
       color: $primary-color;
       font-family: $secondary-font;
       font-size: 20px;
-      line-height: 50px;
+      line-height: 40px;
       list-style: none;
       span {
         font-family: $secondary-font;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
-        line-height: 50px;
+        line-height: 40px;
         color: $primary-color;
       }
     }
   }
   .section-two {
-    height: 450px;
     display: flex;
     justify-content: center;
     li {
       font-family: $secondary-font;
       font-size: 20px;
-      line-height: 50px;
+      line-height: 40px;
       list-style: none;
       color: $primary-color;
       span {
@@ -82,7 +169,7 @@
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
-        line-height: 50px;
+        line-height: 40 px;
         color: $primary-color;
       }
     }
@@ -112,4 +199,58 @@
             width: 100%;
         }
     }
+}
+
+@media screen and (max-width: 480px) {
+  .name-container {
+    padding-top: 60px;
+    max-width: 100%;
+  }
+  .ourTeam-resume {
+    padding: 0;
+    max-width: 90%;
+    p,span {
+      font-size: 18px;
+      line-height: 32px;
+      max-width: 100%;
+    }
+  }
+
+  .cp-specialities {
+    .row {
+      flex-direction: column;
+    }
+  }
+
+  .cp-text-button-pink {
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .cp-text-img {
+    top: 75%;
+    p, span {
+      padding: 10px;
+      line-height: 25px;
+      font-size: 18px;
+      max-width: 100%;
+    }
+    span {
+      padding: 0;
+    }
+  }
+
+  .cp-text {
+    p, span {
+      padding: 10px;
+      line-height: 25px;
+      font-size: 18px;
+      max-width: 100%;
+    }
+    span {
+      padding: 0;
+    }
+  }
 }

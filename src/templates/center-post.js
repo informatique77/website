@@ -162,7 +162,7 @@ const SingleCenterTemplate = ({ data }) => {
               text="Nos centres"
             />
             <BlueCircle
-              slug="/notre-metier"
+              slug="/a-propos"
               img={
                 <StaticImage
                   placeholder="blurred"

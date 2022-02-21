@@ -2,7 +2,6 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
-import PagesHeader from "../components/PagesHeader/PagesHeader"
 import ExternalButton from "../components/Buttons/ExternalButton"
 import BlueCircle from "../components/BlueCircle/BlueCircle"
 import Seo from "../components/seo"
@@ -208,7 +207,7 @@ const Teleconsultation = () => (
           text="Nos centres"
         />
         <BlueCircle
-          slug="/notre-metier"
+          slug="/a-propos"
           img={
             <StaticImage
               placeholder="blurred"
@@ -219,19 +218,6 @@ const Teleconsultation = () => (
             />
           }
           text="Notre métier"
-        />
-        <BlueCircle
-          slug="/nos-tarifs"
-          img={
-            <StaticImage
-              placeholder="blurred"
-              layout="fixed"
-              quality={95}
-              src="../assets/images/circle/white-euro.png"
-              alt="Nos tarifs"
-            />
-          }
-          text="Nos tarifs"
         />
       </div>
     </div>

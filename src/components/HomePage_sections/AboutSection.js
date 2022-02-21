@@ -8,7 +8,7 @@ const AboutSection = () => {
     <div className="about-section">
       <div className="about-img-container">
         <StaticImage
-          src="../../assets/images/doctors/doctors.jpg"
+          src="../../assets/images/ourJobs/hp-notre-equipe.jpg"
           loading="eager"
           layout="constrained"
           width={500}
@@ -28,7 +28,7 @@ const AboutSection = () => {
           votre disposition afin de répondre aux besoins et aux attentes des
           patients.
         </p>
-        <SimpleButton slug="/notre-metier" content="En savoir plus" />
+        <SimpleButton slug="/a-propos" content="En savoir plus" />
       </div>
     </div>
   )
