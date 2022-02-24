@@ -16,10 +16,6 @@ export const MenuItems = [
     url: "/a-propos",
   },
   {
-    title: "Actualités",
-    url: "/actualites",
-  },
-  {
     title: "Recrutement",
     url: "/recrutement",
   },

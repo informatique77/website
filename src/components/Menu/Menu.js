@@ -10,8 +10,8 @@ const Menu = () => {
   return (
     <div className="menu">
       <div className="top-menu">
-        <Link to="recrutement" className="recrutment-link">
-          Recrutement
+        <Link to="actualites" className="recrutment-link">
+          Actualités
         </Link>
         <SocialNetworks />
       </div>
@@ -31,11 +31,11 @@ const Menu = () => {
         </div>
         <ul>
           {MenuItems.map((item, index) => {
-            return item.url !== "/recrutement" ? (
+            return (
               <li key={index} tabIndex={index}>
                 <Link to={item.url}>{item.title}</Link>
               </li>
-            ) : null
+            )
           })}
         </ul>
       </div>
