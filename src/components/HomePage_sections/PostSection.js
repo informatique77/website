@@ -7,7 +7,6 @@ const News = ({ posts, home }) => {
   return (
     <>
       <div className="post-section">
-        <span>Blog</span>
         <h2>
           Actualités
         </h2>

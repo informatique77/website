@@ -33,8 +33,8 @@ const App = ({ data, location }) => {
       />
       <HeaderHomePage />
       <CardsSection arr={dataCards}/>
-      <AboutSection />
       <NumbersSection />
+      <AboutSection />
       <PostSection posts={Posts} home={true} />
       <RecruitmentSection />
     </Layout>

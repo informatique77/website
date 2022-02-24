@@ -27,7 +27,7 @@
 @media screen and (max-width: 767px) {
   .prices-section {
     flex-direction: column;
-    margin-top: 90px;
+    // margin-top: 90px;
     height: auto;
     .pricesTable-container {
       flex-direction: column;
@@ -45,6 +45,6 @@
 
 @media screen and (max-width: 480px) {
   .prices-section {
-    margin-top: 40px;
+    // margin-top: 40px;
   }
 }

@@ -1,8 +1,8 @@
 [
     {
-        "list_one" : ["Générale", "Pédiatrique", "D’urgence", "Traumatologie", "Gérontologie", "Vaccination Covid"]
+        "list_one" : ["Générale", "Pédiatrique", "D’urgence", "Traumatologie", "Vaccination Covid"]
     },
     {
-        "list-two" : ["Générale", "Pédiatrique", "D’urgence", "Traumatologie", "Gérontologie", "Vaccination Covid"]
+        "list-two" : ["Générale", "Pédiatrique", "D’urgence", "Traumatologie", "Vaccination Covid"]
     }
 ]

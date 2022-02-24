@@ -1,9 +1,46 @@
-.our-job-section {
+.our-job-img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.our-job-header {
+  position: relative;
+  padding-top: 500px;
+  padding-bottom: 250px;
+  width: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 300px;
+  background-image: url('../../assets/images/ourJobs/notre-metier.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  h1 {
+    top: 22%;
+    position: absolute;
+    background: #FFF;
+    text-align: left;
+    padding: 5px 50px 5px 50px;
+  }
+  .button__icon--blue {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.our-job-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: auto;
-  background-color: $third-color;
   padding-top: 50px;
 
   .our-job-resume {
@@ -19,27 +56,6 @@
     .part-two,
     .part-three {
       display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .part-one {
-      .our-job-img {
-        box-shadow: -20px -15px $primary-color;
-      }
-    }
-    .part-two {
-      .our-job-img {
-        box-shadow: 20px -15px $primary-color;
-      }
-    }
-    .part-three {
-      .our-job-img {
-        box-shadow: -20px -15px $primary-color;
-      }
-    }
-    .our-job-img-container {
-      display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
     }
@@ -70,7 +86,7 @@
 
 @media screen and (max-width: 1000px) {
   .our-job-section {
-    margin-top: 90px;
+    // margin-top: 90px;
     .our-job-resume {
       width: 90%;
       margin-left: 10px;
@@ -91,5 +107,39 @@
   }
   .part-two {
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .teleconsult-header {
+    padding-top: 370px;
+    padding-bottom: 30px;
+    height: 170px;
+    h1 {
+      top: 50%;
+      font-size: 21px;
+    }
+
+    .button__icon--blue {
+      margin-bottom: 0;
+      bottom: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-job-header {
+    padding-top: 250px;
+    padding-bottom: 30px;
+    height: 170px;
+    h1 {
+      top: 28%;
+      font-size: 21px;
+    }
+
+    .button__icon--blue {
+      margin-bottom: 0;
+      bottom: 45px;
+    }
   }
 }

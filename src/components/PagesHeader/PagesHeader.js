@@ -7,9 +7,9 @@ const PagesHeader = ({ title }) => {
     <div className="pages-header-container">
       <div className="pages-header-title">
         <StaticImage
-          src="../../assets/images/title.png"
-          width={620}
-          height={70}
+          src="../../assets/images/c7-title.jpg"
+          width={1020}
+          height={150}
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="Logo Consultations 7 sur 7"

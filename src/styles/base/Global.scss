@@ -2,6 +2,7 @@
 
 // Components
 @import "../../components/BlueCircle/BlueCircle.scss";
+@import "../../components/Burger/Burger.scss";
 @import "../../components/Buttons/Buttons.scss";
 @import "../../components/Card/Card.scss";
 @import "../../components/Form/FormAssDoc.scss";
@@ -9,6 +10,7 @@
 @import "../../components/HeaderHomePage/HeaderHomePage.scss";
 @import "../../components/Map/Map.scss";
 @import "../../components/MapList/MapList.scss";
+@import "../../components/Menu/Menu.scss";
 @import "../../components/NavBar/NavBar.scss";
 @import "../../components/NewsLetter/NewsLetter.scss";
 @import "../../components/Number/Number.scss";
@@ -47,4 +49,12 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.social-networks {
+    display:  flex;
+    width: 150px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5px;
 }
