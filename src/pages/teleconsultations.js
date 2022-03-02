@@ -12,7 +12,7 @@ const Teleconsultation = () => (
     <div className="teleconsult-header">
       <ExternalButton
         css="button button__icon button__icon--blue"
-        slug="https://www.doctolib.fr/medecin-generaliste/nice/7-7-teleconsultations"
+        slug="https://www.doctolib.fr/centre-de-sante/nice/7-7-consultations"
         content="Je prends rendez-vous"
         staticImage={
           <StaticImage
@@ -178,7 +178,7 @@ const Teleconsultation = () => (
         </div>
         <ExternalButton
           css="button button__icon button__icon--red"
-          slug="https://www.doctolib.fr/medecin-generaliste/nice/7-7-teleconsultations"
+          slug="https://www.doctolib.fr/centre-de-sante/nice/7-7-consultations"
           content="Je prends rendez-vous"
           staticImage={
             <StaticImage
