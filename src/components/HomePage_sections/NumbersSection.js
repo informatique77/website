@@ -47,7 +47,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="4"
+          number="5"
           text="Centres médicaux"
         />
       </div>
@@ -63,7 +63,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="5"
+          number="4"
           text="Nouveaux centres à venir"
         />
         <Number
