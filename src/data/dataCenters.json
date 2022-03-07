@@ -5,10 +5,10 @@
     "address": "Notre service de téléconsultations 7/7 à horaires élargis, pour adultes et enfants.",
     "tel": "Téléconsultations",
     "image": {
-      "src": "../assets/images/centers/teleconsultations.jpg"
+      "src": "../assets/images/centers/teleconsultation-medicale.jpg"
     },
-    "lat": 0,
-    "lng": 0,
+    "lat": 43.70331804449461,
+    "lng": 7.284614046217038,
     "map": false,
     "open": true,
     "bgColor": "#FFFF",
