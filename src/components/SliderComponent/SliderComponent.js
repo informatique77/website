@@ -11,7 +11,7 @@ const SliderComponent = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     speed: 500,
     slidesToShow: 1,
@@ -28,6 +28,7 @@ const SliderComponent = () => {
                  style={{
                   margin: '0 auto',
                 }}
+              height={500}
               layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="Consultations 7 sur 7"
@@ -44,6 +45,7 @@ const SliderComponent = () => {
                  style={{
                   margin: '0 auto',
                 }}
+              height={500}
               layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="Vaccination Covid 19 Nice"
@@ -59,6 +61,7 @@ const SliderComponent = () => {
                  style={{
                   margin: '0 auto',
                 }}
+              height={500}  
               layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="Test Codiv 19"
@@ -74,6 +77,7 @@ const SliderComponent = () => {
                  style={{
                   margin: '0 auto',
                 }}
+              height={500}  
               layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="Téléconsultations 7 sur 7"
