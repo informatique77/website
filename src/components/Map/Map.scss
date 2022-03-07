@@ -31,12 +31,13 @@
         z-index: -1;
       }
     }
-    .infoWindow-container {
+    .infoWindow-container,.infoWindow-center-teleconsult-container, .center-container {
       display: flex;
       align-items: center;
       flex-direction: column;
       width: 270px;
       height: auto;
+      min-height: 400px;
       text-align: center;
       .infoWindow-img-container {
         width: auto;
@@ -103,6 +104,10 @@
         margin: 5px 0 5px 0;
       }
     }
+    .infoWindow-center-teleconsult-container {
+      flex-direction: row;
+      width: auto;
+    }
   }
 }
 
@@ -165,6 +170,12 @@ div[role="button"] {
             height: 92px !important;
           }
         }
+      }
+      .infoWindow-center-teleconsult-container {
+        flex-direction: column;
+      }
+      .center-container {
+        padding-top: 30px;
       }
     }
   }

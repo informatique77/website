@@ -41,8 +41,8 @@ const LiContent = ({ center }) => {
         )}
         <p className="li-address">{center.node.address}</p>
         <br></br>
-        {center.node.open && center.node.index
-          ? openOrClose(center.index)
+        {center.node.open
+          ? openOrClose(center.node.index)
           : null}
         {center.node.open ? (
           <ShowMoreButton slug={center.node.slug} content={"En savoir plus"} />

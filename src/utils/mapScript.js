@@ -3,6 +3,7 @@ import InfoWindowContent from "../components/Map/InfoWindowContent"
 
 import iconOpen from "../assets/images/icons/map-firstaid.png"
 import iconClose from "../assets/images/icons/map-bulldozer.png"
+import inconCenterTeleconsult from "../assets/images/icons/center-teleconsult.png"
 
 /**
  * Création du script pour charger la Google Map
@@ -47,7 +48,7 @@ export const loadMapContent = (data, position, htmlElementID) => {
         lng: center.node.lng,
       }
 
-      const marker = createMarker(center.node.open, markerPosition, map)
+      const marker = createMarker(center.node.open,center.node.index, markerPosition, map)
       const infoWindow = createInfoWindow(center)
 
       center.infoWindow = infoWindow
@@ -76,7 +77,7 @@ export const loadMapSingleCenter = center => {
 
   const map = initMap(markerPosition, 16, `map-${center.dataCentersJson.name}`)
 
-  const marker = createMarker(center.dataCentersJson.open, markerPosition, map)
+  const marker = createMarker(center.dataCentersJson.open,center.dataCentersJson.index, markerPosition, map)
   const infoWindow = createSingleInfoWindow(center.dataCentersJson)
 
   center.infoWindow = infoWindow
@@ -88,16 +89,38 @@ export const loadMapSingleCenter = center => {
 }
 
 /**
+ * Retourne le bon icon pour chaque marker
+ * @param {Boolean} open Check si le centre est ouvert ou non 
+ * @param {Number} index L'index du centre
+ * @returns 
+ */
+const chooseIcon = (open, index) => {
+  console.log(open)
+  if(open) {
+    switch (index) {
+      case 1 :
+        return inconCenterTeleconsult
+      default:
+        return iconOpen   
+    }
+  }else if(!open) {
+    return iconClose
+  }
+}
+
+/**
  * Création d'un Marker
  * @param {Boolean} open Si le centre est actuellement ouvert ou non
+ * @param {Number} index L'index du centre
  * @param {Object} position Lat et Lng d'un centre
  * @param {Object} map La Google Map
  */
-const createMarker = (open, position, map) => {
+const createMarker = (open, index, position, map) => {
+  const iconMarker = chooseIcon(open, index)
   return new window.google.maps.Marker({
     position: position,
     map: map,
-    icon: open ? iconOpen : iconClose,
+    icon: iconMarker
   })
 }
 

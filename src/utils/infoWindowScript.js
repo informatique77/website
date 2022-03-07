@@ -1,3 +1,4 @@
+import imgTeleconsult from "../assets/images/centers/teleconsultation-medicale.jpg"
 import imgSmolett from "../assets/images/centers/smolett.jpg"
 import imgLamartine from "../assets/images/centers/lamartine.jpg"
 import imgLenval from "../assets/images/centers/lenval.jpg"
@@ -10,6 +11,8 @@ import imgMandelieu from "../assets/images/centers/mandelieu.jpg"
 
 export const infoWindowImg = index => {
   switch (index) {
+    case 0 :
+      return imgTeleconsult
     case 1:
       return imgSmolett
     case 2:
