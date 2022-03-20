@@ -1,9 +1,9 @@
 import { infoWindowImg } from "../utils/infoWindowScript"
 import InfoWindowContent from "../components/Map/InfoWindowContent"
 
-import iconOpen from "../assets/images/icons/map-firstaid.png"
-import iconClose from "../assets/images/icons/map-bulldozer.png"
-import inconCenterTeleconsult from "../assets/images/icons/center-teleconsult.png"
+import centerMarker from "../assets/images/markers/marker-center.png"
+import teleconsultMarker from "../assets/images/markers/marker-teleconsult.png"
+import constructionMarker from "../assets/images/markers/marker-construction.png"
 
 /**
  * Création du script pour charger la Google Map
@@ -98,13 +98,13 @@ const chooseIcon = (open, index) => {
   console.log(open)
   if(open) {
     switch (index) {
-      case 1 :
-        return inconCenterTeleconsult
+      case 0 :
+        return teleconsultMarker
       default:
-        return iconOpen   
+        return centerMarker   
     }
   }else if(!open) {
-    return iconClose
+    return constructionMarker
   }
 }
 

@@ -7,9 +7,9 @@
     "image": {
       "src": "../assets/images/centers/teleconsultation-medicale.jpg"
     },
-    "lat": 43.70331804449461,
-    "lng": 7.284614046217038,
-    "map": false,
+    "lat": 43.700471,
+    "lng": 7.267972,
+    "map": true,
     "open": true,
     "bgColor": "#FFFF",
     "slug": "/teleconsultations"
