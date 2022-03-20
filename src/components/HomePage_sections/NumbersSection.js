@@ -33,7 +33,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="45"
+          number="52"
           text="Collaborateurs"
         />
         <Number
@@ -77,7 +77,7 @@ const NumbersSectionOne = () => {
               placeholder="blurred"
             />
           }
-          number="7"
+          number="11"
           text="Téléconsultations par an"
         />
         <Number
