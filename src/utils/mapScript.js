@@ -3,7 +3,7 @@ import InfoWindowContent from "../components/Map/InfoWindowContent"
 
 import centerMarker from "../assets/images/markers/marker-center.png"
 import teleconsultMarker from "../assets/images/markers/marker-teleconsult.png"
-import bulldozerMarker from "../assets/images/markers/marker-bulldozer.png"
+import constructionMarker from "../assets/images/markers/marker-construction.png"
 
 /**
  * Création du script pour charger la Google Map
@@ -98,13 +98,13 @@ const chooseIcon = (open, index) => {
   console.log(open)
   if(open) {
     switch (index) {
-      case 1 :
+      case 0 :
         return teleconsultMarker
       default:
         return centerMarker   
     }
   }else if(!open) {
-    return bulldozerMarker
+    return constructionMarker
   }
 }
 
