@@ -1,0 +1,59 @@
+.last-opening {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background: $third-color;
+    padding: 25px;
+    width: auto;
+    height: auto;
+
+    @include breakpoint($large) {
+        align-items: center;
+        flex-direction: row;
+        padding: 50px 25px;
+    }
+
+    .content {
+        padding: 25px 0;
+
+        @include breakpoint($large) {
+            padding-left: 80px;
+        }
+    }
+
+    p {
+        margin-bottom: 7px;
+    }
+
+    h2, .text {
+        margin-bottom: 30px;
+
+        @include breakpoint($large) {
+            margin-bottom: 30px;
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 0;
+        width: 100%;
+
+        @include breakpoint($medium) {
+            flex-direction: row;
+        }
+
+        .btn {
+            margin-right: 0;
+            margin-bottom: 20px;
+            @include breakpoint($medium) {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

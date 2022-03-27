@@ -1,0 +1,48 @@
+.btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    min-width: 160px;
+    height: 40px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    img {
+        width: 20px;
+        height: 20px;
+        padding-right: 10px;
+    }
+}
+
+.primary {
+    background: $primary-color;
+    border: 1px solid $primary-color;
+    color: $neutral-white;
+}
+
+.secondary { 
+    background: $fourth-color;
+    border: 1px solid $fourth-color;
+    color: $neutral-white;
+}
+
+.tertiary {
+    background: $neutral-white;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+}
+
+.show-more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    color: $primary-color;
+    filter: none;
+    padding-left: 0;
+    img {
+        padding: 4px 0 0 5px;
+    }
+}
