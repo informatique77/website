@@ -1,12 +1,12 @@
 import React from "react"
 import { Pannellum } from "pannellum-react";
 
-const cpImgPanoramic = ({ img }) => {
+const ImgPanoramic = ({ img }) => {
     return (
-        <div className="cp-img-panoramic">
+        <div className="img-panoramic">
             <Pannellum
                 width="100%"
-                height="auto"
+                height="100%"
                 image={img}
                 autoLoad
             />
@@ -14,4 +14,4 @@ const cpImgPanoramic = ({ img }) => {
     )
 }
 
-export default cpImgPanoramic
+export default ImgPanoramic

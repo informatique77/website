@@ -1,0 +1,47 @@
+@font-face {
+  font-family: palanquinDark;
+  src: url("../../assets/Fonts/PalanquinDark-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: palanquin;
+  src: url("../../assets/Fonts/Palanquin-Regular.ttf") format("ttf");
+}
+
+
+$primary-font: palanquinDark, sans-serif;
+$secondary-font: palanquin, sans-serif;
+$third-font: "Roboto", "sans-serif;";
+
+// All your size gather by 2 (Font size on desktop, and when you are on mobile)
+$f-sizes: ((40, 36),(36, 28), (32, 24), (24, 18), (20, 18), (18, 16), (16, 16),  
+(14, 14), (13, 13), (12, 12), (10, 10));
+
+// All your font weight
+$f-weights: 700, 600, 400;
+
+
+// Mixin to return a font size on desktop and mobile, and line height on desktop and mobile
+@mixin f-size($f-size-desktop, $f-size-mobile: $f-size-desktop){
+  font-size: #{$f-size-mobile}px;
+  line-height: #{$f-size-mobile + 4}px;
+  @media only screen and (min-width: 991px) {
+    font-size: #{$f-size-desktop}px;
+    line-height: #{$f-size-desktop + 4}px;
+  }
+}
+
+@mixin f-weight($f-weight){
+  font-weight: $f-weight;
+}
+
+@each $f-size-desktop, $f-size-mobile in $f-sizes {
+    .txt-#{$f-size-desktop} {
+      font-family: $secondary-font;  
+      @include f-size($f-size-desktop, $f-size-mobile);
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

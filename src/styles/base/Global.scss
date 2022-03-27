@@ -1,4 +1,15 @@
-@import "../utils/Variables";
+@import "../config/responsive";
+
+// Atoms
+@import "../UI/atoms/colors.scss";
+@import "../UI/atoms/typographie.scss";
+@import "../UI/atoms/imgPanoramic.scss";
+@import "../UI/atoms/c7.scss";
+@import "../UI/atoms/button.scss";
+
+// Molecules
+@import "../UI/molecules/lastOpening.scss";
+
 
 // Components
 @import "../../components/BlueCircle/BlueCircle.scss";
