@@ -1,6 +1,8 @@
 import React from "react"
+import loadable from '@loadable/component'
 
-import ImgPanoramic from "../atoms/ImgPanoramic"
+// Use loadable to avoid error for "window server side rendering" during build
+const ImgPanoramic = loadable(() => import('../atoms/ImgPanoramic'))
 import C7 from "../atoms/C7"
 import Button from "../atoms/Button"
 
