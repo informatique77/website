@@ -1,8 +1,6 @@
 import React from "react"
 import loadable from '@loadable/component'
 
-// Use loadable to avoid error for "window server side rendering" during build
-const ImgPanoramic = loadable(() => import('../atoms/ImgPanoramic'))
 import C7 from "../atoms/C7"
 import Button from "../atoms/Button"
 
@@ -11,6 +9,8 @@ import walkingIcon from "../../../assets/images/icons/walking.png"
 import blueTelephoneIcon from "../../../assets/images/icons/icon-telephone-blue.png"
 import rightArrowIcon from "../../../assets/images/icons/right-arrow.png"
 
+// Use loadable to avoid error for "window server side rendering" during build
+const ImgPanoramic = loadable(() => import('../atoms/ImgPanoramic'))
 const LastOpening = () => {
     return (
         <div className="last-opening">
