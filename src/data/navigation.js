@@ -16,6 +16,10 @@ export const MenuItems = [
     url: "/a-propos",
   },
   {
+    title: "Notre équipe",
+    url: "/notre-equipe",
+  },
+  {
     title: "Recrutement",
     url: "/recrutement",
   },
