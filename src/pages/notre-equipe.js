@@ -18,26 +18,18 @@ const Team = ({ data }) => {
         description="Consultations 7 sur 7 c'est avant tout une équipe de médecins généralistes et urgentistes, accompagnée pas nos assistantes médicales."
         path="notre-equipe"
       />
-      <PagesHeader title="Notre équipe" />
-      <div className="ourTeam-header">
-        <div className="ourTeam-img">
-          <StaticImage
-            width={350}
-            quality={100}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            placeholder="blurred"
-            src="../assets/images/doctors/doctors-no-shapes.jpg"
-            alt="Notre équipe"
-          />
-        </div>
-        <div className="ourTeam-resume">
-          <span>
-            L’équipe consultations{" "}
-            <span style={{ color: "#e74c3c" }}>7 sur 7</span>
-          </span>
+      <div className="our-job-img-container">
+        <StaticImage
+          src="../assets/images/ourJobs/notre-equipe.jpg"
+          width={800}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Camera téléconsultations"
+          placeholder="blurred"
+        />
+        <div className="cp-text-img">
           <p>
-            Notre équipe de médecins généralistes urgentistes dynamiques, aidée
-            par nos assistantes médicales, se relaie 7 jours sur 7.
+            Notres équipe de médecins généralistes urgentistes dynamiques, aidée de nos assistantes médicales, se relaie <span>7 jours sur 7</span>.
           </p>
         </div>
       </div>
@@ -54,6 +46,16 @@ const Team = ({ data }) => {
             })}
           </ul>
         </div>
+        <div className="our-job-img-container">
+          <StaticImage
+            src="../assets/images/icons/icon-doctor-pink.png"
+            width={500}
+            quality={100}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="Camera téléconsultations"
+            placeholder="blurred"
+          />
+        </div>
         <div className="section-two">
           <ul>
             {" "}
@@ -66,6 +68,11 @@ const Team = ({ data }) => {
             })}
           </ul>
         </div>
+      </div>
+      <div className="cp-text">
+        <p>Des radiologues et des équipes paramédicales (infirmiers, ostéopathes, orthoptistes) sont également
+          présents et à votre service au sein de nos centres médicaux.
+        </p>
       </div>
     </Layout>
   )

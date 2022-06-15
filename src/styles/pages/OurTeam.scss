@@ -203,14 +203,14 @@
 
 @media screen and (max-width: 480px) {
   .name-container {
-    padding-top: 60px;
+    padding-top: 0px;
     max-width: 100%;
   }
   .ourTeam-resume {
     padding: 0;
     max-width: 90%;
     p,span {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 32px;
       max-width: 100%;
     }
@@ -234,7 +234,7 @@
     p, span {
       padding: 10px;
       line-height: 25px;
-      font-size: 18px;
+      font-size: 16px;
       max-width: 100%;
     }
     span {

@@ -4,7 +4,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-top: 180px;
 }
+
+ .name-container {
+    .our-job-img-container {
+      padding-top: 0;
+    }
+  }
 
 .our-job-header {
   position: relative;
@@ -128,6 +135,16 @@
 }
 
 @media screen and (max-width: 480px) {
+  .our-job-img-container {
+    padding-top: 140px;
+  }
+
+  .name-container {
+    .our-job-img-container {
+      padding-top: 0;
+    }
+  }
+
   .our-job-header {
     padding-top: 250px;
     padding-bottom: 30px;
