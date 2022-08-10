@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
-import PagesHeader from "../components/PagesHeader/PagesHeader"
 import Seo from "../components/seo"
 
 const Team = ({ data }) => {

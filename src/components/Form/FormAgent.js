@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 
-const FormDoctor = () => {
+const FormAgent = () => {
   return (
     <div className="doctor-form">
       <form name="contact-doctor" method="POST" data-netlify="true">
@@ -24,39 +24,6 @@ const FormDoctor = () => {
             <input type="text" name="nickname-doctor" required />
             <label htmlFor="nickname-doctor" className="label-container">
               <span className="label-content">Prénom *</span>
-            </label>
-          </div>
-        </div>
-        <div className="input-label-container">
-          <label className="select-label">
-            Thèsé :
-            <select required style={{ width: "70px" }}>
-              <option value="Choisir">Choisir</option>
-              <option value="Oui">Oui</option>
-              <option value="Non">Non</option>
-            </select>
-          </label>
-        </div>
-        <div className="checkboxInput-label-container">
-          <span>Spécialité :</span>
-          <div className="checkbox-container">
-            <label>
-              Médecine générale
-              <input
-                type="checkbox"
-                name="generale-doctor"
-                className="personnal-checkbox"
-              />
-            </label>
-          </div>
-          <div className="checkbox-container">
-            <label>
-              Médecine d'urgence
-              <input
-                type="checkbox"
-                name="urgence-doctor"
-                className="personnal-checkbox"
-              />
             </label>
           </div>
         </div>
@@ -117,4 +84,4 @@ const FormDoctor = () => {
   )
 }
 
-export default FormDoctor
+export default FormAgent
