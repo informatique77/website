@@ -5,6 +5,7 @@
   height: auto;
   background-color: $third-color;
   padding-top: 25px;
+  padding-bottom: 80px;
   h2 {
     font-family: $primary-font;
     font-style: normal;
@@ -19,10 +20,15 @@
   }
   .recruitment-img-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 120px;
     width: 100%;
     margin-top: 10px;
+
+    .btn {
+      margin-inline: auto;
+    }
     h3 {
       text-align: center;
       font-family: $primary-font;
@@ -37,9 +43,11 @@
       padding: 25px 0 20px 0;
     }
     .recruitment-img-1 {
+      margin-bottom: 40px;
       box-shadow: -20px -15px $primary-color;
     }
     .recruitment-img-2 {
+      margin-bottom: 40px;
       box-shadow: 20px -15px $primary-color;
     }
   }

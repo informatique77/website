@@ -24,9 +24,8 @@ const MentionsLegales = () => (
         capital social de € - SIREN : 478293038 - RCS ou RM : - Adresse postale
         : 39 b rue Lamartine 06000 Nice . Directeur de la publication : -
         Contact : . Hébergeur : Gandi - 63-65 Boulevard Masséna, 75013 Paris -
-        Téléphone : 01.70.37.76.61.<br></br> 
-        Délégué à la protection des données : GIBELLI
-        Christophe - informatique@consultations77.org.
+        Téléphone : 01.70.37.76.61.<br></br>
+        Délégué à la protection des données : Serive Informatique - informatique@consultations77.org.
       </p>
       <br></br>
       <h2>2 - Propriété intellectuelle et contrefaçons.</h2>
@@ -86,11 +85,27 @@ const MentionsLegales = () => (
         </a>{" "}
         dispose d’un droit d’accès, de modification et de suppression des
         informations collectées. Pour exercer ce droit, envoyez un message à
-        notre Délégué à la Protection des Données : GIBELLI Christophe -
+        notre Délégué à la Protection des Données : Service Informatique -
         informatique@consultations77.org. Pour plus d'informations sur la façon
         dont nous traitons vos données (type de données, finalité,
         destinataire...), lisez notre Politique de Confidentialité. Il est
         également possible de déposer une réclamation auprès de la CNIL.
+        <br></br>
+        Les données que vous venez de communiquer font l’objet d’un traitement automatisé dans le but de traiter et gérer votre candidature.
+        Il est effectué par Consultations 7 sur 7 39 b rue Lamartine 06000, en sa qualité de responsable de traitement .
+        Ce traitement de données est nécessaire à l’exécution de votre candidature.
+        <br></br>
+        La personne en charge de la protection des données peut être contactée à l’adresse email suivante informatique@consultations77.org.
+        <br></br>
+        Les données seront conservées deux ans après le dernier contact avec le candidat.
+        Les données pourront être conservées par l’employeur pendant toute la durée du contrat de travail en cas d’embauche.
+        Le département RH sont les destinataires de ces données.
+        <br></br>
+        Le responsable de traitement s’engage à ne pas transférer vos données personnelles en dehors de l’Union européenne dans le cadre de ses opérations de traitement.
+        <br></br>
+        Vous disposez d’un droit d’accès, de rectification. Aussi, en cas de motifs légitimes vous disposez d’un droit de suppression, de limitation et d’opposition au traitement de vos données.
+        Vous bénéficiez également du droit à la portabilité de vos données. Et vous avez la possibilité de donner des directives concernant vos données en cas de décès. Vous un email à l’adresse informatique@consultations77.org pour exercer vos droits.
+        Vous avez la possibilité de saisir la CNIL s’il ne vous était pas donné satisfaction. »
       </p>
       <br></br>
       <h2>5 - Liens hypertextes et cookies</h2>

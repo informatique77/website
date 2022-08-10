@@ -6,11 +6,7 @@ import Layout from "../components/Layout/Layout"
 import SimpleButton from "../components/Buttons/SimpleButton"
 import Seo from "../components/seo"
 
-const OurJob = ({ data }) => {
-  const fullArray = data.allDataTeamJson.edges.length
-  const halfArray = data.allDataTeamJson.edges.length / 2
-  const sectionOne = data.allDataTeamJson.edges.slice(0, halfArray)
-  const sectionTwo = data.allDataTeamJson.edges.slice(halfArray, fullArray)
+const OurJob = () => {
   return (
     <Layout>
       <Seo
