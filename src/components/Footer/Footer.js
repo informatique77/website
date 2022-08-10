@@ -21,7 +21,6 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <NewsLetter />
       </div>
       <hr></hr>
       <div className="footer-second-section">

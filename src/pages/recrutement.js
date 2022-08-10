@@ -58,7 +58,7 @@ const Recruitment = () => {
                 alt="Une assistante médicale"
               />
             </div>
-            <Link to="/recrutement-docteur" className="btn primary">Postuler</Link>
+            <Link to="/recrutement-agent" className="btn primary">Postuler</Link>
           </div>
         </div>
       </div>
