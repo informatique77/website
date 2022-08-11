@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const FormAssistant = () => {
   return (
     <div className="assistant-form">
-      <form name="contact-assistant" method="POST" enctype="multipart/form-data" data-netlify="true">
+      <form name="contact-assistant" method="POST" data-netlify="true">
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
         <input type="hidden" name="form-name" value="contact-assistant" />
         <div hidden>
