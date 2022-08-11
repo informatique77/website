@@ -1,11 +1,16 @@
 //-------------------- Breakpoints --------------------//
 
-$breakpoint-range-xsmall: (null, 640px) !default;   //iPhone 4/5 (P)
-$breakpoint-range-small: (641px, 960px) !default;   //iPhone 4 (L), iPad 2 (P), Galaxy S3 (P), Moto X (P)
-$breakpoint-range-medium: (961px, 1280px) !default; //iPhone 5 (L), iPad 2 (L), Nexus 5 (P), Galaxy S3 (L), Galaxy Note (P), HTC One (P), Moto X (L)
-$breakpoint-range-large: (1281px, 1680px) !default; //Laptops, Desktops, iPad 3/4 (P, L), Nexus 5 (L), Galaxy Note (L), HTC One (L)
+$breakpoint-range-xsmall: (null, 640px) !default; //iPhone 4/5 (P)
+$breakpoint-range-small: (641px, 960px) !default; //iPhone 4 (L), iPad 2 (P), Galaxy S3 (P), Moto X (P)
+$breakpoint-range-medium: (
+    961px,
+    1280px
+) !default; //iPhone 5 (L), iPad 2 (L), Nexus 5 (P), Galaxy S3 (L), Galaxy Note (P), HTC One (P), Moto X (L)
+$breakpoint-range-large: (
+    1281px,
+    1680px
+) !default; //Laptops, Desktops, iPad 3/4 (P, L), Nexus 5 (L), Galaxy Note (L), HTC One (L)
 $breakpoint-range-xlarge: (1681px, null) !default;
-
 
 // Media query for minimum resolution
 @mixin if-min($min) {
@@ -44,10 +49,9 @@ $breakpoint-range-xlarge: (1681px, null) !default;
 
 // Media query for retina / HD displays
 @mixin if-retina {
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (-moz-min-device-pixel-ratio: 2),
-    only screen and (min-device-pixel-ratio: 2) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (-moz-min-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2) {
         @content;
     }
 }
@@ -107,7 +111,7 @@ $breakpoint-range-xlarge: (1681px, null) !default;
 
 // Within 2 ranges
 @mixin in-range($range) {
-    @if type-of($range) != 'list' {
+    @if type-of($range) != "list" {
         @warn "in-range() requires a list with a min and max value";
     }
 
@@ -118,12 +122,10 @@ $breakpoint-range-xlarge: (1681px, null) !default;
         @include if-min-max($min, $max) {
             @content;
         }
-
     } @else if $min {
         @include if-min($min) {
             @content;
         }
-
     } @else if $max {
         @include if-max($max) {
             @content;
@@ -164,11 +166,11 @@ $breakpoint-range-xlarge: (1681px, null) !default;
 // Use media queries and automatically generate specific css for ie7/ie8
 // Inspired by https://github.com/nex3/sass/issues/408#issuecomment-6086901
 
-$small:  30em !default; // ≈ 480px
+$small: 30em !default; // ≈ 480px
 $medium: 48em !default; // ≈ 768px
-$large:  60em !default; // ≈ 960px
-$wide:   75em !default; // ≈ 1200px
-$grid:   71.25em !default; // ≈ 1140px
+$large: 60em !default; // ≈ 960px
+$wide: 75em !default; // ≈ 1200px
+$grid: 71.25em !default; // ≈ 1140px
 
 $max-desktop: $large !default;
 
@@ -209,8 +211,26 @@ $media-queries: true !default; // true by default
                 }
             }
         }
-    } @else if $min-width and $min-width <= $max-desktop and
-      (not $max-width or $max-width and $max-width >= $max-desktop) {
+    } @else if
+        $min-width and
+        $min-width <=
+        $max-desktop and
+        (not $max-width or $max-width and $max-width >= $max-desktop)
+    {
         @content;
+    }
+}
+
+$max-w: 1084px;
+
+.max-w {
+    margin: 0 auto;
+    padding: 0 24px;
+    width: auto;
+
+    @include breakpoint($max-w) {
+        max-width: $max-w;
+        padding: 0;
+        width: 100%;
     }
 }

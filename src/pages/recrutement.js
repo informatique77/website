@@ -1,10 +1,9 @@
 import React from "react"
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout/Layout"
 import PagesHeader from "../components/PagesHeader/PagesHeader"
-import FormDoctor from "../components/Form/FormDoctor"
-import FormAssistant from "../components/Form/FormAssistant"
 import Seo from "../components/seo"
 
 const Recruitment = () => {
@@ -21,31 +20,15 @@ const Recruitment = () => {
         <div className="recruitment-img-container">
           <div className="first-form">
             <h3>Médecin</h3>
-            <div className="recruitment-img-1">
-              <StaticImage
-                width={330}
-                quality={100}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                placeholder="blurred"
-                src="../assets/images/ourJobs/our-job-3.jpg"
-                alt="Un médecin"
-              />
-            </div>
-            <FormDoctor />
+            <Link to="/recrutement-docteur" className="btn primary">Postuler</Link>
           </div>
           <div>
             <h3>Assistant(e) Médical(e)</h3>
-            <div className="recruitment-img-2">
-              <StaticImage
-                width={330}
-                quality={100}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                placeholder="blurred"
-                src="../assets/images/ourJobs/our-job-8.jpg"
-                alt="Une assistante médicale"
-              />
-            </div>
-            <FormAssistant />
+            <Link to="/recrutement-assistant" className="btn primary">Postuler</Link>
+          </div>
+          <div>
+            <h3>Agent Polyvalent(e)</h3>
+            <Link to="/recrutement-agent" className="btn primary">Postuler</Link>
           </div>
         </div>
       </div>

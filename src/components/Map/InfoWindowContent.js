@@ -2,9 +2,7 @@ import React from "react"
 import ReactDOMServer from "react-dom/server"
 
 import iconTelephone from "../../assets/images/icons/icon-telephone-blue.png"
-import iconCamera from "../../assets/images/icons/icon-camera-blue.png"
 import iconWalk from "../../assets/images/icons/walking.png"
-import imgTeleconsult from "../../assets/images/centers/teleconsultation-medicale.jpg"
 
 import CallButton from "../Buttons/CallButton"
 import ExternalButton from "../Buttons/ExternalButton"
@@ -47,7 +45,7 @@ const InfoWindowContent = (center, image, globalMap) => {
         ) : null}
       </div>
     </div>
-    )
+  )
 }
 
 export default InfoWindowContent

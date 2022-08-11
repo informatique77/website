@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const FormAssistant = () => {
   return (
@@ -14,18 +15,18 @@ const FormAssistant = () => {
         <div className="input-label-container">
           <input type="text" name="name-assistant" required />
           <label htmlFor="name-assistant" className="label-container">
-            <span className="label-content">Nom</span>
+            <span className="label-content">Nom *</span>
           </label>
         </div>
         <div className="input-label-container">
           <input type="text" name="nickname-assistant" required />
           <label htmlFor="nickname-assistant" className="label-container">
-            <span className="label-content">Prénom</span>
+            <span className="label-content">Prénom *</span>
           </label>
         </div>
         <div className="input-label-container">
           <label className="select-label">
-            Statut :
+            Statut * :
             <select required style={{ width: "100px" }}>
               <option value="Choisir">Choisir</option>
               <option value="Diplômé(e)">Diplômé(e)</option>
@@ -34,7 +35,7 @@ const FormAssistant = () => {
           </label>
         </div>
         <div className="checkboxInput-label-container">
-          <span>Diplômes :</span>
+          <span>Diplômes * pages-header-title:</span>
           <div className="checkbox-container">
             <label>
               Secrétaire Médicale
@@ -60,13 +61,13 @@ const FormAssistant = () => {
         <div className="input-label-container">
           <input type="text" name="tel-assistant" required />
           <label htmlFor="tel-assistant" className="label-container">
-            <span className="label-content">Téléphone</span>
+            <span className="label-content">Téléphone *</span>
           </label>
         </div>
         <div className="input-label-container">
           <input type="text" name="email-assistant" required />
           <label htmlFor="email-assistant" className="label-container">
-            <span className="label-content">Adresse e-mail</span>
+            <span className="label-content">Adresse e-mail *</span>
           </label>
         </div>
         <div className="input-label-container">
@@ -76,8 +77,31 @@ const FormAssistant = () => {
             className="label-container"
             id="texteareaLabel"
           >
-            <span className="label-content">Message</span>
+            <span className="label-content">Message *</span>
           </label>
+        </div>
+        <div className="input-label-container cv">
+          <label
+
+            htmlFor="cv-assistant"
+            id="cvLabel"
+          >
+            <span>CV *</span>
+          </label>
+          <input className="input-cv" type="file" name="cv" required />
+        </div>
+        <div className="checkboxInput-label-container cgu">
+          <div className="checkbox-container">
+            <label>
+              <input
+                type="checkbox"
+                name="generale-doctor"
+                className="personnal-checkbox"
+                required
+              />
+              J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de Consultations 7 sur 7 *
+            </label>
+          </div>
         </div>
         <div>
           <button type="submit" className="form-button">
