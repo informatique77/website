@@ -29,7 +29,7 @@ const FormDoctor = () => {
         </div>
         <div className="input-label-container">
           <label className="select-label">
-            Thèsé :
+            Thèsé  * :
             <select required style={{ width: "70px" }}>
               <option value="Choisir">Choisir</option>
               <option value="Oui">Oui</option>
@@ -38,7 +38,7 @@ const FormDoctor = () => {
           </label>
         </div>
         <div className="checkboxInput-label-container">
-          <span>Spécialité :</span>
+          <span>Spécialité * :</span>
           <div className="checkbox-container">
             <label>
               Médecine générale
@@ -103,7 +103,7 @@ const FormDoctor = () => {
                 className="personnal-checkbox"
                 required
               />
-              J'ai lu et j'accepte les <Link to="/mentions-legales">CGU</Link> de Consultations 7 sur 7 *
+              J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de Consultations 7 sur 7 *
             </label>
           </div>
         </div>

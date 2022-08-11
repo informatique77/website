@@ -54,7 +54,7 @@ const FormAgent = () => {
         <div className="input-label-container cv">
           <label
 
-            htmlFor="cv-doctor"
+            htmlFor="cv-agent"
             id="cvLabel"
           >
             <span>CV *</span>
@@ -70,7 +70,7 @@ const FormAgent = () => {
                 className="personnal-checkbox"
                 required
               />
-              J'ai lu et j'accepte les <Link to="/mentions-legales">CGU</Link> de Consultations 7 sur 7 *
+              J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de Consultations 7 sur 7 *
             </label>
           </div>
         </div>

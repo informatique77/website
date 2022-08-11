@@ -20,44 +20,14 @@ const Recruitment = () => {
         <div className="recruitment-img-container">
           <div className="first-form">
             <h3>Médecin</h3>
-            <div className="recruitment-img-1">
-              <StaticImage
-                width={330}
-                quality={100}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                placeholder="blurred"
-                src="../assets/images/ourJobs/our-job-3.jpg"
-                alt="Un médecin"
-              />
-            </div>
             <Link to="/recrutement-docteur" className="btn primary">Postuler</Link>
           </div>
           <div>
             <h3>Assistant(e) Médical(e)</h3>
-            <div className="recruitment-img-2">
-              <StaticImage
-                width={330}
-                quality={100}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                placeholder="blurred"
-                src="../assets/images/ourJobs/our-job-8.jpg"
-                alt="Une assistante médicale"
-              />
-            </div>
             <Link to="/recrutement-assistant" className="btn primary">Postuler</Link>
           </div>
           <div>
-            <h3>Agent Polyvalente(e)</h3>
-            <div className="recruitment-img-2">
-              <StaticImage
-                width={330}
-                quality={100}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                placeholder="blurred"
-                src="../assets/images/ourJobs/our-job-8.jpg"
-                alt="Une assistante médicale"
-              />
-            </div>
+            <h3>Agent Polyvalent(e)</h3>
             <Link to="/recrutement-agent" className="btn primary">Postuler</Link>
           </div>
         </div>
