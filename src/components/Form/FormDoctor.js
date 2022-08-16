@@ -3,6 +3,12 @@ import { Link } from "gatsby"
 
 
 const FormDoctor = () => {
+  const [state, setState] = React.useState({})
+
+  const handleAttachment = (e) => {
+    setState({ ...state, [e.target.name]: e.target.files[0] })
+  }
+
   return (
     <div className="doctor-form">
       <form name="contact-doctor" method="POST" data-netlify="true">
@@ -92,7 +98,7 @@ const FormDoctor = () => {
           >
             <span>CV *</span>
           </label>
-          <input className="input-cv" type="file" name="cv" required />
+          <input className="input-cv" type="file" name="cv" required onChange={handleAttachment} />
         </div>
         <div className="checkboxInput-label-container cgu">
           <div className="checkbox-container">
