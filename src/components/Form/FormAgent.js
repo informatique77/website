@@ -51,7 +51,7 @@ const FormAgent = () => {
             <span className="label-content">Message *</span>
           </label>
         </div>
-        <div className="input-label-container cv">
+{/*         <div className="input-label-container cv">
           <label
 
             htmlFor="cv-agent"
@@ -60,7 +60,7 @@ const FormAgent = () => {
             <span>CV *</span>
           </label>
           <input className="input-cv" type="file" name="cv" required />
-        </div>
+        </div> */}
         <div className="checkboxInput-label-container cgu">
           <div className="checkbox-container">
             <label>

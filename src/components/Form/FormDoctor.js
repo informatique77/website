@@ -90,7 +90,7 @@ const FormDoctor = () => {
             <span className="label-content">Message *</span>
           </label>
         </div>
-        <div className="input-label-container cv">
+{/*         <div className="input-label-container cv">
           <label
 
             htmlFor="cv-doctor"
@@ -99,7 +99,7 @@ const FormDoctor = () => {
             <span>CV *</span>
           </label>
           <input className="input-cv" type="file" name="cv" required onChange={handleAttachment} />
-        </div>
+        </div> */}
         <div className="checkboxInput-label-container cgu">
           <div className="checkbox-container">
             <label>
