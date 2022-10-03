@@ -69,6 +69,8 @@ const Team = ({ data }) => {
         </div>
       </div>
       <div className="cp-text">
+        <p>L’équipe est complétée par une trentaine de médecins remplaçants.</p>
+        <br></br>
         <p>Des radiologues et des équipes paramédicales (infirmiers, ostéopathes, orthoptistes) sont également
           présents et à votre service au sein de nos centres médicaux.
         </p>

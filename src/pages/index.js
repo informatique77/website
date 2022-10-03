@@ -4,8 +4,8 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
 import HeaderHomePage from "../components/HeaderHomePage/HeaderHomePage"
-import LastOpening from "../components/UI/molecules/LastOpening"
 import CardsSection from "../components/HomePage_sections/CardsSection"
+import MapHp from "../components/Map/MapHp"
 import AboutSection from "../components/HomePage_sections/AboutSection"
 import NumbersSection from "../components/HomePage_sections/NumbersSection"
 import PostSection from "../components/HomePage_sections/PostSection"
@@ -33,7 +33,7 @@ const App = ({ data, location }) => {
         path="/"
       />
       <HeaderHomePage />
-      <LastOpening />
+      <MapHp allMedicalCenters={data} />
       <CardsSection arr={dataCards} />
       <NumbersSection />
       <AboutSection />
@@ -47,6 +47,36 @@ export default App
 
 export const pageQuery = graphql`
   query {
+    allDataCentersJson {
+      edges {
+        node {
+          index
+          address
+          lat
+          lng
+          map
+          open
+          name
+          tel
+          direction
+          slug
+          bgColor
+          image {
+            src {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 250
+                  layout: FIXED
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                  quality: 95
+                )
+              }
+            }
+          }
+        }
+      }
+    }
     site {
       siteMetadata {
         title

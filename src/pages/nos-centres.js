@@ -5,16 +5,19 @@ import Layout from "../components/Layout/Layout"
 import Map from "../components/Map/Map"
 import Seo from "../components/seo"
 
-const ourCenters = ({ data }) => (
-  <Layout>
-    <Seo
-      title="Nos Centres"
-      description="Consultations 7 sur 7 vous acceuillent dans nos centres de 8h30 à 22h00 7 jours sur 7, ainsi que notre centre de téléconsultations de 9h à 21h"
-      path="nos-centres"
-    />
-    <Map allMedicalCenters={data} />
-  </Layout>
-)
+const ourCenters = ({ data }) => {
+  console.log(data.allDataCentersJson)
+  return (
+    <Layout>
+      <Seo
+        title="Nos Centres"
+        description="Consultations 7 sur 7 vous acceuillent dans nos centres de 8h30 à 22h00 7 jours sur 7, ainsi que notre centre de téléconsultations de 9h à 21h"
+        path="nos-centres"
+      />
+      <Map allMedicalCenters={data} />
+    </Layout>
+  )
+}
 
 export const query = graphql`
   {
