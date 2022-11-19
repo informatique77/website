@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
 import HeaderHomePage from "../components/HeaderHomePage/HeaderHomePage"
+import LastOpening from "../components/UI/molecules/LastOpening";
 import CardsSection from "../components/HomePage_sections/CardsSection"
 import MapHp from "../components/Map/MapHp"
 import AboutSection from "../components/HomePage_sections/AboutSection"
@@ -33,6 +34,7 @@ const App = ({ data, location }) => {
         path="/"
       />
       <HeaderHomePage />
+      <LastOpening />
       <MapHp allMedicalCenters={data} />
       <CardsSection arr={dataCards} />
       <NumbersSection />

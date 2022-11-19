@@ -114,6 +114,11 @@
 .map-container {
   display: flex;
   padding-top: 150px;
+
+  &.hp {
+    padding-top: 0;
+  }
+  
   .google-map-container {
     width: 100%;
     height: 70vh;
