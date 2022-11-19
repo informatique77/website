@@ -131,6 +131,29 @@
   },
   {
     "index": 6,
+    "name": "Cagnes-Sur-Mer",
+    "address": "8 cours du 11 novembre, 06800 Cagnes-Sur-Mer",
+    "tel": "04-92-02-07-78",
+    "direction": "https://goo.gl/maps/uKjXEedoSxuuTCxw9",
+    "image": {
+      "src": "../assets/images/centers/cagnes.jpg"
+    },
+    "lat": 43.66152118131474,
+    "lng": 7.15012542883499,
+    "map": true,
+    "open": true,
+    "bgColor": "#F7F6FE",
+    "slug": "/centre/cagnes-sur-mer",
+    "transport": [
+      {
+        "car": "",
+        "bus": "",
+        "tramway": ""
+      }
+    ]
+  },
+  {
+    "index": 7,
     "name": "Nice Nord",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice Nord",
     "tel": "Prochainement",
@@ -152,7 +175,7 @@
     ]
   },
   {
-    "index": 7,
+    "index": 8,
     "name": "Menton",
     "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Menton",
     "tel": "Prochainement",
@@ -165,28 +188,6 @@
     "open": false,
     "bgColor": "#FFFF",
     "slug": "/centre/menton",
-    "transport": [
-      {
-        "car": "",
-        "bus": "",
-        "tramway": ""
-      }
-    ]
-  },
-  {
-    "index": 8,
-    "name": "Cagnes-sur-Mer",
-    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cagnes-sur-Mer",
-    "tel": "Prochainement",
-    "image": {
-      "src": "../assets/images/centers/cagnes.jpg"
-    },
-    "lat": 43.663491756996436,
-    "lng": 7.1503342690857306,
-    "map": true,
-    "open": false,
-    "bgColor": "#F7F6FE",
-    "slug": "/centre/cagnes-sur-mer",
     "transport": [
       {
         "car": "",
