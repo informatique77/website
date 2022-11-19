@@ -20,7 +20,7 @@ const MapHp = ({ allMedicalCenters }) => {
 
   return (
     <>
-      <div className="map-container">
+      <div className="map-container hp">
         <div className="google-map-container">
           <div id="map" style={{ height: "100%", width: "100%" }}></div>
         </div>
