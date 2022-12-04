@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@formcarry/react": "^1.0.3",
     "@loadable/component": "^5.15.2",
     "@rooks/use-visibility-sensor": "^4.11.0",
     "framer-motion": "^4.1.17",
