@@ -1,116 +1,87 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 import { Link } from "gatsby"
 
-const FormAssistant = () => {
-  return (
-    <div className="assistant-form">
-      <form name="contact-assistant" method="POST" data-netlify="true">
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="contact-assistant" />
-        <div hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" />
-          </label>
-        </div>
-        <div className="input-label-container">
-          <input type="text" name="name-assistant" required />
-          <label htmlFor="name-assistant" className="label-container">
-            <span className="label-content">Nom *</span>
-          </label>
-        </div>
-        <div className="input-label-container">
-          <input type="text" name="nickname-assistant" required />
-          <label htmlFor="nickname-assistant" className="label-container">
-            <span className="label-content">Prénom *</span>
-          </label>
-        </div>
-        <div className="input-label-container">
-          <label className="select-label">
-            Statut * :
-            <select required style={{ width: "100px" }}>
-              <option value="Choisir">Choisir</option>
-              <option value="Diplômé(e)">Diplômé(e)</option>
-              <option value="Stagiaire">Stagiaire</option>
-            </select>
-          </label>
-        </div>
-        <div className="checkboxInput-label-container">
-          <span>Diplômes * pages-header-title:</span>
-          <div className="checkbox-container">
-            <label>
-              Secrétaire Médicale
-              <input
-                type="checkbox"
-                name="secretaire-medicale"
-                className="personnal-checkbox"
-                required
-              />
-            </label>
-          </div>
-          <div className="checkbox-container">
-            <label>
-              Aide-soignante
-              <input
-                type="checkbox"
-                name="Aide-soignante"
-                className="personnal-checkbox"
-              />
-            </label>
-          </div>
-        </div>
-        <div className="input-label-container">
-          <input type="text" name="tel-assistant" required />
-          <label htmlFor="tel-assistant" className="label-container">
-            <span className="label-content">Téléphone *</span>
-          </label>
-        </div>
-        <div className="input-label-container">
-          <input type="text" name="email-assistant" required />
-          <label htmlFor="email-assistant" className="label-container">
-            <span className="label-content">Adresse e-mail *</span>
-          </label>
-        </div>
-        <div className="input-label-container">
-          <textarea name="message-assistant" required></textarea>
-          <label
-            htmlFor="message-assistant"
-            className="label-container"
-            id="texteareaLabel"
-          >
-            <span className="label-content">Message *</span>
-          </label>
-        </div>
-{/*         <div className="input-label-container cv">
-          <label
+export default function FormAssistant() {
+  const formRef = useRef(null)
+  const [submitted, setSubmitted] = useState(false);
 
-            htmlFor="cv-assistant"
-            id="cvLabel"
-          >
-            <span>CV *</span>
-          </label>
-          <input className="input-cv" type="file" name="cv" required />
-        </div> */}
-        <div className="checkboxInput-label-container cgu">
-          <div className="checkbox-container">
-            <label>
-              <input
+  const sendFormData = async event => {
+    event.preventDefault()
+
+    if (!formRef.current) {
+      console.log("Something wrong with this ref")
+      return
+    }
+
+    const formData = new FormData(formRef.current)
+
+    fetch("https://formcarry.com/s/j3VUZlwpu", {
+      method: "POST",
+      body: formData,
+      headers: {
+        // you don't have to set Content-Type
+        // otherwise it won't work due to boundary!
+        Accept: "application/json",
+      },
+    })
+      // convert response to json
+      .then(r => r.json())
+      .then(res => {
+        if (res.code === 200) {
+          setSubmitted(true);
+        }
+      })
+  }
+
+  if (submitted) {
+    return (
+      <section className="formcarry-container">
+        <h3>Message envoyé !</h3>
+        <Link to="/">Revenir à la page d'accueil</Link>
+      </section>
+    );
+  }
+
+  return (
+    <section className="formcarry-container">
+      <form ref={formRef} onSubmit={sendFormData}>
+        <div className="formcarry-block">
+          <label htmlFor="firstNameInput">Nom *</label>
+          <input type="text" id="firstNameInput" name="firstName" required/>
+        </div>
+        <div className="formcarry-block">
+          <label htmlFor="LastNameInput">Prénon *</label>
+          <input type="text" id="LastNameInput" name="lastName" required/>
+        </div>
+        <div className="formcarry-block">
+          <label htmlFor="email">Email *</label>
+          <input type="email" id="email" name="email" required/>
+        </div>
+        <div className="formcarry-block">
+          <label htmlFor="phone">Téléphone *</label>
+          <input type="tel" id="phone" name="phone" placeholder="exemple: 0493121113" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required/>
+        </div>
+        <div className="formcarry-block">
+          <label htmlFor="messageInput">Message</label>
+          <textarea id="messageInput" name="message"></textarea>
+        </div>
+        <div className="formcarry-block">
+          <label htmlFor="cv">CV *</label>
+          <input type="file" id="cv" name="cv" required/>
+        </div>
+        <div className="formcarry-block legalMentions">
+          <label htmlFor="legaleMentions">J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de Consultations 7 sur 7 *</label>
+          <input
                 type="checkbox"
-                name="generale-doctor"
-                className="personnal-checkbox"
+                id="legalMentions"
+                name="legalMentions"
                 required
               />
-              J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de Consultations 7 sur 7 *
-            </label>
-          </div>
         </div>
-        <div>
-          <button type="submit" className="form-button">
-            Soumettre
-          </button>
+        <div className="formcarry-block">
+          <button type="submit">Soumettre</button>
         </div>
       </form>
-    </div>
+    </section>
   )
 }
-
-export default FormAssistant
