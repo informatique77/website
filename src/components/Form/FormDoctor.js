@@ -1,126 +1,47 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useRef } from 'react';
+import { useForm } from '@formcarry/react';
 
+export default function FormDoctor() {
+  const formRef = useRef(null)
+ 
+  const sendFormData = async (event) => {
+    event.preventDefault();
+    
+    if(!formRef.current) {
+      console.log('Something wrong with this ref')
+      return
+    }
 
-const FormDoctor = () => {
-  const [state, setState] = React.useState({})
+    const formData = new FormData(formRef.current)
 
-  const handleAttachment = (e) => {
-    setState({ ...state, [e.target.name]: e.target.files[0] })
+    fetch('https://formcarry.com/s/26fQsihG_', {
+      method: 'POST',
+      body: formData,
+      headers: {
+				// you don't have to set Content-Type
+				// otherwise it won't work due to boundary!
+        Accept: 'application/json'
+      }
+    })
+    // convert response to json
+    .then(r => r.json())
+    .then(res => {
+      console.log(res);
+    });
   }
-
+ 
   return (
-    <div className="doctor-form">
-      <form name="contact-doctor" method="POST" data-netlify="true">
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="contact-doctor" />
-        <div hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" />
-          </label>
-        </div>
-        <div className="row-container">
-          <div className="input-label-container">
-            <input type="text" name="name-doctor" required />
-            <label htmlFor="name-doctor" className="label-container">
-              <span className="label-content">Nom *</span>
-            </label>
-          </div>
-          <div className="input-label-container">
-            <input type="text" name="nickname-doctor" required />
-            <label htmlFor="nickname-doctor" className="label-container">
-              <span className="label-content">Prénom *</span>
-            </label>
-          </div>
-        </div>
-        <div className="input-label-container">
-          <label className="select-label">
-            Thèsé  * :
-            <select required style={{ width: "70px" }}>
-              <option value="Choisir">Choisir</option>
-              <option value="Oui">Oui</option>
-              <option value="Non">Non</option>
-            </select>
-          </label>
-        </div>
-        <div className="checkboxInput-label-container">
-          <span>Spécialité * :</span>
-          <div className="checkbox-container">
-            <label>
-              Médecine générale
-              <input
-                type="checkbox"
-                name="generale-doctor"
-                className="personnal-checkbox"
-              />
-            </label>
-          </div>
-          <div className="checkbox-container">
-            <label>
-              Médecine d'urgence
-              <input
-                type="checkbox"
-                name="urgence-doctor"
-                className="personnal-checkbox"
-              />
-            </label>
-          </div>
-        </div>
-        <div className="row-container">
-          <div className="input-label-container">
-            <input type="text" name="tel-doctor" required />
-            <label htmlFor="tel-doctor" className="label-container">
-              <span className="label-content">Téléphone *</span>
-            </label>
-          </div>
-          <div className="input-label-container">
-            <input type="text" name="email-doctor" required />
-            <label htmlFor="email-doctor" className="label-container">
-              <span className="label-content">Adresse e-mail *</span>
-            </label>
-          </div>
-        </div>
-        <div className="input-label-container">
-          <textarea name="message-doctor" required></textarea>
-          <label
-            htmlFor="message-doctor"
-            className="label-container"
-            id="texteareaLabel"
-          >
-            <span className="label-content">Message *</span>
-          </label>
-        </div>
-{/*         <div className="input-label-container cv">
-          <label
+    <form ref={formRef} onSubmit={sendFormData}>
+      <label htmlFor="nameInput">Name</label>
+      <input type="text" id="nameInput" name="name" />
 
-            htmlFor="cv-doctor"
-            id="cvLabel"
-          >
-            <span>CV *</span>
-          </label>
-          <input className="input-cv" type="file" name="cv" required onChange={handleAttachment} />
-        </div> */}
-        <div className="checkboxInput-label-container cgu">
-          <div className="checkbox-container">
-            <label>
-              <input
-                type="checkbox"
-                name="generale-doctor"
-                className="personnal-checkbox"
-                required
-              />
-              J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de Consultations 7 sur 7 *
-            </label>
-          </div>
-        </div>
-        <div>
-          <button type="submit" className="form-button">
-            Soumettre
-          </button>
-        </div>
-      </form>
-    </div>
-  )
+      <label htmlFor="messageInput">Message</label>
+      <textarea id="messageInput" name="message"></textarea>
+
+      <label htmlFor="pictureInput">Picture</label>
+      <input type="file" id="pictureInput" name="picture" />
+
+      <button type="submit">Submit</button>
+    </form>
+  );
 }
-
-export default FormDoctor
