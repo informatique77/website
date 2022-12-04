@@ -34,6 +34,7 @@
 
 @media screen and (max-width: 1000px) {
   .pages-header-container {
+    min-height: 200px;
     &::after {
       display: none;
     }

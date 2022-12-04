@@ -217,5 +217,27 @@
         "tramway": ""
       }
     ]
+  },
+  {
+    "index": 10,
+    "name": "Saint-Raphaël",
+    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Saint-Raphaël",
+    "tel": "Prochainement",
+    "image": {
+      "src": "../assets/images/centers/saint-raphael.jpg"
+    },
+    "lat": 43.423654,
+    "lng": 6.796743,
+    "map": true,
+    "open": false,
+    "bgColor": "#FFFF",
+    "slug": "/centre/saint-raphael",
+    "transport": [
+      {
+        "car": "",
+        "bus": "",
+        "tramway": ""
+      }
+    ]
   }
 ]
