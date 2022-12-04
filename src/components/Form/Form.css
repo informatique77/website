@@ -186,19 +186,23 @@
   box-shadow: none;
 }
 
-.formcarry-container h3 {
+.submited-container {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.submited-container h3 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.formcarry-container a {
+.submited-container a {
   text-align: center;
-  display: block;
-  font-family: $palankin-dark;
   text-decoration: none;
   color: #0596de;
   outline: none;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 

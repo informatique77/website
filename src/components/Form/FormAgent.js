@@ -35,7 +35,7 @@ export default function FormAgent() {
 
   if (submitted) {
     return (
-      <section className="formcarry-container">
+      <section className="submited-container">
         <h3>Message envoyé !</h3>
         <Link  to="/">Revenir à la page d'accueil</Link>
       </section>
