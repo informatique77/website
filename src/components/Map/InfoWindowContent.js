@@ -20,6 +20,7 @@ const InfoWindowContent = (center, image, globalMap) => {
       </h2>
       <div className="infoWindow-img-container">
         <img src={image} alt={center.name}></img>
+        { console.log(image) }
       </div>
       <p className="infoWindow-address">{center.address}</p>
       {center.open ? openOrClose(center.index) : null}

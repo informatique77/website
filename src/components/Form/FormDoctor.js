@@ -1,126 +1,87 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 import { Link } from "gatsby"
 
+export default function FormDoctor() {
+  const formRef = useRef(null)
+  const [submitted, setSubmitted] = useState(false);
 
-const FormDoctor = () => {
-  const [state, setState] = React.useState({})
+  const sendFormData = async event => {
+    event.preventDefault()
 
-  const handleAttachment = (e) => {
-    setState({ ...state, [e.target.name]: e.target.files[0] })
+    if (!formRef.current) {
+      console.log("Something wrong with this ref")
+      return
+    }
+
+    const formData = new FormData(formRef.current)
+
+    fetch("https://formcarry.com/s/26fQsihG_", {
+      method: "POST",
+      body: formData,
+      headers: {
+        // you don't have to set Content-Type
+        // otherwise it won't work due to boundary!
+        Accept: "application/json",
+      },
+    })
+      // convert response to json
+      .then(r => r.json())
+      .then(res => {
+        if (res.code === 200) {
+          setSubmitted(true);
+        }
+      })
+  }
+
+  if (submitted) {
+    return (
+      <section className="submited-container">
+        <h3>Message envoyé !</h3>
+        <Link to="/">Revenir à la page d'accueil</Link>
+      </section>
+    );
   }
 
   return (
-    <div className="doctor-form">
-      <form name="contact-doctor" method="POST" data-netlify="true">
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="contact-doctor" />
-        <div hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" />
-          </label>
+    <section className="formcarry-container">
+      <form ref={formRef} onSubmit={sendFormData}>
+        <div className="formcarry-block">
+          <label htmlFor="firstNameInput">Nom *</label>
+          <input type="text" id="firstNameInput" name="firstName" required/>
         </div>
-        <div className="row-container">
-          <div className="input-label-container">
-            <input type="text" name="name-doctor" required />
-            <label htmlFor="name-doctor" className="label-container">
-              <span className="label-content">Nom *</span>
-            </label>
-          </div>
-          <div className="input-label-container">
-            <input type="text" name="nickname-doctor" required />
-            <label htmlFor="nickname-doctor" className="label-container">
-              <span className="label-content">Prénom *</span>
-            </label>
-          </div>
+        <div className="formcarry-block">
+          <label htmlFor="LastNameInput">Prénon *</label>
+          <input type="text" id="LastNameInput" name="lastName" required/>
         </div>
-        <div className="input-label-container">
-          <label className="select-label">
-            Thèsé  * :
-            <select required style={{ width: "70px" }}>
-              <option value="Choisir">Choisir</option>
-              <option value="Oui">Oui</option>
-              <option value="Non">Non</option>
-            </select>
-          </label>
+        <div className="formcarry-block">
+          <label htmlFor="email">Email *</label>
+          <input type="email" id="email" name="email" required/>
         </div>
-        <div className="checkboxInput-label-container">
-          <span>Spécialité * :</span>
-          <div className="checkbox-container">
-            <label>
-              Médecine générale
-              <input
+        <div className="formcarry-block">
+          <label htmlFor="phone">Téléphone *</label>
+          <input type="tel" id="phone" name="phone" placeholder="exemple: 0493121113" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required/>
+        </div>
+        <div className="formcarry-block">
+          <label htmlFor="messageInput">Message</label>
+          <textarea id="messageInput" name="message"></textarea>
+        </div>
+        <div className="formcarry-block">
+          <label htmlFor="cv">CV *</label>
+          <input type="file" id="cv" name="cv" required/>
+        </div>
+        <div className="formcarry-block legalMentions">
+          <label htmlFor="legaleMentions">J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de Consultations 7 sur 7 *</label>
+          <input
                 type="checkbox"
-                name="generale-doctor"
-                className="personnal-checkbox"
-              />
-            </label>
-          </div>
-          <div className="checkbox-container">
-            <label>
-              Médecine d'urgence
-              <input
-                type="checkbox"
-                name="urgence-doctor"
-                className="personnal-checkbox"
-              />
-            </label>
-          </div>
-        </div>
-        <div className="row-container">
-          <div className="input-label-container">
-            <input type="text" name="tel-doctor" required />
-            <label htmlFor="tel-doctor" className="label-container">
-              <span className="label-content">Téléphone *</span>
-            </label>
-          </div>
-          <div className="input-label-container">
-            <input type="text" name="email-doctor" required />
-            <label htmlFor="email-doctor" className="label-container">
-              <span className="label-content">Adresse e-mail *</span>
-            </label>
-          </div>
-        </div>
-        <div className="input-label-container">
-          <textarea name="message-doctor" required></textarea>
-          <label
-            htmlFor="message-doctor"
-            className="label-container"
-            id="texteareaLabel"
-          >
-            <span className="label-content">Message *</span>
-          </label>
-        </div>
-{/*         <div className="input-label-container cv">
-          <label
-
-            htmlFor="cv-doctor"
-            id="cvLabel"
-          >
-            <span>CV *</span>
-          </label>
-          <input className="input-cv" type="file" name="cv" required onChange={handleAttachment} />
-        </div> */}
-        <div className="checkboxInput-label-container cgu">
-          <div className="checkbox-container">
-            <label>
-              <input
-                type="checkbox"
-                name="generale-doctor"
-                className="personnal-checkbox"
+                id="legalMentions"
+                name="legalMentions"
                 required
               />
-              J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de Consultations 7 sur 7 *
-            </label>
-          </div>
         </div>
-        <div>
-          <button type="submit" className="form-button">
-            Soumettre
-          </button>
+        <div className="formcarry-block">
+          <button type="submit">Soumettre</button>
         </div>
       </form>
-    </div>
+    </section>
   )
 }
-
-export default FormDoctor
