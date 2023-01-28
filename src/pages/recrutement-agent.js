@@ -1,24 +1,15 @@
-import * as React from 'react'
-
+import React from "react"
 import Layout from "../components/Layout/Layout"
-import PagesHeader from "../components/PagesHeader/PagesHeader"
-import FormAgent from "../components/Form/FormAgent"
-import Seo from "../components/seo"
+
+import Redirection from "../components/redirection/Redirection"
+
 
 const recruitmentAgent = () => {
-    return (
-        <Layout>
-            <Seo
-                title="Recrutement Agent Polyvalent"
-                description="Page de recrutement Agent Polyvalent pour Consultations 7 sur 7"
-                path="recrutement-agent"
-            />
-            <PagesHeader title="Recrutement Agent Polyvalent" />
-            <div className="max-w">
-                <FormAgent />
-            </div>
-        </Layout>
-    )
+  return (
+    <Layout>
+      <Redirection />
+    </Layout>
+  )
 }
 
-export default recruitmentAgent
+export default  recruitmentAgent

@@ -1,24 +1,15 @@
-import * as React from 'react'
-
+import React from "react"
 import Layout from "../components/Layout/Layout"
-import PagesHeader from "../components/PagesHeader/PagesHeader"
-import FormDoctor from "../components/Form/FormDoctor"
-import Seo from "../components/seo"
+
+import Redirection from "../components/redirection/Redirection"
+
 
 const recruitmentDoctor = () => {
-    return (
-        <Layout>
-            <Seo
-                title="Recrutement Médecin"
-                description="Page de recrutement Médecine pour Consultations 7 sur 7"
-                path="recrutement-docteur"
-            />
-            <PagesHeader title="Recrutement Médecin" />
-            <div className="max-w">
-                <FormDoctor />
-            </div>
-        </Layout>
-    )
+  return (
+    <Layout>
+      <Redirection />
+    </Layout>
+  )
 }
 
 export default recruitmentDoctor
