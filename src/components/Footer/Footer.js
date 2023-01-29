@@ -16,7 +16,7 @@ const Footer = () => {
               width={150}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
-              alt="Logo Consultations 7 sur 7"
+              alt="Logo C7 Santé"
               placeholder="blurred"
             />
           </Link>
@@ -25,7 +25,7 @@ const Footer = () => {
       <hr></hr>
       <div className="footer-second-section">
         <p>
-          Copyright © {new Date().getFullYear()} Consultations 7 sur 7, tous
+          Copyright © {new Date().getFullYear()} C7 Santé, tous
           droits réservés.
         </p>
         <div className="footer-link">

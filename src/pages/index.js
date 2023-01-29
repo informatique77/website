@@ -9,7 +9,6 @@ import CardsSection from "../components/HomePage_sections/CardsSection"
 import MapHp from "../components/Map/MapHp"
 import AboutSection from "../components/HomePage_sections/AboutSection"
 import NumbersSection from "../components/HomePage_sections/NumbersSection"
-import PostSection from "../components/HomePage_sections/PostSection"
 import PostLink from "../components/PostLink/PostLink"
 import RecruitmentSection from "../components/HomePage_sections/RecruitmentSection"
 import Seo from "../components/seo"
@@ -18,8 +17,6 @@ import { closeBurger } from "../utils/burgerAnimation"
 
 const App = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-  const Posts = posts.map((item, index) => <PostLink key={index} post={item} />)
   const dataCards = require('../data/dataCards.json')
   useEffect(() => {
     window.onpopstate = () => {
@@ -39,7 +36,6 @@ const App = ({ data, location }) => {
       <CardsSection arr={dataCards} />
       <NumbersSection />
       <AboutSection />
-      <PostSection posts={Posts} home={true} />
       <RecruitmentSection />
     </Layout>
   )
