@@ -58,7 +58,7 @@ const HomeHeader = () => {
           <IconButton
             css="button button__icon button__icon--red"
             slug="/teleconsultations"
-            content="Téléconsultations 7 sur 7"
+            content="C7 Téléconsultations"
             staticImage={
               <StaticImage
                 src="../../assets/images/icons/icon-camera.png"
