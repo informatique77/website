@@ -27,7 +27,7 @@ const LastOpening = () => {
                 <Button buttonType="with icon" buttonLabel="En savoir plus" link="/centre/cagnes-sur-mer" icon={rightArrowIcon} css="show-more" />
                 <div className="btn-container">
                     <Button buttonType="link" buttonLabel="Vous y rendre" link="https://goo.gl/maps/uKjXEedoSxuuTCxw9" icon={walkingIcon} css="tertiary" />
-                    <Button buttonType="link" buttonLabel="04-93-47-76-03" link="tel:04-93-47-76-03" icon={blueTelephoneIcon} css="tertiary" />
+                    <Button buttonType="link" buttonLabel="04-92-02-07-78" link="tel:04-92-02-07-78" icon={blueTelephoneIcon} css="tertiary" />
                 </div>
             </div>
         </div>
