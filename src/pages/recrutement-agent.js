@@ -10,7 +10,7 @@ const recruitmentAgent = () => {
         <Layout>
             <Seo
                 title="Recrutement Agent Polyvalent"
-                description="Page de recrutement Agent Polyvalent pour Consultations 7 sur 7"
+                description="Page de recrutement Agent Polyvalent pour C7 Santé"
                 path="recrutement-agent"
             />
             <PagesHeader title="Recrutement Agent Polyvalent" />

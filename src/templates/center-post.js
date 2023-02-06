@@ -37,7 +37,7 @@ const SingleCenterTemplate = ({ data }) => {
           <div className="img-center-container">
             <GatsbyImage
               image={image}
-              alt="Notre équipe Consultations 7 sur 7"
+              alt="Notre équipe C7 Santé"
             />
           </div>
           <div className="text-center-container">

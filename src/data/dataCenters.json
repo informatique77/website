@@ -155,7 +155,7 @@
   {
     "index": 7,
     "name": "Nice Nord",
-    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice Nord",
+    "address": "Prochainement votre centre C7 Santé bientôt sur Nice Nord",
     "tel": "Prochainement",
     "image": {
       "src": "../assets/images/centers/nice-nord.jpg"
@@ -177,7 +177,7 @@
   {
     "index": 8,
     "name": "Menton",
-    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Menton",
+    "address": "Prochainement votre centre C7 Santé bientôt sur Menton",
     "tel": "Prochainement",
     "image": {
       "src": "../assets/images/centers/menton.jpg"
@@ -199,7 +199,7 @@
   {
     "index": 9,
     "name": "Cannes",
-    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Cannes",
+    "address": "Prochainement votre centre C7 Santé bientôt sur Cannes",
     "tel": "Prochainement",
     "image": {
       "src": "../assets/images/centers/cannes.jpg"
@@ -221,7 +221,7 @@
   {
     "index": 10,
     "name": "Saint-Raphaël",
-    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Saint-Raphaël",
+    "address": "Prochainement votre centre C7 Santé bientôt sur Saint-Raphaël",
     "tel": "Prochainement",
     "image": {
       "src": "../assets/images/centers/saint-raphael.jpg"

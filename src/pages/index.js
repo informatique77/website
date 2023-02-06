@@ -27,7 +27,7 @@ const App = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo
         title="Accueil"
-        description="Consultations 7 sur 7 vous accueillent dans nos centres de consultations et téléconsultations sur la Côte d'Azur 7 jours sur 7, week-ends et jours fériés sans rendez-vous, de 8h30 à 22h00 sans interruption."
+        description="C7 Santé vous accueillent dans nos centres de consultations et téléconsultations sur la Côte d'Azur 7 jours sur 7, week-ends et jours fériés sans rendez-vous, de 8h30 à 22h00 sans interruption."
         path="/"
       />
       <HeaderHomePage />

@@ -11,7 +11,7 @@ const Recruitment = () => {
     <Layout>
       <Seo
         title="Recrutement"
-        description="Page de recrutement médecin et assistant(e) médical(e) Consultations 7 sur 7"
+        description="Page de recrutement médecin et assistant(e) médical(e) C7 Santé"
         path="recrutement"
       />
       <PagesHeader title="Recrutement" />

@@ -1,11 +1,11 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.consultations77.org">
-    <img alt="Consultations 7 sur 7" src="src/images/logo-consultations77.png" width="200" />
+    <img alt="C7 Santé" src="src/images/logo-consultations77.png" width="200" />
   </a>
 </p>
 <h1 align="center">
-  Documentation du site web de Consultations 7 sur 7
+  Documentation du site web de C7 Santé
 </h1>
 
 Le site a été créé avec le générateur de site statique GatsbyJs, basé sur REACT.

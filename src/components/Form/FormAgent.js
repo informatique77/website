@@ -70,7 +70,7 @@ export default function FormAgent() {
           <input type="file" id="cv" name="cv" required/>
         </div>
         <div className="formcarry-block legalMentions">
-          <label htmlFor="legaleMentions">J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de Consultations 7 sur 7 *</label>
+          <label htmlFor="legaleMentions">J'ai lu et j'accepte les <Link to="/mention-legales">CGU</Link> de C7 Santé *</label>
           <input
                 type="checkbox"
                 id="legalMentions"

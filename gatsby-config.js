@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Consultations 7 sur 7`,
+    title: `C7 Santé`,
     author: {
       name: `GIBELLI Christophe`,
       summary: `Développeur FRONT END résiliant à NICE`,
     },
-    description: `Consultations 7 sur 7 vous accueillent 7 jours sur 7, week-ends et jours fériés inclus, 
+    description: `C7 Santé vous accueillent 7 jours sur 7, week-ends et jours fériés inclus, 
     sans rendez-vous, de 8h30 à 22h00 sans interruption.`,
     siteUrl: `https://www.consultations77.org/`,
     social: {
@@ -156,7 +156,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Consultations 7/7`,
-        description: `Consultations 7 sur 7 vous accueillent 7 jours sur 7, week-ends et jours fériés inclus, 
+        description: `C7 Santé vous accueillent 7 jours sur 7, week-ends et jours fériés inclus, 
         sans rendez-vous, de 8h30 à 22h00 sans interruption.`,
         short_name: `C7`,
         start_url: `/`,

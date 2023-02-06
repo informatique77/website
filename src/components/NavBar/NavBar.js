@@ -16,7 +16,7 @@ const NavBar = () => {
             width={125}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Logo Consultations 7 sur 7"
+            alt="Logo C7 Santé"
             placeholder="blurred"
           />
         </Link>
@@ -31,7 +31,7 @@ const NavBar = () => {
             width={125}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Logo Consultations 7 sur 7"
+            alt="Logo C7 Santé"
             placeholder="blurred"
           />
         </Link>

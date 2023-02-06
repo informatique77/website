@@ -19,7 +19,7 @@ const RecruitmentSection = () => {
           width={183}
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="Recrutement Consultations 7 sur 7"
+          alt="Recrutement C7 Santé"
           placeholder="blurred"
         />
       </div>

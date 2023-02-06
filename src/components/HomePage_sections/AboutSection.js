@@ -14,7 +14,7 @@ const AboutSection = () => {
           width={500}
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="Notre équipe Consultations 7 sur 7"
+          alt="Notre équipe C7 Santé"
           placeholder="blurred"
         />
       </div>

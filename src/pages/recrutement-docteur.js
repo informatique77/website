@@ -10,7 +10,7 @@ const recruitmentDoctor = () => {
         <Layout>
             <Seo
                 title="Recrutement Médecin"
-                description="Page de recrutement Médecine pour Consultations 7 sur 7"
+                description="Page de recrutement Médecine pour C7 Santé"
                 path="recrutement-docteur"
             />
             <PagesHeader title="Recrutement Médecin" />

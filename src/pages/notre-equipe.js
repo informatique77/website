@@ -14,7 +14,7 @@ const Team = ({ data }) => {
     <Layout>
       <Seo
         title="Notre équipe"
-        description="Consultations 7 sur 7 c'est avant tout une équipe de médecins généralistes et urgentistes, accompagnée pas nos assistantes médicales."
+        description="C7 Santé c'est avant tout une équipe de médecins généralistes et urgentistes, accompagnée pas nos assistantes médicales."
         path="notre-equipe"
       />
       <div className="our-job-img-container">

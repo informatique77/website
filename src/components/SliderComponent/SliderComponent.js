@@ -31,7 +31,7 @@ const SliderComponent = () => {
               height={500}
               layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
-              alt="Consultations 7 sur 7"
+              alt="C7 Santé"
               placeholder="blurred"
             />
 
@@ -80,7 +80,7 @@ const SliderComponent = () => {
               height={500}  
               layout="constrained"
               formats={["AUTO", "WEBP", "AVIF"]}
-              alt="Téléconsultations 7 sur 7"
+              alt="TéléC7 Santé"
               placeholder="blurred"
             />
           </div>

@@ -11,7 +11,7 @@ const OurJob = () => {
     <Layout>
       <Seo
         title="Qui sommes nous ?"
-        description="Chez consultations 7 sur 7, notre métier c'est de vous proposer des consultations pour adultes et enfants, sans rendez-vous, 
+        description="Chez C7 Santé, notre métier c'est de vous proposer des consultations pour adultes et enfants, sans rendez-vous, 
       avec la possibilité d'effectuer des examens complémentaires pouvant être réalisé sur place"
         path="notre-metier"
       />

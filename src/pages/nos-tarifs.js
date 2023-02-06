@@ -11,7 +11,7 @@ const Prices = () => (
     <Seo title="Nos Tarifs" />
     <PagesHeader
       title="Nos Tarifs"
-      desription="Consulter les tarifs pratiqués chez Consultations 7 sur 7 dans nos centre de consultatations et de téléconsulations"
+      desription="Consulter les tarifs pratiqués chez C7 Santé dans nos centre de consultatations et de téléconsulations"
       path="nos-tarifs"
     />
     <div className="prices-section">
