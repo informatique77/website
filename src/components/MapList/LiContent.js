@@ -26,8 +26,15 @@ const LiContent = ({ center }) => {
       </div>
       <div className="li-text-container">
         <h2>
-          <span>C</span>
-          <span className="red-seven">7</span>
+        <StaticImage
+            src="../../assets/images/c7sante.png"
+            loading="eager"
+            width={45}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="Logo C7 Santé"
+            placeholder="blurred"
+          />
           {center.node.name}
         </h2>
         <p className="li-address">{center.node.address}</p>
