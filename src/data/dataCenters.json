@@ -155,8 +155,9 @@
   {
     "index": 7,
     "name": "Nice Nord",
-    "address": "Prochainement votre centre Consultations 7 sur 7 bientôt sur Nice Nord",
+    "address": "Prochainement votre centre Consultations 7 sur 7 au 39 Bd Gorbella 06100 Nice",
     "tel": "Prochainement",
+    "direction": "https://maps.app.goo.gl/u9UF3pG6V4jRxFTE6",
     "image": {
       "src": "../assets/images/centers/nice-nord.jpg"
     },
@@ -165,10 +166,10 @@
     "map": true,
     "open": false,
     "bgColor": "#F7F6FE",
-    "slug": "/centre/ariane",
+    "slug": "/centre/nice-nord",
     "transport": [
       {
-        "car": "",
+        "car": "À 5 min de la sortie d'autoroute Nice Nord",
         "bus": "",
         "tramway": ""
       }
